@@ -26,7 +26,7 @@ namespace EfCoreDatabaseBenchmark.Data
         {
 
             optionsBuilder
-                .UseMySql("server=localhost;port=3306;database=Benchmark;user=root;password=mamali80;Old Guids=true",
+                .UseMySql("server=localhost;port=3306;database=Benchmark;user=root;password=pass;Old Guids=true",
                     mysqlOptions => { mysqlOptions.CommandTimeout(28000); })
                 .UseSnakeCaseNamingConvention();
 
