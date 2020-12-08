@@ -91,7 +91,7 @@ namespace EfCoreDatabaseBenchmark
 
             for (var x = 0; x < _sequence; x++)
             {
-                Console.WriteLine("---------- Sequence " + (x + 1) + " ----------");
+                Console.WriteLine("---------- Benchmark Sequence " + (x + 1) + " ----------");
                 var mainFileExist = File.Exists(_mainFile);
                 if (mainFileExist)
                 {
@@ -106,7 +106,7 @@ namespace EfCoreDatabaseBenchmark
 
                 foreach (var item in _cases)
                 {
-                    Console.Write("Benchmarking " + item.CaseName + " ");
+                    Console.Write(item.CaseName + " ");
 
                     var result = await Collect(item.CaseName, item.SelectFunc, item.InsertFunc);
 
