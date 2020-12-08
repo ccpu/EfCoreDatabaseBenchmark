@@ -1,700 +1,700 @@
-|<div style='width:155px'>Case</div>|Inserts|InsertTime|SelectTime|DiskTime|DiskReadTime|DiskWriteTime|CurrentDiskQueueLength|AvgDiskQueueLength|AvgDiskReadQueueLength|AvgDiskWriteQueueLength|
-|:------------|:------------:|:------------:|:------------:|:------------:|:------------:|:------------:|:------------:|:------------:|:------------:|:------------:|
-|auto-increment-key|100000|20.677|0.205|5.09|0.32|4.71|0.17|0.05|0|0.05|
-|guid-key|100000|4.628|0.07|27.57|0.68|7.23|0|0.28|0.01|0.27|
-|guid-sequential-key|100000|4.857|0.08|21.44|0.35|7.88|1.5|0.21|0|0.21|
-|guid-comb-key|100000|5.637|0.023|17.66|0.82|16.78|3.33|0.18|0.01|0.17|
-|objectid-key|100000|6.35|0.146|19.27|0.25|18.9|0.5|0.19|0|0.19|
-|<div style='width:155px'>Case</div>|Inserts|InsertTime|SelectTime|DiskTime|DiskReadTime|DiskWriteTime|CurrentDiskQueueLength|AvgDiskQueueLength|AvgDiskReadQueueLength|AvgDiskWriteQueueLength|
-|<div style='width:155px'>Case</div>|Inserts|InsertTime|SelectTime|DiskTime|DiskReadTime|DiskWriteTime|CurrentDiskQueueLength|AvgDiskQueueLength|AvgDiskReadQueueLength|AvgDiskWriteQueueLength|
-|auto-increment-key|100|0.175|0.149|0|0|0|0|0|0|0|
-|guid-key|100|0.055|0.008|0|0|0|0|0|0|0|
-|guid-sequential-key|100|0.016|0.006|0|0|0|0|0|0|0|
-|guid-comb-key|100|0.046|0.005|0|0|0|0|0|0|0|
-|objectid-key|100|0.04|0.007|0|0|0|0|0|0|0|
-|<div style='width:155px'>Case</div>|Inserts|InsertTime|SelectTime|DiskTime|DiskReadTime|DiskWriteTime|CurrentDiskQueueLength|AvgDiskQueueLength|AvgDiskReadQueueLength|AvgDiskWriteQueueLength|
-|auto-increment-key|100|0.184|0.146|0|0|0|0|0|0|0|
-|guid-key|100|0.047|0.011|0|0|0|0|0|0|0|
-|guid-sequential-key|100|0.023|0.006|0|0|0|0|0|0|0|
-|guid-comb-key|100|0.057|0.008|0|0|0|0|0|0|0|
-|objectid-key|100|0.023|0.008|0|0|0|0|0|0|0|
-|<div style='width:155px'>Case</div>|Inserts|InsertTime|SelectTime|DiskTime|DiskReadTime|DiskWriteTime|CurrentDiskQueueLength|AvgDiskQueueLength|AvgDiskReadQueueLength|AvgDiskWriteQueueLength|
-|auto-increment-key|100|0.176|0.145|0|0|0|0|0|0|0|
-|guid-key|100|0.039|0.007|0|0|0|0|0|0|0|
-|guid-sequential-key|100|0.017|0.006|0|0|0|0|0|0|0|
-|guid-comb-key|100|0.042|0.006|0|0|0|0|0|0|0|
-|objectid-key|100|0.042|0.008|0|0|0|0|0|0|0|
-|numeric-key|100|0.014|0|0|0|0|0|0|0|0|
-|<div style='width:155px'>Case</div>|Inserts|InsertTime|SelectTime|DiskTime|DiskReadTime|DiskWriteTime|CurrentDiskQueueLength|AvgDiskQueueLength|AvgDiskReadQueueLength|AvgDiskWriteQueueLength|
-|auto-increment-key|100|0.161|0.147|0|0|0|0|0|0|0|
-|guid-key|100|0.047|0.009|0|0|0|0|0|0|0|
-|guid-sequential-key|100|0.016|0.006|0|0|0|0|0|0|0|
-|guid-comb-key|100|0.035|0.006|0|0|0|0|0|0|0|
-|objectid-key|100|0.025|0.011|0|0|0|0|0|0|0|
-|<div style='width:155px'>Case</div>|Inserts|InsertTime|SelectTime|DiskTime|DiskReadTime|DiskWriteTime|CurrentDiskQueueLength|AvgDiskQueueLength|AvgDiskReadQueueLength|AvgDiskWriteQueueLength|
-|auto-increment-key|100|0.141|0.151|0|0|0|0|0|0|0|
-|guid-key|100|0.072|0.009|0|0|0|0|0|0|0|
-|guid-sequential-key|100|0.016|0.007|0|0|0|0|0|0|0|
-|guid-comb-key|100|0.056|0.007|0|0|0|0|0|0|0|
-|objectid-key|100|0.037|0.008|0|0|0|0|0|0|0|
-|<div style='width:155px'>Case</div>|Inserts|InsertTime|SelectTime|DiskTime|DiskReadTime|DiskWriteTime|CurrentDiskQueueLength|AvgDiskQueueLength|AvgDiskReadQueueLength|AvgDiskWriteQueueLength|
-|auto-increment-key|100|0.171|0.16|0|0|0|0|0|0|0|
-|guid-key|100|0.064|0.011|0|0|0|0|0|0|0|
-|guid-sequential-key|100|0.031|0.007|0|0|0|0|0|0|0|
-|guid-comb-key|100|0.055|0.007|0|0|0|0|0|0|0|
-|objectid-key|100|0.025|0.008|0|0|0|0|0|0|0|
-|numeric-indexed|100|0.057|0.007|0|0|0|0|0|0|0|
-|objectid-indexed|100|0.039|0.007|0|0|0|0|0|0|0|
-|guid-indexed|100|0.048|0.006|0|0|0|0|0|0|0|
-|guid-sequential-indexed|100|0.06|0.006|0|0|0|0|0|0|0|
-|guid-comb-indexed|100|0.053|0.006|0|0|0|0|0|0|0|
-|<div style='width:155px'>Case</div>|Inserts|InsertTime|SelectTime|DiskTime|DiskReadTime|DiskWriteTime|CurrentDiskQueueLength|AvgDiskQueueLength|AvgDiskReadQueueLength|AvgDiskWriteQueueLength|
-|auto-increment-key|100|0.171|0.151|0|0|0|0|0|0|0|
-|guid-key|100|0.047|0.007|0|0|0|0|0|0|0|
-|guid-sequential-key|100|0.021|0.007|0|0|0|0|0|0|0|
-|guid-comb-key|100|0.055|0.007|0|0|0|0|0|0|0|
-|objectid-key|100|0.024|0.009|0|0|0|0|0|0|0|
-|numeric-indexed|100|0.045|0.009|0|0|0|0|0|0|0|
-|objectid-indexed|100|0.043|0.007|0|0|0|0|0|0|0|
-|guid-indexed|100|0.041|0.006|0|0|0|0|0|0|0|
-|guid-sequential-indexed|100|0.049|0.006|0|0|0|0|0|0|0|
-|guid-comb-indexed|100|0.04|0.016|0|0|0|0|0|0|0|
-|<div style='width:155px'>Case</div>|Inserts|InsertTime|SelectTime|DiskTime|DiskReadTime|DiskWriteTime|CurrentDiskQueueLength|AvgDiskQueueLength|AvgDiskReadQueueLength|AvgDiskWriteQueueLength|
-|auto-increment-key|100|0.062|0.004|0|0|0|0|0|0|0|
-|guid-key|100|0.024|0.001|0|0|0|0|0|0|0|
-|guid-sequential-key|100|0.009|0.002|0|0|0|0|0|0|0|
-|guid-comb-key|100|0.024|0.001|0|0|0|0|0|0|0|
-|objectid-key|100|0.01|0.001|0|0|0|0|0|0|0|
-|numeric-indexed|100|0.027|0.001|0|0|0|0|0|0|0|
-|objectid-indexed|100|0.038|0.001|0|0|0|0|0|0|0|
-|guid-indexed|100|0.03|0.001|0|0|0|0|0|0|0|
-|guid-sequential-indexed|100|0.033|0.002|0|0|0|0|0|0|0|
-|guid-comb-indexed|100|0.041|0.001|0|0|0|0|0|0|0|
-|<div style='width:155px'>Case</div>|Inserts|InsertTime|SelectTime|DiskTime|DiskReadTime|DiskWriteTime|CurrentDiskQueueLength|AvgDiskQueueLength|AvgDiskReadQueueLength|AvgDiskWriteQueueLength|
-|auto-increment-key|100000|21.033|0.183|4.41|0.3|3.87|0.06|0.04|0|0.04|
-|guid-key|100000|4.826|0.047|24.64|0.52|7.05|0.5|0.25|0.01|0.24|
-|guid-sequential-key|100000|5.103|0.064|20.65|0.22|11.23|0.67|0.21|0|0.2|
-|guid-comb-key|100000|5.575|0.043|33.3|1.19|31.68|0.33|0.33|0.01|0.32|
-|objectid-key|100000|6.623|0.113|15.94|0.19|15.62|0.5|0.16|0|0.16|
-|numeric-indexed|100000|23.366|0.034|5.3|0.07|5.21|0.38|0.05|0|0.05|
-|objectid-indexed|100000|24.414|0.039|7.23|0.24|6.97|0.27|0.07|0|0.07|
-|<div style='width:155px'>Case</div>|Inserts|InsertTime|SelectTime|DiskTime|DiskReadTime|DiskWriteTime|CurrentDiskQueueLength|AvgDiskQueueLength|AvgDiskReadQueueLength|AvgDiskWriteQueueLength|
-|auto-increment-key|100|0.173|0.159|0|0|0|0|0|0|0|
-|guid-key|100|0.053|0.008|0|0|0|0|0|0|0|
-|guid-sequential-key|100|0.02|0.006|0|0|0|0|0|0|0|
-|guid-comb-key|100|0.035|0.008|0|0|0|0|0|0|0|
-|objectid-key|100|0.033|0.01|0|0|0|0|0|0|0|
-|objectid-char-indexed|100|0.039|0.006|0|0|0|0|0|0|0|
-|numeric-indexed|100|0.041|0.006|0|0|0|0|0|0|0|
-|objectid-indexed|100|0.068|0.007|0|0|0|0|0|0|0|
-|guid-indexed|100|0.041|0.006|0|0|0|0|0|0|0|
-|guid-sequential-indexed|100|0.043|0.006|0|0|0|0|0|0|0|
-|guid-comb-indexed|100|0.043|0.012|0|0|0|0|0|0|0|
-|<div style='width:155px'>Case</div>|Inserts|InsertTime|SelectTime|DiskTime|DiskReadTime|DiskWriteTime|CurrentDiskQueueLength|AvgDiskQueueLength|AvgDiskReadQueueLength|AvgDiskWriteQueueLength|
-|auto-increment-key|100|0.041|0.003|0|0|0|0|0|0|0|
-|guid-key|100|0.031|0.001|0|0|0|0|0|0|0|
-|guid-sequential-key|100|0.019|0.001|0|0|0|0|0|0|0|
-|guid-comb-key|100|0.047|0.002|0|0|0|0|0|0|0|
-|objectid-key|100|0.02|0.002|0|0|0|0|0|0|0|
-|objectid-char-indexed|100|0.038|0.001|0|0|0|0|0|0|0|
-|numeric-indexed|100|0.042|0.002|0|0|0|0|0|0|0|
-|objectid-indexed|100|0.042|0.002|0|0|0|0|0|0|0|
-|guid-indexed|100|0.045|0.001|0|0|0|0|0|0|0|
-|guid-sequential-indexed|100|0.047|0.001|0|0|0|0|0|0|0|
-|guid-comb-indexed|100|0.044|0.001|0|0|0|0|0|0|0|
-|<div style='width:155px'>Case</div>|Inserts|InsertTime|SelectTime|DiskTime|DiskReadTime|DiskWriteTime|CurrentDiskQueueLength|AvgDiskQueueLength|AvgDiskReadQueueLength|AvgDiskWriteQueueLength|
-|auto-increment-key|100|0.143|0.153|0|0|0|0|0|0|0|
-|guid-key|100|0.056|0.012|0|0|0|0|0|0|0|
-|guid-sequential-key|100|0.018|0.007|0|0|0|0|0|0|0|
-|guid-comb-key|100|0.046|0.011|0|0|0|0|0|0|0|
-|objectid-key|100|0.03|0.009|0|0|0|0|0|0|0|
-|objectid-char-indexed|100|0.036|0.006|0|0|0|0|0|0|0|
-|numeric-indexed|100|0.046|0.006|0|0|0|0|0|0|0|
-|objectid-indexed|100|0.043|0.008|0|0|0|0|0|0|0|
-|guid-indexed|100|0.043|0.006|0|0|0|0|0|0|0|
-|guid-sequential-indexed|100|0.045|0.006|0|0|0|0|0|0|0|
-|guid-comb-indexed|100|0.051|0.007|0|0|0|0|0|0|0|
-|<div style='width:155px'>Case</div>|Inserts|InsertTime|SelectTime|DiskTime|DiskReadTime|DiskWriteTime|CurrentDiskQueueLength|AvgDiskQueueLength|AvgDiskReadQueueLength|AvgDiskWriteQueueLength|
-|auto-increment-key|100|0.05|0.003|0|0|0|0|0|0|0|
-|guid-key|100|0.033|0.001|0|0|0|0|0|0|0|
-|guid-sequential-key|100|0.022|0.002|0|0|0|0|0|0|0|
-|guid-comb-key|100|0.036|0.002|0|0|0|0|0|0|0|
-|objectid-key|100|0.019|0.002|0|0|0|0|0|0|0|
-|objectid-char-indexed|100|0.044|0.001|0|0|0|0|0|0|0|
-|numeric-indexed|100|0.043|0.002|0|0|0|0|0|0|0|
-|objectid-indexed|100|0.055|0.002|0|0|0|0|0|0|0|
-|guid-indexed|100|0.047|0.002|0|0|0|0|0|0|0|
-|guid-sequential-indexed|100|0.047|0.001|0|0|0|0|0|0|0|
-|guid-comb-indexed|100|0.044|0.001|0|0|0|0|0|0|0|
-|<div style='width:155px'>Case</div>|Inserts|InsertTime|SelectTime|DiskTime|DiskReadTime|DiskWriteTime|CurrentDiskQueueLength|AvgDiskQueueLength|AvgDiskReadQueueLength|AvgDiskWriteQueueLength|
-|auto-increment-key|100000|21.198|0.186|4.35|0.05|4.24|0.11|0.04|0|0.04|
-|guid-key|100000|4.758|0.03|32.34|0.68|7.05|0.5|0.32|0.01|0.32|
-|guid-sequential-key|100000|5.093|0.059|21.11|0.3|10.73|0.33|0.21|0|0.21|
-|guid-comb-key|100000|5.47|0.042|18.23|0.43|17.37|1|0.18|0|0.18|
-|objectid-key|100000|6.868|0.14|15.61|0.25|15.36|0.75|0.16|0|0.15|
-|objectid-char-indexed|100000|24.808|0.061|7.68|0.34|7.33|0.14|0.08|0|0.07|
-|numeric-indexed|100000|24.212|0.031|4.55|0.06|4.49|0.23|0.05|0|0.05|
-|objectid-indexed|100000|25.733|0.041|5.3|0.1|5.18|0.17|0.05|0|0.05|
-|guid-indexed|100000|26.613|0.054|8.26|1.04|7.21|0.33|0.08|0.01|0.07|
-|guid-sequential-indexed|100000|26.348|0.038|5.04|0.05|4.99|0|0.05|0|0.05|
-|guid-comb-indexed|100000|27.351|0.043|5.98|0.25|5.71|0.12|0.06|0|0.06|
-|<div style='width:155px'>Case</div>|Inserts|InsertTime|SelectTime|DiskTime|DiskReadTime|DiskWriteTime|CurrentDiskQueueLength|AvgDiskQueueLength|AvgDiskReadQueueLength|AvgDiskWriteQueueLength|
-|auto-increment-key|100000|25.389|0.094|3.69|0.23|3.45|0.04|0.04|0|0.03|
-|guid-key|100000|22.152|0.159|108.19|37.85|70.35|1.35|1.08|0.38|0.7|
-|guid-sequential-key|100000|10.105|0.168|5.23|0.11|5.1|0|0.05|0|0.05|
-|guid-comb-key|100000|22.168|0.166|98.23|32.68|65.51|1.35|0.98|0.33|0.66|
-|objectid-key|100000|12.157|0.237|5.81|0.12|5.69|0|0.06|0|0.06|
-|objectid-char-indexed|100000|29.847|0.133|4.58|0.09|4.48|0.07|0.05|0|0.04|
-|numeric-indexed|100000|29.542|0.059|3.44|0.07|3.37|0.07|0.03|0|0.03|
-|objectid-indexed|100000|30.27|0.1|3.61|0.09|3.51|0.18|0.04|0|0.04|
-|guid-indexed|100000|34.018|0.189|22.33|6.21|16.12|0.23|0.22|0.06|0.16|
-|guid-sequential-indexed|100000|31.214|0.122|4.09|0.56|3.53|0.17|0.04|0.01|0.04|
-|guid-comb-indexed|100000|35.583|0.086|22.22|6.61|15.61|0.33|0.22|0.07|0.16|
-|<div style='width:155px'>Case</div>|Inserts|InsertTime|SelectTime|DiskTime|DiskReadTime|DiskWriteTime|CurrentDiskQueueLength|AvgDiskQueueLength|AvgDiskReadQueueLength|AvgDiskWriteQueueLength|
-|auto-increment-key|200000|40.284|0.041|3.68|0.04|3.64|0.08|0.04|0|0.04|
-|guid-key|200000|60.969|0.089|157.22|53.61|103.59|2.05|1.57|0.54|1.04|
-|guid-sequential-key|200000|10.024|0.118|15.07|0.61|14.47|0.5|0.15|0.01|0.14|
-|guid-comb-key|200000|63.678|0.14|152.56|52.47|100.06|1.61|1.53|0.52|1|
-|objectid-key|200000|14.889|0.169|9.45|0.08|9.37|0.17|0.09|0|0.09|
-|objectid-char-indexed|200000|49.037|0.069|6.15|0.07|6.06|0.46|0.06|0|0.06|
-|numeric-indexed|200000|48.269|0.068|5.97|0.06|5.9|0.11|0.06|0|0.06|
-|objectid-indexed|200000|50.174|0.06|4.53|0.05|4.48|0.49|0.05|0|0.04|
-|guid-indexed|200000|90.673|0.069|72.29|24.44|47.85|0.66|0.72|0.24|0.48|
-|guid-sequential-indexed|200000|52.325|0.068|5.56|0.06|5.5|0.2|0.06|0|0.06|
-|guid-comb-indexed|200000|91.993|0.058|68.14|22.96|45.18|0.65|0.68|0.23|0.45|
-|<div style='width:155px'>Case</div>|Inserts|InsertTime|SelectTime|DiskTime|DiskReadTime|DiskWriteTime|CurrentDiskQueueLength|AvgDiskQueueLength|AvgDiskReadQueueLength|AvgDiskWriteQueueLength|
-|auto-increment-key|200000|50.845|0.084|3.06|0.13|2.94|0.19|0.03|0|0.03|
-|guid-key|200000|81.593|0.262|139.84|48.5|91.38|1.91|1.4|0.49|0.91|
-|guid-sequential-key|200000|19.902|0.305|6.84|0.84|6|0.22|0.07|0.01|0.06|
-|guid-comb-key|200000|83.677|0.265|139.12|47.86|91.27|2.04|1.39|0.48|0.91|
-|objectid-key|200000|24.87|0.471|7.54|0.88|6.66|0.22|0.08|0.01|0.07|
-|objectid-char-indexed|200000|60.931|0.26|5.12|0.09|5.04|0.14|0.05|0|0.05|
-|numeric-indexed|200000|59.432|0.187|3.89|0.36|3.58|0.23|0.04|0|0.04|
-|objectid-indexed|200000|60.561|0.14|4.31|0.13|4.18|0.12|0.04|0|0.04|
-|guid-indexed|200000|118.531|0.224|76.63|26.35|50.3|0.95|0.77|0.26|0.5|
-|guid-sequential-indexed|200000|62.763|0.243|4.16|0.07|4.1|0.15|0.04|0|0.04|
-|guid-comb-indexed|200000|126.403|0.141|75.82|26.35|49.46|0.8|0.76|0.26|0.49|
-|<div style='width:155px'>Case</div>|Inserts|InsertTime|SelectTime|DiskTime|DiskReadTime|DiskWriteTime|CurrentDiskQueueLength|AvgDiskQueueLength|AvgDiskReadQueueLength|AvgDiskWriteQueueLength|
-|auto-increment-key|200000|60.729|0.237|3.22|0.12|3.1|0.1|0.03|0|0.03|
-|guid-key|200000|100.17|0.502|129.98|45.41|84.57|1.79|1.3|0.45|0.85|
-|guid-sequential-key|200000|30.574|0.531|4.61|0.08|4.52|0.11|0.05|0|0.05|
-|guid-comb-key|200000|103.067|0.467|124.69|44|80.71|1.49|1.25|0.44|0.81|
-|objectid-key|200000|35.201|0.817|4.62|0.34|4.28|0.12|0.05|0|0.04|
-|objectid-char-indexed|200000|69.86|0.303|5.34|0.05|5.3|0.24|0.05|0|0.05|
-|numeric-indexed|200000|69.56|0.297|2.95|0.07|2.88|0.15|0.03|0|0.03|
-|objectid-indexed|200000|71.973|0.342|4.93|0.26|4.68|0.16|0.05|0|0.05|
-|guid-indexed|200000|141.272|0.32|81.38|28.69|52.7|1.15|0.81|0.29|0.53|
-|guid-sequential-indexed|200000|75.351|0.311|3.49|0.1|3.38|0.08|0.03|0|0.03|
-|guid-comb-indexed|200000|139.151|0.342|76.06|26.39|49.67|0.81|0.76|0.26|0.5|
-|<div style='width:155px'>Case</div>|Inserts|InsertTime|SelectTime|DiskTime|DiskReadTime|DiskWriteTime|CurrentDiskQueueLength|AvgDiskQueueLength|AvgDiskReadQueueLength|AvgDiskWriteQueueLength|
-|auto-increment-key|200000|71.313|0.298|2.08|0.09|1.98|0.19|0.02|0|0.02|
-|guid-key|200000|119.942|0.663|119.8|42.13|77.68|1.48|1.2|0.42|0.77|
-|guid-sequential-key|200000|41.362|0.721|3.31|0.05|3.26|0.05|0.03|0|0.03|
-|guid-comb-key|200000|121.627|0.707|119.31|42.88|76.47|1.61|1.19|0.43|0.76|
-|objectid-key|200000|44.122|1.251|4.06|0.51|3.56|0.1|0.04|0.01|0.04|
-|objectid-char-indexed|200000|80.256|0.571|4.63|0.98|3.65|0.12|0.05|0.01|0.04|
-|numeric-indexed|200000|79.021|0.429|2.73|0.09|2.63|0.03|0.03|0|0.03|
-|objectid-indexed|200000|81.162|0.528|5.03|1.07|3.95|0.13|0.05|0.01|0.04|
-|guid-indexed|200000|154.108|0.309|78.74|28|50.73|0.91|0.79|0.28|0.51|
-|guid-sequential-indexed|200000|83.308|0.518|4.1|0.8|3.3|0.17|0.04|0.01|0.03|
-|guid-comb-indexed|200000|151.534|0.415|74.16|25.55|48.61|0.66|0.74|0.26|0.49|
-|<div style='width:155px'>Case</div>|Inserts|InsertTime|SelectTime|DiskTime|DiskReadTime|DiskWriteTime|CurrentDiskQueueLength|AvgDiskQueueLength|AvgDiskReadQueueLength|AvgDiskWriteQueueLength|
-|auto-increment-key|200000|88.697|0.331|1.98|0.15|1.83|0.11|0.02|0|0.02|
-|guid-key|200000|125.381|0.834|114.99|41.06|73.92|1.29|1.15|0.41|0.74|
-|guid-sequential-key|200000|50.916|0.896|2.94|0.12|2.82|0.17|0.03|0|0.03|
-|guid-comb-key|200000|129.516|0.805|114.88|42.02|72.88|1.39|1.15|0.42|0.73|
-|objectid-key|200000|54.25|1.66|3.45|0.47|2.97|0.02|0.03|0|0.03|
-|objectid-char-indexed|200000|96.333|0.771|4.29|1.25|3.04|0.11|0.04|0.01|0.03|
-|numeric-indexed|200000|93.617|0.571|2.59|0.08|2.51|0.12|0.03|0|0.03|
-|objectid-indexed|200000|93.521|0.667|2.71|0.09|2.62|0.16|0.03|0|0.03|
-|guid-indexed|200000|172.945|0.629|70.95|25.8|45.16|1.05|0.71|0.26|0.45|
-|guid-sequential-indexed|200000|102.927|0.681|2.72|0.17|2.56|0.06|0.03|0|0.03|
-|guid-comb-indexed|200000|181.066|0.406|70.94|25.46|45.47|0.85|0.71|0.25|0.45|
-|<div style='width:155px'>Case</div>|Inserts|InsertTime|SelectTime|DiskTime|DiskReadTime|DiskWriteTime|CurrentDiskQueueLength|AvgDiskQueueLength|AvgDiskReadQueueLength|AvgDiskWriteQueueLength|
-|auto-increment-key|200000|95.549|0.387|1.7|0.02|1.68|0.04|0.02|0|0.02|
-|guid-key|200000|143.472|1.181|103.7|37.78|65.93|1.11|1.04|0.38|0.66|
-|guid-sequential-key|200000|60.772|1.081|3.05|0.72|2.34|0.08|0.03|0.01|0.02|
-|guid-comb-key|200000|144.028|1.119|106.63|39.36|67.28|1.27|1.07|0.39|0.67|
-|objectid-key|200000|65.713|2.331|3.34|0.67|2.67|0.08|0.03|0.01|0.03|
-|objectid-char-indexed|200000|100.696|1.138|3.27|0.39|2.88|0.09|0.03|0|0.03|
-|numeric-indexed|200000|104.068|0.742|2.46|0.08|2.38|0.1|0.02|0|0.02|
-|objectid-indexed|200000|105.26|0.934|3.06|0.77|2.29|0.1|0.03|0.01|0.02|
-|guid-indexed|200000|192.556|0.806|74.77|28.69|46.1|1.03|0.75|0.29|0.46|
-|guid-sequential-indexed|200000|114.233|0.837|2.37|0.31|2.06|0.16|0.02|0|0.02|
-|guid-comb-indexed|200000|192.688|0.835|70.27|25.93|44.35|0.88|0.7|0.26|0.44|
-|<div style='width:155px'>Case</div>|Inserts|InsertTime|SelectTime|DiskTime|DiskReadTime|DiskWriteTime|CurrentDiskQueueLength|AvgDiskQueueLength|AvgDiskReadQueueLength|AvgDiskWriteQueueLength|
-|auto-increment-key|200000|102.528|0.396|1.62|0.06|1.56|0.1|0.02|0|0.02|
-|guid-key|200000|170.669|1.359|103.77|40.08|63.72|1.35|1.04|0.4|0.64|
-|guid-sequential-key|200000|78.002|1.284|1.66|0.33|1.33|0.03|0.02|0|0.01|
-|guid-comb-key|200000|156.897|1.238|100.54|37.01|63.54|1.31|1.01|0.37|0.64|
-|objectid-key|200000|78.621|2.521|2.73|0.84|1.89|0.03|0.03|0.01|0.02|
-|objectid-char-indexed|200000|124.143|1.195|2.74|0.24|2.49|0.1|0.03|0|0.02|
-|numeric-indexed|200000|113.819|0.957|2.07|0.1|1.98|0.14|0.02|0|0.02|
-|objectid-indexed|200000|139.487|0.804|2.02|0.23|1.79|0.21|0.02|0|0.02|
-|guid-indexed|200000|241.126|1.047|56.74|20.57|36.17|0.8|0.57|0.21|0.36|
-|guid-sequential-indexed|200000|113.107|1.013|3.39|1.14|2.25|0.11|0.03|0.01|0.02|
-|guid-comb-indexed|200000|199.975|1.073|74.52|28.41|46.13|1.02|0.75|0.28|0.46|
-|<div style='width:155px'>Case</div>|Inserts|InsertTime|SelectTime|DiskTime|DiskReadTime|DiskWriteTime|CurrentDiskQueueLength|AvgDiskQueueLength|AvgDiskReadQueueLength|AvgDiskWriteQueueLength|
-|auto-increment-key|200000|110.079|0.485|1.59|0.01|1.58|0.03|0.02|0|0.02|
-|guid-key|200000|180.194|1.548|103.23|39.86|63.34|1.23|1.03|0.4|0.63|
-|guid-sequential-key|200000|80.686|1.955|1.68|0.13|1.54|0.12|0.02|0|0.02|
-|guid-comb-key|200000|183.397|1.555|103.04|40.13|62.87|1.29|1.03|0.4|0.63|
-|objectid-key|200000|84.321|4.468|2.38|0.46|1.92|0.07|0.03|0|0.02|
-|objectid-char-indexed|200000|119.749|1.41|2.76|0.4|2.35|0.12|0.03|0|0.02|
-|numeric-indexed|200000|117.946|0.775|1.96|0.06|1.9|0.13|0.02|0|0.02|
-|objectid-indexed|200000|121.39|0.888|3.24|1.07|2.17|0.13|0.03|0.01|0.02|
-|guid-indexed|200000|214.213|1.2|73.65|28.68|44.97|0.89|0.74|0.29|0.45|
-|guid-sequential-indexed|200000|122.21|1.619|2.74|0.82|1.92|0.12|0.03|0.01|0.02|
-|guid-comb-indexed|200000|213.44|0.887|71.33|27.83|43.5|0.97|0.71|0.28|0.44|
-|<div style='width:155px'>Case</div>|Inserts|InsertTime|SelectTime|DiskTime|DiskReadTime|DiskWriteTime|CurrentDiskQueueLength|AvgDiskQueueLength|AvgDiskReadQueueLength|AvgDiskWriteQueueLength|
-|auto-increment-key|200000|118.336|2.046|2.13|0.87|1.26|0.06|0.02|0.01|0.01|
-|guid-key|200000|194.208|2.56|102.89|40.66|62.24|1.27|1.03|0.41|0.62|
-|guid-sequential-key|200000|90.018|1.715|1.89|0.46|1.43|0.08|0.02|0|0.01|
-|guid-comb-key|200000|193.926|1.796|100.7|39.58|61.12|1.35|1.01|0.4|0.61|
-|objectid-key|200000|96.741|2.921|1.52|0.1|1.42|0.21|0.02|0|0.01|
-|objectid-char-indexed|200000|129.493|1.45|3.71|1.11|2.6|0.2|0.04|0.01|0.03|
-|numeric-indexed|200000|130.837|2.743|2.56|0.86|1.69|0.03|0.03|0.01|0.02|
-|objectid-indexed|200000|130.286|1.134|2.8|0.98|1.83|0.13|0.03|0.01|0.02|
-|guid-indexed|200000|226.491|1.197|69.86|27.87|42|0.85|0.7|0.28|0.42|
-|guid-sequential-indexed|200000|130.976|1.357|2.08|0.11|1.97|0.15|0.02|0|0.02|
-|guid-comb-indexed|200000|223.977|1.103|67.18|26.4|40.79|0.96|0.67|0.26|0.41|
-|<div style='width:155px'>Case</div>|Inserts|InsertTime|SelectTime|DiskTime|DiskReadTime|DiskWriteTime|CurrentDiskQueueLength|AvgDiskQueueLength|AvgDiskReadQueueLength|AvgDiskWriteQueueLength|
-|<div style='width:155px'>Case</div>|Inserts|InsertTime|SelectTime|DiskTime|DiskReadTime|DiskWriteTime|CurrentDiskQueueLength|AvgDiskQueueLength|AvgDiskReadQueueLength|AvgDiskWriteQueueLength|
-|auto-increment-key|10000|2.396|0.179|0|0|0|0|0|0|0|
-|guid-key|10000|5.205|0.018|181.8|70.18|68.4|1.67|1.82|0.7|1.12|
-|guid-sequential-key|10000|0.508|0.022|0|0|0|0|0|0|0|
-|guid-comb-key|10000|5.838|0.021|175.85|72.76|66.31|2|1.76|0.73|1.03|
-|objectid-key|10000|0.709|0.016|0|0|0|0|0|0|0|
-|objectid-char-indexed|10000|2.598|0.013|0|0|0|0|0|0|0|
-|numeric-indexed|10000|2.485|0.013|0|0|0|0|0|0|0|
-|objectid-indexed|10000|2.542|0.012|0|0|0|0|0|0|0|
-|guid-indexed|10000|8.018|0.015|122.5|46.61|56.5|1|1.23|0.47|0.76|
-|guid-sequential-indexed|10000|2.681|0.012|0|0|0|0|0|0|0|
-|guid-comb-indexed|10000|7.501|0.012|117.9|47.52|55.85|1.4|1.18|0.48|0.7|
-|<div style='width:155px'>Case</div>|Inserts|InsertTime|SelectTime|DiskTime|DiskReadTime|DiskWriteTime|CurrentDiskQueueLength|AvgDiskQueueLength|AvgDiskReadQueueLength|AvgDiskWriteQueueLength|
-|auto-increment-key|10000|2.56|0.027|0|0|0|0|0|0|0|
-|guid-key|10000|6.411|0.024|193.32|67.07|101.32|2.75|1.93|0.67|1.26|
-|guid-sequential-key|10000|1.002|0.016|0|0|0|0|0|0|0|
-|guid-comb-key|10000|6.656|0.035|189.03|75|87.03|5|1.89|0.75|1.14|
-|objectid-key|10000|1.103|0.037|0|0|0|0|0|0|0|
-|objectid-char-indexed|10000|3.064|0.014|7.43|0|0|0|0.07|0|0.07|
-|numeric-indexed|10000|2.907|0.014|0|0|0|0|0|0|0|
-|objectid-indexed|10000|3.034|0.022|4.47|0.01|0|0|0.04|0|0.04|
-|guid-indexed|10000|7.849|0.046|110.08|41.99|56.9|1|1.1|0.42|0.68|
-|guid-sequential-indexed|10000|3.078|0.031|5.7|0|0|0|0.06|0|0.06|
-|guid-comb-indexed|10000|8.826|0.027|113.38|48.61|53.03|1.83|1.13|0.49|0.65|
-|<div style='width:155px'>Case</div>|Inserts|InsertTime|SelectTime|DiskTime|DiskReadTime|DiskWriteTime|CurrentDiskQueueLength|AvgDiskQueueLength|AvgDiskReadQueueLength|AvgDiskWriteQueueLength|
-|auto-increment-key|10000|2.997|0.038|3.84|1.1|0|0|0.04|0.01|0.03|
-|guid-key|10000|6.446|0.06|175.12|72.36|75.99|1|1.75|0.72|1.03|
-|guid-sequential-key|10000|1.462|0.026|0|0|0|0|0|0|0|
-|guid-comb-key|10000|5.893|0.061|195.7|66.49|88.12|1.67|1.96|0.66|1.29|
-|objectid-key|10000|1.602|0.033|0|0|0|0|0|0|0|
-|objectid-char-indexed|10000|3.467|0.036|14.3|0|0|1|0.14|0|0.14|
-|numeric-indexed|10000|3.506|0.018|1.92|0|0|1|0.02|0|0.02|
-|objectid-indexed|10000|3.623|0.031|1.91|0|0|0|0.02|0|0.02|
-|guid-indexed|10000|8.411|0.036|111.8|45.05|53.71|1.83|1.12|0.45|0.67|
-|guid-sequential-indexed|10000|3.571|0.037|2.97|0|0|0|0.03|0|0.03|
-|guid-comb-indexed|10000|9.36|0.059|116.82|48.21|59.37|1.86|1.17|0.48|0.68|
-|<div style='width:155px'>Case</div>|Inserts|InsertTime|SelectTime|DiskTime|DiskReadTime|DiskWriteTime|CurrentDiskQueueLength|AvgDiskQueueLength|AvgDiskReadQueueLength|AvgDiskWriteQueueLength|
-|auto-increment-key|10000|3.508|0.044|1.16|0|0|0|0.01|0|0.01|
-|guid-key|10000|5.934|0.085|187.85|65.48|79.61|2|1.88|0.66|1.22|
-|guid-sequential-key|10000|1.983|0.033|0|0|0|0|0|0|0|
-|guid-comb-key|10000|6.851|0.08|187.45|71|81.74|2.5|1.87|0.71|1.16|
-|objectid-key|10000|2.098|0.047|0|0|0|0|0|0|0|
-|objectid-char-indexed|10000|3.921|0.058|1.96|0|0|0|0.02|0|0.02|
-|numeric-indexed|10000|3.884|0.036|2.05|0|0|1|0.02|0|0.02|
-|objectid-indexed|10000|3.993|0.053|9.18|1.18|1.9|0|0.09|0.01|0.08|
-|guid-indexed|10000|9.207|0.103|114.09|45.36|60.69|1.29|1.14|0.45|0.69|
-|guid-sequential-indexed|10000|4.139|0.097|3.04|0.18|2.39|1|0.03|0|0.03|
-|guid-comb-indexed|10000|8.896|0.04|105.3|42.35|55.21|3.17|1.05|0.42|0.63|
-|<div style='width:155px'>Case</div>|Inserts|InsertTime|SelectTime|DiskTime|DiskReadTime|DiskWriteTime|CurrentDiskQueueLength|AvgDiskQueueLength|AvgDiskReadQueueLength|AvgDiskWriteQueueLength|
-|auto-increment-key|10000|4|0.038|3.31|1.17|1.75|0|0.03|0.01|0.02|
-|guid-key|10000|7.472|0.167|169.3|67.36|85.52|3.6|1.69|0.67|1.02|
-|guid-sequential-key|10000|2.492|0.046|0|0|0|0|0|0|0|
-|guid-comb-key|10000|7.605|0.048|163.63|65.32|84.02|0.6|1.64|0.65|0.98|
-|objectid-key|10000|2.669|0.064|0|0|0|0|0|0|0|
-|objectid-char-indexed|10000|4.493|0.038|7.88|0.21|7.3|0.5|0.08|0|0.08|
-|numeric-indexed|10000|4.421|0.031|6.55|0.32|1.08|0.5|0.07|0|0.06|
-|objectid-indexed|10000|4.524|0.053|1.36|0.29|0.68|0.5|0.01|0|0.01|
-|guid-indexed|10000|9.344|0.079|104.12|40.5|60.95|2.43|1.04|0.4|0.64|
-|guid-sequential-indexed|10000|4.537|0.037|1.48|0.29|0.78|0.5|0.01|0|0.01|
-|guid-comb-indexed|10000|10.04|0.057|109.37|45.91|62.28|0.62|1.09|0.46|0.63|
-|<div style='width:155px'>Case</div>|Inserts|InsertTime|SelectTime|DiskTime|DiskReadTime|DiskWriteTime|CurrentDiskQueueLength|AvgDiskQueueLength|AvgDiskReadQueueLength|AvgDiskWriteQueueLength|
-|auto-increment-key|10000|4.469|0.049|1.12|0.31|0.66|0.5|0.01|0|0.01|
-|guid-key|10000|7.836|0.085|154.53|61.48|87.65|2.2|1.55|0.61|0.93|
-|guid-sequential-key|10000|2.917|0.053|0|0|0|0|0|0|0|
-|guid-comb-key|10000|7.111|0.138|160.12|58.18|98.27|4|1.6|0.58|1.02|
-|objectid-key|10000|3.145|0.078|0.81|0.61|0|0|0.01|0.01|0|
-|objectid-char-indexed|10000|4.888|0.055|1.59|0.64|0.77|0.5|0.02|0.01|0.01|
-|numeric-indexed|10000|4.878|0.058|1.89|0.21|1.45|1|0.02|0|0.02|
-|objectid-indexed|10000|4.976|0.058|3.14|1.39|1.75|0.33|0.03|0.01|0.02|
-|guid-indexed|10000|9.775|0.054|104.06|41.54|62.5|2|1.04|0.42|0.63|
-|guid-sequential-indexed|10000|5.038|0.055|6.19|0.52|5.59|0|0.06|0.01|0.06|
-|guid-comb-indexed|10000|10.519|0.08|107.39|44.8|62.51|1.62|1.07|0.45|0.63|
-|<div style='width:155px'>Case</div>|Inserts|InsertTime|SelectTime|DiskTime|DiskReadTime|DiskWriteTime|CurrentDiskQueueLength|AvgDiskQueueLength|AvgDiskReadQueueLength|AvgDiskWriteQueueLength|
-|auto-increment-key|10000|4.997|0.049|1.98|0.74|1.18|1|0.02|0.01|0.01|
-|guid-key|10000|7.522|0.147|136.18|49.28|86.91|1.8|1.36|0.49|0.87|
-|guid-sequential-key|10000|3.412|0.073|0.47|0|0|0|0|0|0|
-|guid-comb-key|10000|8.314|0.165|143.7|56.19|87.4|1.83|1.44|0.56|0.87|
-|objectid-key|10000|3.604|0.089|0.25|0|0|0|0|0|0|
-|objectid-char-indexed|10000|5.345|0.064|1.14|0.16|0.84|0|0.01|0|0.01|
-|numeric-indexed|10000|5.364|0.056|1.15|0.22|0.93|0.33|0.01|0|0.01|
-|objectid-indexed|10000|5.479|0.073|1.12|0.24|0.81|0|0.01|0|0.01|
-|guid-indexed|10000|11.065|0.143|95.08|41.15|53.95|1.44|0.95|0.41|0.54|
-|guid-sequential-indexed|10000|5.49|0.086|1.13|0.23|0.82|0.33|0.01|0|0.01|
-|guid-comb-indexed|10000|10.184|0.12|87.69|34.21|53.44|1|0.88|0.34|0.53|
-|<div style='width:155px'>Case</div>|Inserts|InsertTime|SelectTime|DiskTime|DiskReadTime|DiskWriteTime|CurrentDiskQueueLength|AvgDiskQueueLength|AvgDiskReadQueueLength|AvgDiskWriteQueueLength|
-|auto-increment-key|10000|5.458|0.046|0.79|0.22|0.5|0.33|0.01|0|0.01|
-|guid-key|10000|8.713|0.158|129.31|50.85|78.45|2.17|1.29|0.51|0.78|
-|guid-sequential-key|10000|3.951|0.068|0.61|0|0|0|0.01|0|0.01|
-|guid-comb-key|10000|9.58|0.188|130.71|54.49|76.24|1.57|1.31|0.55|0.76|
-|objectid-key|10000|4.024|0.107|1.05|0.33|0.36|0|0.01|0|0.01|
-|objectid-char-indexed|10000|5.899|0.106|3.95|0.24|3.72|0.67|0.04|0|0.04|
-|numeric-indexed|10000|5.947|0.066|1.3|0.22|0.92|0|0.01|0|0.01|
-|objectid-indexed|10000|6.067|0.077|4.09|0.16|3.8|0|0.04|0|0.04|
-|guid-indexed|10000|10.974|0.084|78.47|31.22|47.34|2.12|0.79|0.31|0.47|
-|guid-sequential-indexed|10000|6.312|0.075|1.08|0.15|0.77|0|0.01|0|0.01|
-|guid-comb-indexed|10000|12.399|0.09|81.19|35.35|45.81|1.1|0.81|0.35|0.46|
-|<div style='width:155px'>Case</div>|Inserts|InsertTime|SelectTime|DiskTime|DiskReadTime|DiskWriteTime|CurrentDiskQueueLength|AvgDiskQueueLength|AvgDiskReadQueueLength|AvgDiskWriteQueueLength|
-|auto-increment-key|10000|5.901|0.048|0.74|0.21|0.39|0|0.01|0|0.01|
-|guid-key|10000|9.936|0.19|135.96|53.64|82.24|1.88|1.36|0.54|0.82|
-|guid-sequential-key|10000|4.441|0.078|0.38|0|0.13|0|0|0|0|
-|guid-comb-key|10000|8.692|0.228|106.82|39.55|67.19|2.67|1.07|0.4|0.67|
-|objectid-key|10000|4.65|0.121|0|0|0|0|0|0|0|
-|objectid-char-indexed|10000|6.483|0.115|1.02|0.18|0.85|0|0.01|0|0.01|
-|numeric-indexed|10000|6.408|0.099|3.26|0.15|3.01|0.25|0.03|0|0.03|
-|objectid-indexed|10000|6.523|0.085|0.79|0.14|0.62|0.25|0.01|0|0.01|
-|guid-indexed|10000|12.131|0.159|86.53|36.07|50.49|1.2|0.87|0.36|0.5|
-|guid-sequential-indexed|10000|6.529|0.089|0.82|0.18|0.65|0|0.01|0|0.01|
-|guid-comb-indexed|10000|11.631|0.176|81.57|33.02|48.54|0.44|0.82|0.33|0.49|
-|<div style='width:155px'>Case</div>|Inserts|InsertTime|SelectTime|DiskTime|DiskReadTime|DiskWriteTime|CurrentDiskQueueLength|AvgDiskQueueLength|AvgDiskReadQueueLength|AvgDiskWriteQueueLength|
-|auto-increment-key|10000|6.508|0.058|3.09|0.16|2.8|0|0.03|0|0.03|
-|guid-key|10000|9.272|0.215|108.8|40.52|68.29|2.29|1.09|0.41|0.68|
-|guid-sequential-key|10000|4.988|0.085|1.72|1.17|0.34|0|0.02|0.01|0.01|
-|guid-comb-key|10000|9.902|0.142|107.99|42.21|65.7|2|1.08|0.42|0.66|
-|objectid-key|10000|5.152|0.136|1.4|0.23|1|5.33|0.01|0|0.01|
-|objectid-char-indexed|10000|6.905|0.11|3.61|0.18|3.31|0|0.04|0|0.03|
-|numeric-indexed|10000|6.842|0.075|0.81|0.17|0.52|0.25|0.01|0|0.01|
-|objectid-indexed|10000|7.022|0.108|1.4|0.35|0.96|0|0.01|0|0.01|
-|guid-indexed|10000|13.687|0.22|88.65|40.63|47.91|1.91|0.89|0.41|0.48|
-|guid-sequential-indexed|10000|6.949|0.114|2.67|1.36|1.21|0|0.03|0.01|0.01|
-|guid-comb-indexed|10000|11.625|0.116|74.8|29.6|45.17|0.56|0.75|0.3|0.45|
-|<div style='width:155px'>Case</div>|Inserts|InsertTime|SelectTime|DiskTime|DiskReadTime|DiskWriteTime|CurrentDiskQueueLength|AvgDiskQueueLength|AvgDiskReadQueueLength|AvgDiskWriteQueueLength|
-|auto-increment-key|10000|6.808|0.055|0.64|0.09|0.43|0|0.01|0|0.01|
-|guid-key|10000|10.16|0.176|109.09|43.66|65.33|0.88|1.09|0.44|0.65|
-|guid-sequential-key|10000|5.351|0.098|0.14|0|0.14|0|0|0|0|
-|guid-comb-key|10000|10.449|0.291|109.94|44.08|65.86|1.62|1.1|0.44|0.66|
-|objectid-key|10000|5.618|0.154|0.13|0|0|0|0|0|0|
-|objectid-char-indexed|10000|7.284|0.108|0.66|0.12|0.54|0|0.01|0|0.01|
-|numeric-indexed|10000|7.279|0.063|0.69|0.08|0.6|0|0.01|0|0.01|
-|objectid-indexed|10000|7.402|0.146|0.71|0.15|0.52|0.2|0.01|0|0.01|
-|guid-indexed|10000|12.252|0.234|74.52|28.83|45.77|1.3|0.75|0.29|0.46|
-|guid-sequential-indexed|10000|7.396|0.13|0.62|0.13|0.46|0.2|0.01|0|0|
-|guid-comb-indexed|10000|13.069|0.19|80.17|33.37|46.79|1.91|0.8|0.33|0.47|
-|<div style='width:155px'>Case</div>|Inserts|InsertTime|SelectTime|DiskTime|DiskReadTime|DiskWriteTime|CurrentDiskQueueLength|AvgDiskQueueLength|AvgDiskReadQueueLength|AvgDiskWriteQueueLength|
-|auto-increment-key|10000|7.461|0.048|0.46|0.11|0.35|0.2|0|0|0|
-|guid-key|10000|11.414|0.261|106.76|44.68|62.09|0.89|1.07|0.45|0.62|
-|guid-sequential-key|10000|5.982|0.107|1.55|1.23|0.2|0|0.02|0.01|0|
-|guid-comb-key|10000|10.449|0.242|97.02|36.72|60.35|1.5|0.97|0.37|0.6|
-|objectid-key|10000|6|0.157|0.81|0.48|0.33|0|0.01|0|0|
-|objectid-char-indexed|10000|7.766|0.106|0.59|0.12|0.47|0.2|0.01|0|0|
-|numeric-indexed|10000|7.779|0.086|2.69|0.13|2.56|0.2|0.03|0|0.03|
-|objectid-indexed|10000|7.825|0.094|2.49|0.13|2.45|2.6|0.02|0|0.02|
-|guid-indexed|10000|13.698|0.174|71.07|31.89|39.19|0.36|0.71|0.32|0.39|
-|guid-sequential-indexed|10000|7.88|0.103|0.67|0.15|0.52|0|0.01|0|0.01|
-|guid-comb-indexed|10000|13.602|0.203|76.72|33.36|43.35|1.27|0.77|0.33|0.43|
-|<div style='width:155px'>Case</div>|Inserts|InsertTime|SelectTime|DiskTime|DiskReadTime|DiskWriteTime|CurrentDiskQueueLength|AvgDiskQueueLength|AvgDiskReadQueueLength|AvgDiskWriteQueueLength|
-|auto-increment-key|10000|7.847|0.074|0.36|0.13|0.23|0|0|0|0|
-|guid-key|10000|10.72|0.236|88.89|33.15|55.62|0.25|0.89|0.33|0.56|
-|guid-sequential-key|10000|6.28|0.115|0.24|0.14|0.1|0.25|0|0|0|
-|guid-comb-key|10000|11.272|0.3|99.04|38.74|60.25|1.44|0.99|0.39|0.6|
-|objectid-key|10000|6.553|0.167|0.38|0|0.24|0|0|0|0|
-|objectid-char-indexed|10000|8.232|0.112|3.06|0.11|2.95|0.17|0.03|0|0.03|
-|numeric-indexed|10000|8.114|0.093|0.86|0.05|0.74|0|0.01|0|0.01|
-|objectid-indexed|10000|8.286|0.116|0.64|0.1|0.51|0|0.01|0|0.01|
-|guid-indexed|10000|14.86|0.286|83.84|39.13|44.68|1.46|0.84|0.39|0.45|
-|guid-sequential-indexed|10000|8.282|0.086|2.47|0.1|2.3|0.17|0.02|0|0.02|
-|guid-comb-indexed|10000|13.29|0.266|68.46|26.92|41.53|0.45|0.68|0.27|0.42|
-|<div style='width:155px'>Case</div>|Inserts|InsertTime|SelectTime|DiskTime|DiskReadTime|DiskWriteTime|CurrentDiskQueueLength|AvgDiskQueueLength|AvgDiskReadQueueLength|AvgDiskWriteQueueLength|
-|auto-increment-key|10000|8.431|0.078|0.47|0.09|0.34|0.17|0|0|0|
-|guid-key|10000|11.798|0.337|99.23|39.12|60.13|0.8|0.99|0.39|0.6|
-|guid-sequential-key|10000|6.763|0.123|0|0|0|0|0|0|0|
-|guid-comb-key|10000|12.69|0.238|103.51|41.62|61.9|1|1.04|0.42|0.62|
-|objectid-key|10000|7.035|0.187|0.58|0.28|0.3|0.2|0.01|0|0|
-|objectid-char-indexed|10000|8.827|0.154|0.63|0.12|0.42|0.33|0.01|0|0.01|
-|numeric-indexed|10000|8.684|0.12|0.72|0.11|0.58|0.17|0.01|0|0.01|
-|objectid-indexed|10000|8.775|0.164|0.43|0.1|0.33|0|0|0|0|
-|guid-indexed|10000|14.054|0.297|66.82|27.55|39.22|0.83|0.67|0.28|0.39|
-|guid-sequential-indexed|10000|9.06|0.115|1|0.27|0.73|0.14|0.01|0|0.01|
-|guid-comb-indexed|10000|13.742|0.179|64.18|26.22|37.96|0.36|0.64|0.26|0.38|
-|<div style='width:155px'>Case</div>|Inserts|InsertTime|SelectTime|DiskTime|DiskReadTime|DiskWriteTime|CurrentDiskQueueLength|AvgDiskQueueLength|AvgDiskReadQueueLength|AvgDiskWriteQueueLength|
-|auto-increment-key|10000|8.88|0.057|0.46|0.09|0.33|0.17|0|0|0|
-|guid-key|10000|12.889|0.287|100.11|39.83|60.25|1.45|1|0.4|0.6|
-|guid-sequential-key|10000|7.309|0.138|1.16|0.96|0.2|0|0.01|0.01|0|
-|guid-comb-key|10000|11.687|0.266|77.27|28.74|48.5|1.11|0.77|0.29|0.48|
-|objectid-key|10000|7.492|0.21|0.13|0|0.13|0|0|0|0|
-|objectid-char-indexed|10000|9.218|0.148|2.98|0.17|2.81|0|0.03|0|0.03|
-|numeric-indexed|10000|9.182|0.099|0.61|0.09|0.52|0.29|0.01|0|0.01|
-|objectid-indexed|10000|9.319|0.093|2.51|0.1|2.38|0.14|0.03|0|0.02|
-|guid-indexed|10000|14.969|0.115|65.21|28.24|36.94|1.08|0.65|0.28|0.37|
-|guid-sequential-indexed|10000|9.424|0.096|0.42|0.05|0.38|0.14|0|0|0|
-|guid-comb-indexed|10000|14.56|0.271|65.81|26.26|39.52|1|0.66|0.26|0.4|
-|<div style='width:155px'>Case</div>|Inserts|InsertTime|SelectTime|DiskTime|DiskReadTime|DiskWriteTime|CurrentDiskQueueLength|AvgDiskQueueLength|AvgDiskReadQueueLength|AvgDiskWriteQueueLength|
-|auto-increment-key|10000|9.254|0.064|0.41|0.04|0.36|0.14|0|0|0|
-|guid-key|10000|12.118|0.355|84.6|31.87|52.69|1.6|0.85|0.32|0.53|
-|guid-sequential-key|10000|7.845|0.139|0.08|0|0.08|0|0|0|0|
-|guid-comb-key|10000|12.697|0.159|82.55|32.49|50.02|1|0.83|0.33|0.5|
-|objectid-key|10000|7.886|0.207|3.71|1.48|2.22|0.17|0.04|0.01|0.02|
-|objectid-char-indexed|10000|9.648|0.125|0.61|0.09|0.45|0|0.01|0|0.01|
-|numeric-indexed|10000|9.647|0.16|2.05|0.08|1.96|0.43|0.02|0|0.02|
-|objectid-indexed|10000|9.764|0.148|0.41|0.09|0.32|0|0|0|0|
-|guid-indexed|10000|15.899|0.41|68.52|30.42|38.1|1.64|0.69|0.3|0.38|
-|guid-sequential-indexed|10000|9.803|0.124|0.43|0.1|0.33|0.14|0|0|0|
-|guid-comb-indexed|10000|14.933|0.165|56.97|22.48|34.44|0.17|0.57|0.23|0.34|
-|<div style='width:155px'>Case</div>|Inserts|InsertTime|SelectTime|DiskTime|DiskReadTime|DiskWriteTime|CurrentDiskQueueLength|AvgDiskQueueLength|AvgDiskReadQueueLength|AvgDiskWriteQueueLength|
-|auto-increment-key|10000|9.789|0.055|0.42|0.09|0.33|0|0|0|0|
-|guid-key|10000|13.097|0.341|82|32.55|49.35|1.09|0.82|0.33|0.49|
-|guid-sequential-key|10000|8.316|0.157|0.22|0.09|0.13|0|0|0|0|
-|guid-comb-key|10000|14.077|0.321|86.36|36.62|49.73|1.25|0.86|0.37|0.5|
-|objectid-key|10000|8.436|0.248|0.08|0|0.08|0|0|0|0|
-|objectid-char-indexed|10000|10.146|0.169|0.81|0.05|0.72|0|0.01|0|0.01|
-|numeric-indexed|10000|10.226|0.121|0.51|0.08|0.43|0.12|0.01|0|0|
-|objectid-indexed|10000|10.231|0.123|0.49|0.09|0.41|0.25|0|0|0|
-|guid-indexed|10000|15.506|0.376|62.6|25.46|37.19|1.38|0.63|0.25|0.37|
-|guid-sequential-indexed|10000|10.247|0.168|1.87|0.07|1.79|0.12|0.02|0|0.02|
-|guid-comb-indexed|10000|15.916|0.348|65.21|28.41|36.76|0.29|0.65|0.28|0.37|
-|<div style='width:155px'>Case</div>|Inserts|InsertTime|SelectTime|DiskTime|DiskReadTime|DiskWriteTime|CurrentDiskQueueLength|AvgDiskQueueLength|AvgDiskReadQueueLength|AvgDiskWriteQueueLength|
-|auto-increment-key|10000|10.159|0.082|0.7|0.04|0.61|0|0.01|0|0.01|
-|guid-key|10000|12.823|0.431|73.09|27.03|46.06|0.64|0.73|0.27|0.46|
-|guid-sequential-key|10000|8.879|0.16|0.08|0|0.08|0|0|0|0|
-|guid-comb-key|10000|13.573|0.277|75.61|28.08|47.52|0.55|0.76|0.28|0.48|
-|objectid-key|10000|9.012|0.248|0.56|0.33|0.17|0|0.01|0|0|
-|objectid-char-indexed|10000|10.802|0.185|2.06|0.1|1.96|0|0.02|0|0.02|
-|numeric-indexed|10000|10.774|0.108|0.3|0.07|0.21|0|0|0|0|
-|objectid-indexed|10000|10.835|0.144|0.39|0.04|0.35|0.12|0|0|0|
-|guid-indexed|10000|16.762|0.457|68.52|32.01|36.52|0.67|0.69|0.32|0.37|
-|guid-sequential-indexed|10000|10.757|0.133|0.49|0.07|0.36|0.12|0|0|0|
-|guid-comb-indexed|10000|15.876|0.375|53.58|21.78|31.78|0.57|0.54|0.22|0.32|
-|<div style='width:155px'>Case</div>|Inserts|InsertTime|SelectTime|DiskTime|DiskReadTime|DiskWriteTime|CurrentDiskQueueLength|AvgDiskQueueLength|AvgDiskReadQueueLength|AvgDiskWriteQueueLength|
-|auto-increment-key|10000|10.914|0.116|0.31|0.08|0.24|0.12|0|0|0|
-|guid-key|10000|14.068|0.347|73.96|29.31|44.72|1.33|0.74|0.29|0.45|
-|guid-sequential-key|10000|9.307|0.168|0.22|0.08|0.09|0.14|0|0|0|
-|guid-comb-key|10000|14.441|0.39|77.37|31.02|46.32|1.42|0.77|0.31|0.46|
-|objectid-key|10000|9.415|0.244|0.19|0|0.19|0|0|0|0|
-|objectid-char-indexed|10000|11.199|0.418|0.45|0.08|0.37|0|0|0|0|
-|numeric-indexed|10000|11.1|0.119|2.2|0.04|2.16|0|0.02|0|0.02|
-|objectid-indexed|10000|11.214|0.167|0.5|0.07|0.43|0.11|0|0|0|
-|guid-indexed|10000|15.747|0.483|56.45|22.56|33.83|0.36|0.56|0.23|0.34|
-|guid-sequential-indexed|10000|11.692|0.202|0.44|0.08|0.31|0.22|0|0|0|
-|guid-comb-indexed|10000|16.244|0.231|54.38|21.88|32.49|0.86|0.54|0.22|0.33|
-|<div style='width:155px'>Case</div>|Inserts|InsertTime|SelectTime|DiskTime|DiskReadTime|DiskWriteTime|CurrentDiskQueueLength|AvgDiskQueueLength|AvgDiskReadQueueLength|AvgDiskWriteQueueLength|
-|auto-increment-key|10000|11.351|0.099|0.32|0.06|0.26|0|0|0|0|
-|guid-key|10000|14.981|0.542|79.1|31.84|47.28|1.31|0.79|0.32|0.47|
-|guid-sequential-key|10000|9.785|0.34|5.31|2.62|2.69|0.12|0.05|0.03|0.03|
-|guid-comb-key|10000|14.047|0.332|69.1|25.37|43.73|0.58|0.69|0.25|0.44|
-|objectid-key|10000|9.899|0.255|1.64|1.32|0.32|0.12|0.02|0.01|0|
-|objectid-char-indexed|10000|11.629|0.299|1.72|0.05|1.67|0|0.02|0|0.02|
-|numeric-indexed|10000|11.755|0.173|0.41|0.07|0.29|0.11|0|0|0|
-|objectid-indexed|10000|11.681|0.177|1.54|0.07|1.46|0|0.02|0|0.01|
-|guid-indexed|10000|16.752|0.269|51.37|21.81|29.52|0.71|0.51|0.22|0.3|
-|guid-sequential-indexed|10000|11.839|0.211|0.4|0.08|0.32|0|0|0|0|
-|guid-comb-indexed|10000|18.039|0.379|56.84|24.21|32.66|0.69|0.57|0.24|0.33|
-|<div style='width:155px'>Case</div>|Inserts|InsertTime|SelectTime|DiskTime|DiskReadTime|DiskWriteTime|CurrentDiskQueueLength|AvgDiskQueueLength|AvgDiskReadQueueLength|AvgDiskWriteQueueLength|
-|auto-increment-key|10000|11.988|0.108|3.31|1.71|1.59|0|0.03|0.02|0.02|
-|guid-key|10000|14.946|0.402|66|25.46|40.54|0.46|0.66|0.25|0.41|
-|guid-sequential-key|10000|10.31|0.185|0.18|0.07|0.11|0|0|0|0|
-|guid-comb-key|10000|15.71|0.432|67.01|28.21|38.9|1|0.67|0.28|0.39|
-|objectid-key|10000|10.707|0.279|0.17|0|0.1|0|0|0|0|
-|objectid-char-indexed|10000|12.391|0.184|1.02|0.65|0.32|0|0.01|0.01|0|
-|numeric-indexed|10000|12.537|0.13|0.33|0.06|0.26|0.2|0|0|0|
-|objectid-indexed|10000|12.543|0.113|0.5|0.18|0.26|0|0.01|0|0|
-|guid-indexed|10000|18.927|0.379|57.96|27.1|30.83|0.71|0.58|0.27|0.31|
-|guid-sequential-indexed|10000|12.463|0.127|0.84|0.52|0.31|0|0.01|0.01|0|
-|guid-comb-indexed|10000|17.445|0.379|49.1|19.96|29.13|0.67|0.49|0.2|0.29|
-|<div style='width:155px'>Case</div>|Inserts|InsertTime|SelectTime|DiskTime|DiskReadTime|DiskWriteTime|CurrentDiskQueueLength|AvgDiskQueueLength|AvgDiskReadQueueLength|AvgDiskWriteQueueLength|
-|auto-increment-key|10000|12.306|0.077|0.32|0.06|0.26|0.1|0|0|0|
-|guid-key|10000|15.798|0.564|76.08|29.01|47.06|1.21|0.76|0.29|0.47|
-|guid-sequential-key|10000|10.769|0.201|0.2|0|0.18|0|0|0|0|
-|guid-comb-key|10000|16.603|0.404|69.72|28.96|40.75|1|0.7|0.29|0.41|
-|objectid-key|10000|10.836|0.277|3.37|1.86|1.5|0.11|0.03|0.02|0.02|
-|objectid-char-indexed|10000|12.58|0.259|0.41|0.07|0.35|0.1|0|0|0|
-|numeric-indexed|10000|12.691|0.1|0.36|0.06|0.22|0|0|0|0|
-|objectid-indexed|10000|12.684|0.182|0.47|0.07|0.35|0|0|0|0|
-|guid-indexed|10000|17.599|0.342|51.97|19.85|32.06|0.67|0.52|0.2|0.32|
-|guid-sequential-indexed|10000|12.808|0.164|0.97|0.5|0.39|0.1|0.01|0.01|0|
-|guid-comb-indexed|10000|18.503|0.221|53.37|23.44|29.91|0.5|0.53|0.23|0.3|
-|<div style='width:155px'>Case</div>|Inserts|InsertTime|SelectTime|DiskTime|DiskReadTime|DiskWriteTime|CurrentDiskQueueLength|AvgDiskQueueLength|AvgDiskReadQueueLength|AvgDiskWriteQueueLength|
-|auto-increment-key|10000|12.578|0.093|0.29|0.03|0.26|0|0|0|0|
-|guid-key|10000|16.505|0.375|69.69|28.1|41.57|0.93|0.7|0.28|0.42|
-|guid-sequential-key|10000|11.261|0.206|0.22|0.06|0.16|0|0|0|0|
-|guid-comb-key|10000|15.87|0.437|62.24|24.67|37.55|1.14|0.62|0.25|0.38|
-|objectid-key|10000|11.46|0.307|0.12|0|0.12|0|0|0|0|
-|objectid-char-indexed|10000|13.177|0.23|1.71|0.06|1.66|0|0.02|0|0.02|
-|numeric-indexed|10000|13.089|0.16|1.72|0.21|1.51|0.09|0.02|0|0.02|
-|objectid-indexed|10000|13.567|0.161|0.42|0.06|0.32|0.09|0|0|0|
-|guid-indexed|10000|18.866|0.246|52.88|22.37|30.49|0.62|0.53|0.22|0.31|
-|guid-sequential-indexed|10000|13.203|0.196|0.54|0.03|0.47|0.27|0.01|0|0.01|
-|guid-comb-indexed|10000|18.915|0.336|54.45|23.36|31.07|0.35|0.54|0.23|0.31|
-|<div style='width:155px'>Case</div>|Inserts|InsertTime|SelectTime|DiskTime|DiskReadTime|DiskWriteTime|CurrentDiskQueueLength|AvgDiskQueueLength|AvgDiskReadQueueLength|AvgDiskWriteQueueLength|
-|auto-increment-key|10000|13.059|0.084|1.25|0.65|0.6|0|0.01|0.01|0.01|
-|guid-key|10000|15.971|0.554|62.1|23.72|38.37|0.36|0.62|0.24|0.38|
-|guid-sequential-key|10000|11.683|0.206|0.15|0|0.1|0|0|0|0|
-|guid-comb-key|10000|17.413|0.494|63.47|26.11|37.36|1.47|0.63|0.26|0.37|
-|objectid-key|10000|11.816|0.306|1.85|1.7|0.16|0|0.02|0.02|0|
-|objectid-char-indexed|10000|13.51|0.227|0.41|0.06|0.31|0|0|0|0|
-|numeric-indexed|10000|13.35|0.152|0.41|0.06|0.31|0.27|0|0|0|
-|objectid-indexed|10000|13.638|0.182|1.54|0.06|1.44|0.09|0.02|0|0.01|
-|guid-indexed|10000|18.274|0.398|41.88|16|25.81|0.19|0.42|0.16|0.26|
-|guid-sequential-indexed|10000|14.081|0.155|2.19|0.17|1.98|0.08|0.02|0|0.02|
-|guid-comb-indexed|10000|18.844|0.33|49.07|20.61|28.43|0.88|0.49|0.21|0.28|
-|<div style='width:155px'>Case</div>|Inserts|InsertTime|SelectTime|DiskTime|DiskReadTime|DiskWriteTime|CurrentDiskQueueLength|AvgDiskQueueLength|AvgDiskReadQueueLength|AvgDiskWriteQueueLength|
-|auto-increment-key|10000|13.722|0.097|0.26|0.03|0.24|0|0|0|0|
-|guid-key|10000|17.778|0.487|64.17|26.79|37.38|0.75|0.64|0.27|0.37|
-|guid-sequential-key|10000|12.12|0.239|1.46|0.17|1.29|0|0.01|0|0.01|
-|guid-comb-key|10000|16.138|0.529|51.94|18.97|32.98|0.43|0.52|0.19|0.33|
-|objectid-key|10000|12.454|0.353|0.08|0|0.08|0|0|0|0|
-|objectid-char-indexed|10000|14.25|0.285|1.43|0.05|1.34|0.08|0.01|0|0.01|
-|numeric-indexed|10000|13.893|0.127|0.29|0.06|0.21|0|0|0|0|
-|objectid-indexed|10000|14.091|0.162|0.89|0.34|0.55|0.08|0.01|0|0.01|
-|guid-indexed|10000|19.803|0.221|48.95|20.7|28.18|0.29|0.49|0.21|0.28|
-|guid-sequential-indexed|10000|14.144|0.274|0.69|0.05|0.6|0|0.01|0|0.01|
-|guid-comb-indexed|10000|20.018|0.552|49.65|20.98|28.65|0.5|0.5|0.21|0.29|
-|<div style='width:155px'>Case</div>|Inserts|InsertTime|SelectTime|DiskTime|DiskReadTime|DiskWriteTime|CurrentDiskQueueLength|AvgDiskQueueLength|AvgDiskReadQueueLength|AvgDiskWriteQueueLength|
-|auto-increment-key|10000|14.228|0.085|0.31|0.02|0.24|0.08|0|0|0|
-|guid-key|10000|16.949|0.512|56.47|21.75|34.71|0.73|0.56|0.22|0.35|
-|guid-sequential-key|10000|12.749|0.224|0.15|0|0.15|0|0|0|0|
-|guid-comb-key|10000|17.521|0.375|56.68|22.15|34.48|0.4|0.57|0.22|0.35|
-|objectid-key|10000|12.953|0.408|1.31|0.67|0.64|0.09|0.01|0.01|0.01|
-|objectid-char-indexed|10000|14.607|0.268|0.4|0.06|0.34|0.08|0|0|0|
-|numeric-indexed|10000|14.632|0.143|0.35|0.05|0.29|0.08|0|0|0|
-|objectid-indexed|10000|14.791|0.185|0.28|0.06|0.23|0.08|0|0|0|
-|guid-indexed|10000|19.896|0.554|47.75|20.44|27.31|0.72|0.48|0.2|0.27|
-|guid-sequential-indexed|10000|15.101|0.203|0.94|0.38|0.55|0.15|0.01|0|0.01|
-|guid-comb-indexed|10000|19.838|0.547|46.59|19.64|26.93|0.5|0.47|0.2|0.27|
-|<div style='width:155px'>Case</div>|Inserts|InsertTime|SelectTime|DiskTime|DiskReadTime|DiskWriteTime|CurrentDiskQueueLength|AvgDiskQueueLength|AvgDiskReadQueueLength|AvgDiskWriteQueueLength|
-|auto-increment-key|10000|14.569|0.13|0.29|0.03|0.23|0|0|0|0|
-|guid-key|10000|18.333|0.554|59.51|22.82|36.69|0.5|0.6|0.23|0.37|
-|guid-sequential-key|10000|13.153|0.252|0.3|0.05|0.25|0|0|0|0|
-|guid-comb-key|10000|18.105|0.669|57.07|22.69|34.31|0.94|0.57|0.23|0.34|
-|objectid-key|10000|13.371|0.379|0.14|0|0.12|0|0|0|0|
-|objectid-char-indexed|10000|15.105|0.266|0.85|0.33|0.52|0.08|0.01|0|0.01|
-|numeric-indexed|10000|14.985|0.137|0.38|0.03|0.31|0.08|0|0|0|
-|objectid-indexed|10000|15.182|0.174|0.54|0.05|0.45|0|0.01|0|0|
-|guid-indexed|10000|20.002|0.28|45.39|18.9|26.46|0.28|0.45|0.19|0.26|
-|guid-sequential-indexed|10000|15.19|0.276|0.5|0.05|0.42|0|0.01|0|0|
-|guid-comb-indexed|10000|20.263|0.26|41.47|17.13|24.36|0.61|0.41|0.17|0.24|
-|<div style='width:155px'>Case</div>|Inserts|InsertTime|SelectTime|DiskTime|DiskReadTime|DiskWriteTime|CurrentDiskQueueLength|AvgDiskQueueLength|AvgDiskReadQueueLength|AvgDiskWriteQueueLength|
-|auto-increment-key|10000|15.086|0.113|0.53|0.09|0.43|0.69|0.01|0|0|
-|guid-key|10000|19.251|0.492|64.69|25.33|39.37|1.24|0.65|0.25|0.39|
-|guid-sequential-key|10000|13.541|0.242|0.05|0|0.05|0|0|0|0|
-|guid-comb-key|10000|17.727|0.664|53.18|20.83|32.35|0.56|0.53|0.21|0.32|
-|objectid-key|10000|13.76|0.392|2.84|1.69|1.14|0|0.03|0.02|0.01|
-|objectid-char-indexed|10000|15.749|0.246|1.09|0.05|1.04|0|0.01|0|0.01|
-|numeric-indexed|10000|15.808|0.204|1.12|0.05|1.03|0|0.01|0|0.01|
-|objectid-indexed|10000|15.825|0.198|1.12|0.05|1.02|0|0.01|0|0.01|
-|guid-indexed|10000|21.612|0.211|45.92|19.68|26.19|0.37|0.46|0.2|0.26|
-|guid-sequential-indexed|10000|15.68|0.632|5.89|4.14|1.75|0|0.06|0.04|0.02|
-|guid-comb-indexed|10000|20.44|0.503|40.44|15.5|24.93|0.78|0.4|0.16|0.25|
-|<div style='width:155px'>Case</div>|Inserts|InsertTime|SelectTime|DiskTime|DiskReadTime|DiskWriteTime|CurrentDiskQueueLength|AvgDiskQueueLength|AvgDiskReadQueueLength|AvgDiskWriteQueueLength|
-|auto-increment-key|10000|15.699|0.108|0.26|0.05|0.18|0.08|0|0|0|
-|guid-key|10000|18.713|0.439|50.71|19.87|30.79|1.06|0.51|0.2|0.31|
-|guid-sequential-key|10000|14.108|0.258|0.26|0.05|0.21|0|0|0|0|
-|guid-comb-key|10000|19.652|0.444|55.29|22.6|32.7|1.06|0.55|0.23|0.33|
-|objectid-key|10000|14.286|0.406|0.17|0.02|0.14|0|0|0|0|
-|objectid-char-indexed|10000|15.833|0.258|0.4|0.04|0.36|0|0|0|0|
-|numeric-indexed|10000|15.945|0.145|0.3|0.05|0.24|0.08|0|0|0|
-|objectid-indexed|10000|16.176|0.192|0.51|0.04|0.44|0.07|0.01|0|0|
-|guid-indexed|10000|20.603|0.613|44.03|18.89|25.11|0.58|0.44|0.19|0.25|
-|guid-sequential-indexed|10000|16.25|0.244|0.39|0.05|0.31|0|0|0|0|
-|guid-comb-indexed|10000|21.636|0.2|38.56|15.76|22.8|0.16|0.39|0.16|0.23|
-|<div style='width:155px'>Case</div>|Inserts|InsertTime|SelectTime|DiskTime|DiskReadTime|DiskWriteTime|CurrentDiskQueueLength|AvgDiskQueueLength|AvgDiskReadQueueLength|AvgDiskWriteQueueLength|
-|auto-increment-key|10000|16.919|0.115|0.22|0.04|0.14|0|0|0|0|
-|guid-key|10000|20.058|0.534|57.62|23.15|34.45|0.78|0.58|0.23|0.34|
-|guid-sequential-key|10000|14.626|0.272|0.11|0|0.11|0|0|0|0|
-|guid-comb-key|10000|19.17|0.479|50.17|18.46|31.72|0.82|0.5|0.18|0.32|
-|objectid-key|10000|14.785|0.407|1.78|1.39|0.39|0.08|0.02|0.01|0|
-|objectid-char-indexed|10000|16.566|0.257|1.17|0.04|1.12|0|0.01|0|0.01|
-|numeric-indexed|10000|16.455|0.215|0.37|0.02|0.31|0.07|0|0|0|
-|objectid-indexed|10000|16.476|0.186|0.34|0.02|0.29|0|0|0|0|
-|guid-indexed|10000|22.477|0.21|41.96|18.14|23.78|0.75|0.42|0.18|0.24|
-|guid-sequential-indexed|10000|16.647|0.296|0.32|0.02|0.26|0.07|0|0|0|
-|guid-comb-indexed|10000|22.064|0.628|41.92|17.25|24.66|0.4|0.42|0.17|0.25|
-|<div style='width:155px'>Case</div>|Inserts|InsertTime|SelectTime|DiskTime|DiskReadTime|DiskWriteTime|CurrentDiskQueueLength|AvgDiskQueueLength|AvgDiskReadQueueLength|AvgDiskWriteQueueLength|
-|auto-increment-key|10000|16.67|0.144|0.25|0.02|0.23|0|0|0|0|
-|guid-key|10000|19.424|0.763|49.9|20.12|29.77|0.28|0.5|0.2|0.3|
-|guid-sequential-key|10000|15|0.283|0.73|0.54|0.19|0|0.01|0.01|0|
-|guid-comb-key|10000|20.063|0.355|51.9|20.39|31.54|0.89|0.52|0.2|0.32|
-|objectid-key|10000|15.432|0.452|0.13|0|0.13|0|0|0|0|
-|objectid-char-indexed|10000|17.388|0.309|0.29|0.04|0.22|0.07|0|0|0|
-|numeric-indexed|10000|17.13|0.245|0.64|0.13|0.48|0.13|0.01|0|0.01|
-|objectid-indexed|10000|17.413|0.277|0.37|0.03|0.31|0.07|0|0|0|
-|guid-indexed|10000|23.087|0.614|47.1|20.44|26.61|0.62|0.47|0.2|0.27|
-|guid-sequential-indexed|10000|17.333|0.18|0.52|0.02|0.47|0.07|0.01|0|0.01|
-|guid-comb-indexed|10000|22.863|0.714|43.53|18.9|24.63|0.62|0.44|0.19|0.25|
-|<div style='width:155px'>Case</div>|Inserts|InsertTime|SelectTime|DiskTime|DiskReadTime|DiskWriteTime|CurrentDiskQueueLength|AvgDiskQueueLength|AvgDiskReadQueueLength|AvgDiskWriteQueueLength|
-|auto-increment-key|10000|17.119|0.143|1.59|0.45|1.13|0.13|0.02|0|0.01|
-|guid-key|10000|21.049|0.723|53.75|22.26|31.44|0.53|0.54|0.22|0.31|
-|guid-sequential-key|10000|15.771|0.29|0.13|0|0.13|0|0|0|0|
-|guid-comb-key|10000|21.591|0.612|53.31|22.6|30.7|0.32|0.53|0.23|0.31|
-|objectid-key|10000|15.774|0.435|1.64|1.41|0.19|0|0.02|0.01|0|
-|objectid-char-indexed|10000|17.461|0.292|0.29|0.02|0.27|0|0|0|0|
-|numeric-indexed|10000|17.342|0.221|1.07|0.04|0.99|0|0.01|0|0.01|
-|objectid-indexed|10000|17.487|0.182|1.06|0.05|0.99|0|0.01|0|0.01|
-|guid-indexed|10000|22.874|0.588|41.58|18.71|22.84|1.1|0.42|0.19|0.23|
-|guid-sequential-indexed|10000|17.695|0.274|1.05|0.04|0.98|0.13|0.01|0|0.01|
-|guid-comb-indexed|10000|23.224|0.672|41.92|18.22|23.68|0.9|0.42|0.18|0.24|
-|<div style='width:155px'>Case</div>|Inserts|InsertTime|SelectTime|DiskTime|DiskReadTime|DiskWriteTime|CurrentDiskQueueLength|AvgDiskQueueLength|AvgDiskReadQueueLength|AvgDiskWriteQueueLength|
-|auto-increment-key|10000|17.725|0.141|0.25|0.03|0.22|0.07|0|0|0|
-|guid-key|10000|20.747|0.501|45.47|18.31|27.15|0.89|0.45|0.18|0.27|
-|guid-sequential-key|10000|16.09|0.297|0.47|0.22|0.25|0.07|0|0|0|
-|guid-comb-key|10000|21.042|0.427|47.29|19.34|27.92|0.47|0.47|0.19|0.28|
-|objectid-key|10000|16.129|0.515|1.08|0.07|0.96|0|0.01|0|0.01|
-|objectid-char-indexed|10000|17.847|0.349|3.77|2.43|1.35|0|0.04|0.02|0.01|
-|numeric-indexed|10000|17.775|0.207|0.26|0.05|0.21|0.07|0|0|0|
-|objectid-indexed|10000|18.046|0.2|1.23|0.68|0.52|0.06|0.01|0.01|0.01|
-|guid-indexed|10000|24.081|0.762|44.52|19.25|25.26|0.23|0.45|0.19|0.25|
-|guid-sequential-indexed|10000|18.429|0.218|0.35|0.04|0.28|0|0|0|0|
-|guid-comb-indexed|10000|23.191|0.355|35.89|14.35|21.55|0.24|0.36|0.14|0.22|
-|<div style='width:155px'>Case</div>|Inserts|InsertTime|SelectTime|DiskTime|DiskReadTime|DiskWriteTime|CurrentDiskQueueLength|AvgDiskQueueLength|AvgDiskReadQueueLength|AvgDiskWriteQueueLength|
-|auto-increment-key|10000|18.018|0.127|2.26|1.72|0.54|0|0.02|0.02|0.01|
-|guid-key|10000|21.665|0.74|51.61|21.21|30.4|0.55|0.52|0.21|0.3|
-|guid-sequential-key|10000|16.49|0.302|0.13|0|0.13|0|0|0|0|
-|guid-comb-key|10000|21.931|0.795|54.65|22.19|32.43|0.25|0.55|0.22|0.32|
-|objectid-key|10000|16.853|0.482|1.26|1.08|0.15|0.07|0.01|0.01|0|
-|objectid-char-indexed|10000|18.62|0.304|0.34|0.04|0.29|0|0|0|0|
-|numeric-indexed|10000|18.477|0.294|0.32|0.02|0.27|0|0|0|0|
-|objectid-indexed|10000|18.868|0.242|0.3|0.02|0.25|0|0|0|0|
-|guid-indexed|10000|23.7|0.338|35.58|14.42|21.13|0.52|0.36|0.14|0.21|
-|guid-sequential-indexed|10000|18.623|0.253|0.28|0.05|0.2|0.06|0|0|0|
-|guid-comb-indexed|10000|24.446|0.315|40.35|16.97|23.37|0.5|0.4|0.17|0.23|
-|<div style='width:155px'>Case</div>|Inserts|InsertTime|SelectTime|DiskTime|DiskReadTime|DiskWriteTime|CurrentDiskQueueLength|AvgDiskQueueLength|AvgDiskReadQueueLength|AvgDiskWriteQueueLength|
-|auto-increment-key|10000|18.387|0.13|0.3|0.03|0.22|0.06|0|0|0|
-|guid-key|10000|21.988|0.695|48.75|19.45|29.33|0.85|0.49|0.19|0.29|
-|guid-sequential-key|10000|16.904|0.319|1.35|0.92|0.43|0.07|0.01|0.01|0|
-|guid-comb-key|10000|21.635|0.687|44.61|18.11|26.49|0.7|0.45|0.18|0.26|
-|objectid-key|10000|17.472|0.533|0.13|0|0.13|0|0|0|0|
-|objectid-char-indexed|10000|19.073|0.505|1.91|0.48|1.43|0.06|0.02|0|0.01|
-|numeric-indexed|10000|18.98|0.294|1.94|1.4|0.51|0|0.02|0.01|0.01|
-|objectid-indexed|10000|19.036|0.22|1.44|1.1|0.33|0.12|0.01|0.01|0|
-|guid-indexed|10000|24.535|0.718|42.79|21.1|21.67|0.83|0.43|0.21|0.22|
-|guid-sequential-indexed|10000|19.048|0.267|1.93|0.73|1.09|0.06|0.02|0.01|0.01|
-|guid-comb-indexed|10000|23.765|0.591|36.91|16.24|20.67|0.68|0.37|0.16|0.21|
-|<div style='width:155px'>Case</div>|Inserts|InsertTime|SelectTime|DiskTime|DiskReadTime|DiskWriteTime|CurrentDiskQueueLength|AvgDiskQueueLength|AvgDiskReadQueueLength|AvgDiskWriteQueueLength|
-|auto-increment-key|10000|19.153|0.126|0.44|0.05|0.4|0.06|0|0|0|
-|guid-key|10000|22.418|0.65|45.07|17.64|27.44|0.6|0.45|0.18|0.27|
-|guid-sequential-key|10000|17.611|0.319|0.1|0|0.1|0|0|0|0|
-|guid-comb-key|10000|23.88|0.588|47.34|19.85|27.46|0.73|0.47|0.2|0.27|
-|objectid-key|10000|17.682|0.531|2.6|1.63|0.94|0|0.03|0.02|0.01|
-|objectid-char-indexed|10000|19.542|0.419|0.25|0.04|0.21|0.06|0|0|0|
-|numeric-indexed|10000|19.701|0.219|1|0.04|0.93|0|0.01|0|0.01|
-|objectid-indexed|10000|20.99|0.253|2.58|1.62|0.94|0.05|0.03|0.02|0.01|
-|guid-indexed|10000|25.189|0.709|33.99|14.08|19.89|0.96|0.34|0.14|0.2|
-|guid-sequential-indexed|10000|20.293|0.267|0.47|0.04|0.41|0|0|0|0|
-|guid-comb-indexed|10000|25.11|0.361|35.95|14.57|21.38|0.61|0.36|0.15|0.21|
-|<div style='width:155px'>Case</div>|Inserts|InsertTime|SelectTime|DiskTime|DiskReadTime|DiskWriteTime|CurrentDiskQueueLength|AvgDiskQueueLength|AvgDiskReadQueueLength|AvgDiskWriteQueueLength|
-|auto-increment-key|10000|21.686|0.123|0.23|0.04|0.16|0.11|0|0|0|
-|guid-key|10000|25.786|0.838|46.05|19.73|26.34|0.54|0.46|0.2|0.26|
-|guid-sequential-key|10000|18.679|0.354|0.09|0|0.06|0|0|0|0|
-|guid-comb-key|10000|23.149|0.613|39.78|15.3|24.5|0.38|0.4|0.15|0.25|
-|objectid-key|10000|18.511|0.549|0.12|0|0.12|0|0|0|0|
-|objectid-char-indexed|10000|20.739|0.339|0.27|0.07|0.18|0|0|0|0|
+| <div style='width:155px'>Case</div> | Inserts | InsertTime | SelectTime | DiskTime | DiskReadTime | DiskWriteTime | CurrentDiskQueueLength | AvgDiskQueueLength | AvgDiskReadQueueLength | AvgDiskWriteQueueLength |
+| :---------------------------------- | :-----: | :--------: | :--------: | :------: | :----------: | :-----------: | :--------------------: | :----------------: | :--------------------: | :---------------------: |
+| auto-increment-key                  | 100000  |   20.677   |   0.205    |   5.09   |     0.32     |     4.71      |          0.17          |        0.05        |           0            |          0.05           |
+| guid-key                            | 100000  |   4.628    |    0.07    |  27.57   |     0.68     |     7.23      |           0            |        0.28        |          0.01          |          0.27           |
+| guid-sequential-key                 | 100000  |   4.857    |    0.08    |  21.44   |     0.35     |     7.88      |          1.5           |        0.21        |           0            |          0.21           |
+| guid-comb-key                       | 100000  |   5.637    |   0.023    |  17.66   |     0.82     |     16.78     |          3.33          |        0.18        |          0.01          |          0.17           |
+| objectid-key                        | 100000  |    6.35    |   0.146    |  19.27   |     0.25     |     18.9      |          0.5           |        0.19        |           0            |          0.19           |
+| <div style='width:155px'>Case</div> | Inserts | InsertTime | SelectTime | DiskTime | DiskReadTime | DiskWriteTime | CurrentDiskQueueLength | AvgDiskQueueLength | AvgDiskReadQueueLength | AvgDiskWriteQueueLength |
+| <div style='width:155px'>Case</div> | Inserts | InsertTime | SelectTime | DiskTime | DiskReadTime | DiskWriteTime | CurrentDiskQueueLength | AvgDiskQueueLength | AvgDiskReadQueueLength | AvgDiskWriteQueueLength |
+| auto-increment-key                  |   100   |   0.175    |   0.149    |    0     |      0       |       0       |           0            |         0          |           0            |            0            |
+| guid-key                            |   100   |   0.055    |   0.008    |    0     |      0       |       0       |           0            |         0          |           0            |            0            |
+| guid-sequential-key                 |   100   |   0.016    |   0.006    |    0     |      0       |       0       |           0            |         0          |           0            |            0            |
+| guid-comb-key                       |   100   |   0.046    |   0.005    |    0     |      0       |       0       |           0            |         0          |           0            |            0            |
+| objectid-key                        |   100   |    0.04    |   0.007    |    0     |      0       |       0       |           0            |         0          |           0            |            0            |
+| <div style='width:155px'>Case</div> | Inserts | InsertTime | SelectTime | DiskTime | DiskReadTime | DiskWriteTime | CurrentDiskQueueLength | AvgDiskQueueLength | AvgDiskReadQueueLength | AvgDiskWriteQueueLength |
+| auto-increment-key                  |   100   |   0.184    |   0.146    |    0     |      0       |       0       |           0            |         0          |           0            |            0            |
+| guid-key                            |   100   |   0.047    |   0.011    |    0     |      0       |       0       |           0            |         0          |           0            |            0            |
+| guid-sequential-key                 |   100   |   0.023    |   0.006    |    0     |      0       |       0       |           0            |         0          |           0            |            0            |
+| guid-comb-key                       |   100   |   0.057    |   0.008    |    0     |      0       |       0       |           0            |         0          |           0            |            0            |
+| objectid-key                        |   100   |   0.023    |   0.008    |    0     |      0       |       0       |           0            |         0          |           0            |            0            |
+| <div style='width:155px'>Case</div> | Inserts | InsertTime | SelectTime | DiskTime | DiskReadTime | DiskWriteTime | CurrentDiskQueueLength | AvgDiskQueueLength | AvgDiskReadQueueLength | AvgDiskWriteQueueLength |
+| auto-increment-key                  |   100   |   0.176    |   0.145    |    0     |      0       |       0       |           0            |         0          |           0            |            0            |
+| guid-key                            |   100   |   0.039    |   0.007    |    0     |      0       |       0       |           0            |         0          |           0            |            0            |
+| guid-sequential-key                 |   100   |   0.017    |   0.006    |    0     |      0       |       0       |           0            |         0          |           0            |            0            |
+| guid-comb-key                       |   100   |   0.042    |   0.006    |    0     |      0       |       0       |           0            |         0          |           0            |            0            |
+| objectid-key                        |   100   |   0.042    |   0.008    |    0     |      0       |       0       |           0            |         0          |           0            |            0            |
+| numeric-key                         |   100   |   0.014    |     0      |    0     |      0       |       0       |           0            |         0          |           0            |            0            |
+| <div style='width:155px'>Case</div> | Inserts | InsertTime | SelectTime | DiskTime | DiskReadTime | DiskWriteTime | CurrentDiskQueueLength | AvgDiskQueueLength | AvgDiskReadQueueLength | AvgDiskWriteQueueLength |
+| auto-increment-key                  |   100   |   0.161    |   0.147    |    0     |      0       |       0       |           0            |         0          |           0            |            0            |
+| guid-key                            |   100   |   0.047    |   0.009    |    0     |      0       |       0       |           0            |         0          |           0            |            0            |
+| guid-sequential-key                 |   100   |   0.016    |   0.006    |    0     |      0       |       0       |           0            |         0          |           0            |            0            |
+| guid-comb-key                       |   100   |   0.035    |   0.006    |    0     |      0       |       0       |           0            |         0          |           0            |            0            |
+| objectid-key                        |   100   |   0.025    |   0.011    |    0     |      0       |       0       |           0            |         0          |           0            |            0            |
+| <div style='width:155px'>Case</div> | Inserts | InsertTime | SelectTime | DiskTime | DiskReadTime | DiskWriteTime | CurrentDiskQueueLength | AvgDiskQueueLength | AvgDiskReadQueueLength | AvgDiskWriteQueueLength |
+| auto-increment-key                  |   100   |   0.141    |   0.151    |    0     |      0       |       0       |           0            |         0          |           0            |            0            |
+| guid-key                            |   100   |   0.072    |   0.009    |    0     |      0       |       0       |           0            |         0          |           0            |            0            |
+| guid-sequential-key                 |   100   |   0.016    |   0.007    |    0     |      0       |       0       |           0            |         0          |           0            |            0            |
+| guid-comb-key                       |   100   |   0.056    |   0.007    |    0     |      0       |       0       |           0            |         0          |           0            |            0            |
+| objectid-key                        |   100   |   0.037    |   0.008    |    0     |      0       |       0       |           0            |         0          |           0            |            0            |
+| <div style='width:155px'>Case</div> | Inserts | InsertTime | SelectTime | DiskTime | DiskReadTime | DiskWriteTime | CurrentDiskQueueLength | AvgDiskQueueLength | AvgDiskReadQueueLength | AvgDiskWriteQueueLength |
+| auto-increment-key                  |   100   |   0.171    |    0.16    |    0     |      0       |       0       |           0            |         0          |           0            |            0            |
+| guid-key                            |   100   |   0.064    |   0.011    |    0     |      0       |       0       |           0            |         0          |           0            |            0            |
+| guid-sequential-key                 |   100   |   0.031    |   0.007    |    0     |      0       |       0       |           0            |         0          |           0            |            0            |
+| guid-comb-key                       |   100   |   0.055    |   0.007    |    0     |      0       |       0       |           0            |         0          |           0            |            0            |
+| objectid-key                        |   100   |   0.025    |   0.008    |    0     |      0       |       0       |           0            |         0          |           0            |            0            |
+| numeric-indexed                     |   100   |   0.057    |   0.007    |    0     |      0       |       0       |           0            |         0          |           0            |            0            |
+| objectid-indexed                    |   100   |   0.039    |   0.007    |    0     |      0       |       0       |           0            |         0          |           0            |            0            |
+| guid-indexed                        |   100   |   0.048    |   0.006    |    0     |      0       |       0       |           0            |         0          |           0            |            0            |
+| guid-sequential-indexed             |   100   |    0.06    |   0.006    |    0     |      0       |       0       |           0            |         0          |           0            |            0            |
+| guid-comb-indexed                   |   100   |   0.053    |   0.006    |    0     |      0       |       0       |           0            |         0          |           0            |            0            |
+| <div style='width:155px'>Case</div> | Inserts | InsertTime | SelectTime | DiskTime | DiskReadTime | DiskWriteTime | CurrentDiskQueueLength | AvgDiskQueueLength | AvgDiskReadQueueLength | AvgDiskWriteQueueLength |
+| auto-increment-key                  |   100   |   0.171    |   0.151    |    0     |      0       |       0       |           0            |         0          |           0            |            0            |
+| guid-key                            |   100   |   0.047    |   0.007    |    0     |      0       |       0       |           0            |         0          |           0            |            0            |
+| guid-sequential-key                 |   100   |   0.021    |   0.007    |    0     |      0       |       0       |           0            |         0          |           0            |            0            |
+| guid-comb-key                       |   100   |   0.055    |   0.007    |    0     |      0       |       0       |           0            |         0          |           0            |            0            |
+| objectid-key                        |   100   |   0.024    |   0.009    |    0     |      0       |       0       |           0            |         0          |           0            |            0            |
+| numeric-indexed                     |   100   |   0.045    |   0.009    |    0     |      0       |       0       |           0            |         0          |           0            |            0            |
+| objectid-indexed                    |   100   |   0.043    |   0.007    |    0     |      0       |       0       |           0            |         0          |           0            |            0            |
+| guid-indexed                        |   100   |   0.041    |   0.006    |    0     |      0       |       0       |           0            |         0          |           0            |            0            |
+| guid-sequential-indexed             |   100   |   0.049    |   0.006    |    0     |      0       |       0       |           0            |         0          |           0            |            0            |
+| guid-comb-indexed                   |   100   |    0.04    |   0.016    |    0     |      0       |       0       |           0            |         0          |           0            |            0            |
+| <div style='width:155px'>Case</div> | Inserts | InsertTime | SelectTime | DiskTime | DiskReadTime | DiskWriteTime | CurrentDiskQueueLength | AvgDiskQueueLength | AvgDiskReadQueueLength | AvgDiskWriteQueueLength |
+| auto-increment-key                  |   100   |   0.062    |   0.004    |    0     |      0       |       0       |           0            |         0          |           0            |            0            |
+| guid-key                            |   100   |   0.024    |   0.001    |    0     |      0       |       0       |           0            |         0          |           0            |            0            |
+| guid-sequential-key                 |   100   |   0.009    |   0.002    |    0     |      0       |       0       |           0            |         0          |           0            |            0            |
+| guid-comb-key                       |   100   |   0.024    |   0.001    |    0     |      0       |       0       |           0            |         0          |           0            |            0            |
+| objectid-key                        |   100   |    0.01    |   0.001    |    0     |      0       |       0       |           0            |         0          |           0            |            0            |
+| numeric-indexed                     |   100   |   0.027    |   0.001    |    0     |      0       |       0       |           0            |         0          |           0            |            0            |
+| objectid-indexed                    |   100   |   0.038    |   0.001    |    0     |      0       |       0       |           0            |         0          |           0            |            0            |
+| guid-indexed                        |   100   |    0.03    |   0.001    |    0     |      0       |       0       |           0            |         0          |           0            |            0            |
+| guid-sequential-indexed             |   100   |   0.033    |   0.002    |    0     |      0       |       0       |           0            |         0          |           0            |            0            |
+| guid-comb-indexed                   |   100   |   0.041    |   0.001    |    0     |      0       |       0       |           0            |         0          |           0            |            0            |
+| <div style='width:155px'>Case</div> | Inserts | InsertTime | SelectTime | DiskTime | DiskReadTime | DiskWriteTime | CurrentDiskQueueLength | AvgDiskQueueLength | AvgDiskReadQueueLength | AvgDiskWriteQueueLength |
+| auto-increment-key                  | 100000  |   21.033   |   0.183    |   4.41   |     0.3      |     3.87      |          0.06          |        0.04        |           0            |          0.04           |
+| guid-key                            | 100000  |   4.826    |   0.047    |  24.64   |     0.52     |     7.05      |          0.5           |        0.25        |          0.01          |          0.24           |
+| guid-sequential-key                 | 100000  |   5.103    |   0.064    |  20.65   |     0.22     |     11.23     |          0.67          |        0.21        |           0            |           0.2           |
+| guid-comb-key                       | 100000  |   5.575    |   0.043    |   33.3   |     1.19     |     31.68     |          0.33          |        0.33        |          0.01          |          0.32           |
+| objectid-key                        | 100000  |   6.623    |   0.113    |  15.94   |     0.19     |     15.62     |          0.5           |        0.16        |           0            |          0.16           |
+| numeric-indexed                     | 100000  |   23.366   |   0.034    |   5.3    |     0.07     |     5.21      |          0.38          |        0.05        |           0            |          0.05           |
+| objectid-indexed                    | 100000  |   24.414   |   0.039    |   7.23   |     0.24     |     6.97      |          0.27          |        0.07        |           0            |          0.07           |
+| <div style='width:155px'>Case</div> | Inserts | InsertTime | SelectTime | DiskTime | DiskReadTime | DiskWriteTime | CurrentDiskQueueLength | AvgDiskQueueLength | AvgDiskReadQueueLength | AvgDiskWriteQueueLength |
+| auto-increment-key                  |   100   |   0.173    |   0.159    |    0     |      0       |       0       |           0            |         0          |           0            |            0            |
+| guid-key                            |   100   |   0.053    |   0.008    |    0     |      0       |       0       |           0            |         0          |           0            |            0            |
+| guid-sequential-key                 |   100   |    0.02    |   0.006    |    0     |      0       |       0       |           0            |         0          |           0            |            0            |
+| guid-comb-key                       |   100   |   0.035    |   0.008    |    0     |      0       |       0       |           0            |         0          |           0            |            0            |
+| objectid-key                        |   100   |   0.033    |    0.01    |    0     |      0       |       0       |           0            |         0          |           0            |            0            |
+| objectid-char-indexed               |   100   |   0.039    |   0.006    |    0     |      0       |       0       |           0            |         0          |           0            |            0            |
+| numeric-indexed                     |   100   |   0.041    |   0.006    |    0     |      0       |       0       |           0            |         0          |           0            |            0            |
+| objectid-indexed                    |   100   |   0.068    |   0.007    |    0     |      0       |       0       |           0            |         0          |           0            |            0            |
+| guid-indexed                        |   100   |   0.041    |   0.006    |    0     |      0       |       0       |           0            |         0          |           0            |            0            |
+| guid-sequential-indexed             |   100   |   0.043    |   0.006    |    0     |      0       |       0       |           0            |         0          |           0            |            0            |
+| guid-comb-indexed                   |   100   |   0.043    |   0.012    |    0     |      0       |       0       |           0            |         0          |           0            |            0            |
+| <div style='width:155px'>Case</div> | Inserts | InsertTime | SelectTime | DiskTime | DiskReadTime | DiskWriteTime | CurrentDiskQueueLength | AvgDiskQueueLength | AvgDiskReadQueueLength | AvgDiskWriteQueueLength |
+| auto-increment-key                  |   100   |   0.041    |   0.003    |    0     |      0       |       0       |           0            |         0          |           0            |            0            |
+| guid-key                            |   100   |   0.031    |   0.001    |    0     |      0       |       0       |           0            |         0          |           0            |            0            |
+| guid-sequential-key                 |   100   |   0.019    |   0.001    |    0     |      0       |       0       |           0            |         0          |           0            |            0            |
+| guid-comb-key                       |   100   |   0.047    |   0.002    |    0     |      0       |       0       |           0            |         0          |           0            |            0            |
+| objectid-key                        |   100   |    0.02    |   0.002    |    0     |      0       |       0       |           0            |         0          |           0            |            0            |
+| objectid-char-indexed               |   100   |   0.038    |   0.001    |    0     |      0       |       0       |           0            |         0          |           0            |            0            |
+| numeric-indexed                     |   100   |   0.042    |   0.002    |    0     |      0       |       0       |           0            |         0          |           0            |            0            |
+| objectid-indexed                    |   100   |   0.042    |   0.002    |    0     |      0       |       0       |           0            |         0          |           0            |            0            |
+| guid-indexed                        |   100   |   0.045    |   0.001    |    0     |      0       |       0       |           0            |         0          |           0            |            0            |
+| guid-sequential-indexed             |   100   |   0.047    |   0.001    |    0     |      0       |       0       |           0            |         0          |           0            |            0            |
+| guid-comb-indexed                   |   100   |   0.044    |   0.001    |    0     |      0       |       0       |           0            |         0          |           0            |            0            |
+| <div style='width:155px'>Case</div> | Inserts | InsertTime | SelectTime | DiskTime | DiskReadTime | DiskWriteTime | CurrentDiskQueueLength | AvgDiskQueueLength | AvgDiskReadQueueLength | AvgDiskWriteQueueLength |
+| auto-increment-key                  |   100   |   0.143    |   0.153    |    0     |      0       |       0       |           0            |         0          |           0            |            0            |
+| guid-key                            |   100   |   0.056    |   0.012    |    0     |      0       |       0       |           0            |         0          |           0            |            0            |
+| guid-sequential-key                 |   100   |   0.018    |   0.007    |    0     |      0       |       0       |           0            |         0          |           0            |            0            |
+| guid-comb-key                       |   100   |   0.046    |   0.011    |    0     |      0       |       0       |           0            |         0          |           0            |            0            |
+| objectid-key                        |   100   |    0.03    |   0.009    |    0     |      0       |       0       |           0            |         0          |           0            |            0            |
+| objectid-char-indexed               |   100   |   0.036    |   0.006    |    0     |      0       |       0       |           0            |         0          |           0            |            0            |
+| numeric-indexed                     |   100   |   0.046    |   0.006    |    0     |      0       |       0       |           0            |         0          |           0            |            0            |
+| objectid-indexed                    |   100   |   0.043    |   0.008    |    0     |      0       |       0       |           0            |         0          |           0            |            0            |
+| guid-indexed                        |   100   |   0.043    |   0.006    |    0     |      0       |       0       |           0            |         0          |           0            |            0            |
+| guid-sequential-indexed             |   100   |   0.045    |   0.006    |    0     |      0       |       0       |           0            |         0          |           0            |            0            |
+| guid-comb-indexed                   |   100   |   0.051    |   0.007    |    0     |      0       |       0       |           0            |         0          |           0            |            0            |
+| <div style='width:155px'>Case</div> | Inserts | InsertTime | SelectTime | DiskTime | DiskReadTime | DiskWriteTime | CurrentDiskQueueLength | AvgDiskQueueLength | AvgDiskReadQueueLength | AvgDiskWriteQueueLength |
+| auto-increment-key                  |   100   |    0.05    |   0.003    |    0     |      0       |       0       |           0            |         0          |           0            |            0            |
+| guid-key                            |   100   |   0.033    |   0.001    |    0     |      0       |       0       |           0            |         0          |           0            |            0            |
+| guid-sequential-key                 |   100   |   0.022    |   0.002    |    0     |      0       |       0       |           0            |         0          |           0            |            0            |
+| guid-comb-key                       |   100   |   0.036    |   0.002    |    0     |      0       |       0       |           0            |         0          |           0            |            0            |
+| objectid-key                        |   100   |   0.019    |   0.002    |    0     |      0       |       0       |           0            |         0          |           0            |            0            |
+| objectid-char-indexed               |   100   |   0.044    |   0.001    |    0     |      0       |       0       |           0            |         0          |           0            |            0            |
+| numeric-indexed                     |   100   |   0.043    |   0.002    |    0     |      0       |       0       |           0            |         0          |           0            |            0            |
+| objectid-indexed                    |   100   |   0.055    |   0.002    |    0     |      0       |       0       |           0            |         0          |           0            |            0            |
+| guid-indexed                        |   100   |   0.047    |   0.002    |    0     |      0       |       0       |           0            |         0          |           0            |            0            |
+| guid-sequential-indexed             |   100   |   0.047    |   0.001    |    0     |      0       |       0       |           0            |         0          |           0            |            0            |
+| guid-comb-indexed                   |   100   |   0.044    |   0.001    |    0     |      0       |       0       |           0            |         0          |           0            |            0            |
+| <div style='width:155px'>Case</div> | Inserts | InsertTime | SelectTime | DiskTime | DiskReadTime | DiskWriteTime | CurrentDiskQueueLength | AvgDiskQueueLength | AvgDiskReadQueueLength | AvgDiskWriteQueueLength |
+| auto-increment-key                  | 100000  |   21.198   |   0.186    |   4.35   |     0.05     |     4.24      |          0.11          |        0.04        |           0            |          0.04           |
+| guid-key                            | 100000  |   4.758    |    0.03    |  32.34   |     0.68     |     7.05      |          0.5           |        0.32        |          0.01          |          0.32           |
+| guid-sequential-key                 | 100000  |   5.093    |   0.059    |  21.11   |     0.3      |     10.73     |          0.33          |        0.21        |           0            |          0.21           |
+| guid-comb-key                       | 100000  |    5.47    |   0.042    |  18.23   |     0.43     |     17.37     |           1            |        0.18        |           0            |          0.18           |
+| objectid-key                        | 100000  |   6.868    |    0.14    |  15.61   |     0.25     |     15.36     |          0.75          |        0.16        |           0            |          0.15           |
+| objectid-char-indexed               | 100000  |   24.808   |   0.061    |   7.68   |     0.34     |     7.33      |          0.14          |        0.08        |           0            |          0.07           |
+| numeric-indexed                     | 100000  |   24.212   |   0.031    |   4.55   |     0.06     |     4.49      |          0.23          |        0.05        |           0            |          0.05           |
+| objectid-indexed                    | 100000  |   25.733   |   0.041    |   5.3    |     0.1      |     5.18      |          0.17          |        0.05        |           0            |          0.05           |
+| guid-indexed                        | 100000  |   26.613   |   0.054    |   8.26   |     1.04     |     7.21      |          0.33          |        0.08        |          0.01          |          0.07           |
+| guid-sequential-indexed             | 100000  |   26.348   |   0.038    |   5.04   |     0.05     |     4.99      |           0            |        0.05        |           0            |          0.05           |
+| guid-comb-indexed                   | 100000  |   27.351   |   0.043    |   5.98   |     0.25     |     5.71      |          0.12          |        0.06        |           0            |          0.06           |
+| <div style='width:155px'>Case</div> | Inserts | InsertTime | SelectTime | DiskTime | DiskReadTime | DiskWriteTime | CurrentDiskQueueLength | AvgDiskQueueLength | AvgDiskReadQueueLength | AvgDiskWriteQueueLength |
+| auto-increment-key                  | 100000  |   25.389   |   0.094    |   3.69   |     0.23     |     3.45      |          0.04          |        0.04        |           0            |          0.03           |
+| guid-key                            | 100000  |   22.152   |   0.159    |  108.19  |    37.85     |     70.35     |          1.35          |        1.08        |          0.38          |           0.7           |
+| guid-sequential-key                 | 100000  |   10.105   |   0.168    |   5.23   |     0.11     |      5.1      |           0            |        0.05        |           0            |          0.05           |
+| guid-comb-key                       | 100000  |   22.168   |   0.166    |  98.23   |    32.68     |     65.51     |          1.35          |        0.98        |          0.33          |          0.66           |
+| objectid-key                        | 100000  |   12.157   |   0.237    |   5.81   |     0.12     |     5.69      |           0            |        0.06        |           0            |          0.06           |
+| objectid-char-indexed               | 100000  |   29.847   |   0.133    |   4.58   |     0.09     |     4.48      |          0.07          |        0.05        |           0            |          0.04           |
+| numeric-indexed                     | 100000  |   29.542   |   0.059    |   3.44   |     0.07     |     3.37      |          0.07          |        0.03        |           0            |          0.03           |
+| objectid-indexed                    | 100000  |   30.27    |    0.1     |   3.61   |     0.09     |     3.51      |          0.18          |        0.04        |           0            |          0.04           |
+| guid-indexed                        | 100000  |   34.018   |   0.189    |  22.33   |     6.21     |     16.12     |          0.23          |        0.22        |          0.06          |          0.16           |
+| guid-sequential-indexed             | 100000  |   31.214   |   0.122    |   4.09   |     0.56     |     3.53      |          0.17          |        0.04        |          0.01          |          0.04           |
+| guid-comb-indexed                   | 100000  |   35.583   |   0.086    |  22.22   |     6.61     |     15.61     |          0.33          |        0.22        |          0.07          |          0.16           |
+| <div style='width:155px'>Case</div> | Inserts | InsertTime | SelectTime | DiskTime | DiskReadTime | DiskWriteTime | CurrentDiskQueueLength | AvgDiskQueueLength | AvgDiskReadQueueLength | AvgDiskWriteQueueLength |
+| auto-increment-key                  | 200000  |   40.284   |   0.041    |   3.68   |     0.04     |     3.64      |          0.08          |        0.04        |           0            |          0.04           |
+| guid-key                            | 200000  |   60.969   |   0.089    |  157.22  |    53.61     |    103.59     |          2.05          |        1.57        |          0.54          |          1.04           |
+| guid-sequential-key                 | 200000  |   10.024   |   0.118    |  15.07   |     0.61     |     14.47     |          0.5           |        0.15        |          0.01          |          0.14           |
+| guid-comb-key                       | 200000  |   63.678   |    0.14    |  152.56  |    52.47     |    100.06     |          1.61          |        1.53        |          0.52          |            1            |
+| objectid-key                        | 200000  |   14.889   |   0.169    |   9.45   |     0.08     |     9.37      |          0.17          |        0.09        |           0            |          0.09           |
+| objectid-char-indexed               | 200000  |   49.037   |   0.069    |   6.15   |     0.07     |     6.06      |          0.46          |        0.06        |           0            |          0.06           |
+| numeric-indexed                     | 200000  |   48.269   |   0.068    |   5.97   |     0.06     |      5.9      |          0.11          |        0.06        |           0            |          0.06           |
+| objectid-indexed                    | 200000  |   50.174   |    0.06    |   4.53   |     0.05     |     4.48      |          0.49          |        0.05        |           0            |          0.04           |
+| guid-indexed                        | 200000  |   90.673   |   0.069    |  72.29   |    24.44     |     47.85     |          0.66          |        0.72        |          0.24          |          0.48           |
+| guid-sequential-indexed             | 200000  |   52.325   |   0.068    |   5.56   |     0.06     |      5.5      |          0.2           |        0.06        |           0            |          0.06           |
+| guid-comb-indexed                   | 200000  |   91.993   |   0.058    |  68.14   |    22.96     |     45.18     |          0.65          |        0.68        |          0.23          |          0.45           |
+| <div style='width:155px'>Case</div> | Inserts | InsertTime | SelectTime | DiskTime | DiskReadTime | DiskWriteTime | CurrentDiskQueueLength | AvgDiskQueueLength | AvgDiskReadQueueLength | AvgDiskWriteQueueLength |
+| auto-increment-key                  | 200000  |   50.845   |   0.084    |   3.06   |     0.13     |     2.94      |          0.19          |        0.03        |           0            |          0.03           |
+| guid-key                            | 200000  |   81.593   |   0.262    |  139.84  |     48.5     |     91.38     |          1.91          |        1.4         |          0.49          |          0.91           |
+| guid-sequential-key                 | 200000  |   19.902   |   0.305    |   6.84   |     0.84     |       6       |          0.22          |        0.07        |          0.01          |          0.06           |
+| guid-comb-key                       | 200000  |   83.677   |   0.265    |  139.12  |    47.86     |     91.27     |          2.04          |        1.39        |          0.48          |          0.91           |
+| objectid-key                        | 200000  |   24.87    |   0.471    |   7.54   |     0.88     |     6.66      |          0.22          |        0.08        |          0.01          |          0.07           |
+| objectid-char-indexed               | 200000  |   60.931   |    0.26    |   5.12   |     0.09     |     5.04      |          0.14          |        0.05        |           0            |          0.05           |
+| numeric-indexed                     | 200000  |   59.432   |   0.187    |   3.89   |     0.36     |     3.58      |          0.23          |        0.04        |           0            |          0.04           |
+| objectid-indexed                    | 200000  |   60.561   |    0.14    |   4.31   |     0.13     |     4.18      |          0.12          |        0.04        |           0            |          0.04           |
+| guid-indexed                        | 200000  |  118.531   |   0.224    |  76.63   |    26.35     |     50.3      |          0.95          |        0.77        |          0.26          |           0.5           |
+| guid-sequential-indexed             | 200000  |   62.763   |   0.243    |   4.16   |     0.07     |      4.1      |          0.15          |        0.04        |           0            |          0.04           |
+| guid-comb-indexed                   | 200000  |  126.403   |   0.141    |  75.82   |    26.35     |     49.46     |          0.8           |        0.76        |          0.26          |          0.49           |
+| <div style='width:155px'>Case</div> | Inserts | InsertTime | SelectTime | DiskTime | DiskReadTime | DiskWriteTime | CurrentDiskQueueLength | AvgDiskQueueLength | AvgDiskReadQueueLength | AvgDiskWriteQueueLength |
+| auto-increment-key                  | 200000  |   60.729   |   0.237    |   3.22   |     0.12     |      3.1      |          0.1           |        0.03        |           0            |          0.03           |
+| guid-key                            | 200000  |   100.17   |   0.502    |  129.98  |    45.41     |     84.57     |          1.79          |        1.3         |          0.45          |          0.85           |
+| guid-sequential-key                 | 200000  |   30.574   |   0.531    |   4.61   |     0.08     |     4.52      |          0.11          |        0.05        |           0            |          0.05           |
+| guid-comb-key                       | 200000  |  103.067   |   0.467    |  124.69  |      44      |     80.71     |          1.49          |        1.25        |          0.44          |          0.81           |
+| objectid-key                        | 200000  |   35.201   |   0.817    |   4.62   |     0.34     |     4.28      |          0.12          |        0.05        |           0            |          0.04           |
+| objectid-char-indexed               | 200000  |   69.86    |   0.303    |   5.34   |     0.05     |      5.3      |          0.24          |        0.05        |           0            |          0.05           |
+| numeric-indexed                     | 200000  |   69.56    |   0.297    |   2.95   |     0.07     |     2.88      |          0.15          |        0.03        |           0            |          0.03           |
+| objectid-indexed                    | 200000  |   71.973   |   0.342    |   4.93   |     0.26     |     4.68      |          0.16          |        0.05        |           0            |          0.05           |
+| guid-indexed                        | 200000  |  141.272   |    0.32    |  81.38   |    28.69     |     52.7      |          1.15          |        0.81        |          0.29          |          0.53           |
+| guid-sequential-indexed             | 200000  |   75.351   |   0.311    |   3.49   |     0.1      |     3.38      |          0.08          |        0.03        |           0            |          0.03           |
+| guid-comb-indexed                   | 200000  |  139.151   |   0.342    |  76.06   |    26.39     |     49.67     |          0.81          |        0.76        |          0.26          |           0.5           |
+| <div style='width:155px'>Case</div> | Inserts | InsertTime | SelectTime | DiskTime | DiskReadTime | DiskWriteTime | CurrentDiskQueueLength | AvgDiskQueueLength | AvgDiskReadQueueLength | AvgDiskWriteQueueLength |
+| auto-increment-key                  | 200000  |   71.313   |   0.298    |   2.08   |     0.09     |     1.98      |          0.19          |        0.02        |           0            |          0.02           |
+| guid-key                            | 200000  |  119.942   |   0.663    |  119.8   |    42.13     |     77.68     |          1.48          |        1.2         |          0.42          |          0.77           |
+| guid-sequential-key                 | 200000  |   41.362   |   0.721    |   3.31   |     0.05     |     3.26      |          0.05          |        0.03        |           0            |          0.03           |
+| guid-comb-key                       | 200000  |  121.627   |   0.707    |  119.31  |    42.88     |     76.47     |          1.61          |        1.19        |          0.43          |          0.76           |
+| objectid-key                        | 200000  |   44.122   |   1.251    |   4.06   |     0.51     |     3.56      |          0.1           |        0.04        |          0.01          |          0.04           |
+| objectid-char-indexed               | 200000  |   80.256   |   0.571    |   4.63   |     0.98     |     3.65      |          0.12          |        0.05        |          0.01          |          0.04           |
+| numeric-indexed                     | 200000  |   79.021   |   0.429    |   2.73   |     0.09     |     2.63      |          0.03          |        0.03        |           0            |          0.03           |
+| objectid-indexed                    | 200000  |   81.162   |   0.528    |   5.03   |     1.07     |     3.95      |          0.13          |        0.05        |          0.01          |          0.04           |
+| guid-indexed                        | 200000  |  154.108   |   0.309    |  78.74   |      28      |     50.73     |          0.91          |        0.79        |          0.28          |          0.51           |
+| guid-sequential-indexed             | 200000  |   83.308   |   0.518    |   4.1    |     0.8      |      3.3      |          0.17          |        0.04        |          0.01          |          0.03           |
+| guid-comb-indexed                   | 200000  |  151.534   |   0.415    |  74.16   |    25.55     |     48.61     |          0.66          |        0.74        |          0.26          |          0.49           |
+| <div style='width:155px'>Case</div> | Inserts | InsertTime | SelectTime | DiskTime | DiskReadTime | DiskWriteTime | CurrentDiskQueueLength | AvgDiskQueueLength | AvgDiskReadQueueLength | AvgDiskWriteQueueLength |
+| auto-increment-key                  | 200000  |   88.697   |   0.331    |   1.98   |     0.15     |     1.83      |          0.11          |        0.02        |           0            |          0.02           |
+| guid-key                            | 200000  |  125.381   |   0.834    |  114.99  |    41.06     |     73.92     |          1.29          |        1.15        |          0.41          |          0.74           |
+| guid-sequential-key                 | 200000  |   50.916   |   0.896    |   2.94   |     0.12     |     2.82      |          0.17          |        0.03        |           0            |          0.03           |
+| guid-comb-key                       | 200000  |  129.516   |   0.805    |  114.88  |    42.02     |     72.88     |          1.39          |        1.15        |          0.42          |          0.73           |
+| objectid-key                        | 200000  |   54.25    |    1.66    |   3.45   |     0.47     |     2.97      |          0.02          |        0.03        |           0            |          0.03           |
+| objectid-char-indexed               | 200000  |   96.333   |   0.771    |   4.29   |     1.25     |     3.04      |          0.11          |        0.04        |          0.01          |          0.03           |
+| numeric-indexed                     | 200000  |   93.617   |   0.571    |   2.59   |     0.08     |     2.51      |          0.12          |        0.03        |           0            |          0.03           |
+| objectid-indexed                    | 200000  |   93.521   |   0.667    |   2.71   |     0.09     |     2.62      |          0.16          |        0.03        |           0            |          0.03           |
+| guid-indexed                        | 200000  |  172.945   |   0.629    |  70.95   |     25.8     |     45.16     |          1.05          |        0.71        |          0.26          |          0.45           |
+| guid-sequential-indexed             | 200000  |  102.927   |   0.681    |   2.72   |     0.17     |     2.56      |          0.06          |        0.03        |           0            |          0.03           |
+| guid-comb-indexed                   | 200000  |  181.066   |   0.406    |  70.94   |    25.46     |     45.47     |          0.85          |        0.71        |          0.25          |          0.45           |
+| <div style='width:155px'>Case</div> | Inserts | InsertTime | SelectTime | DiskTime | DiskReadTime | DiskWriteTime | CurrentDiskQueueLength | AvgDiskQueueLength | AvgDiskReadQueueLength | AvgDiskWriteQueueLength |
+| auto-increment-key                  | 200000  |   95.549   |   0.387    |   1.7    |     0.02     |     1.68      |          0.04          |        0.02        |           0            |          0.02           |
+| guid-key                            | 200000  |  143.472   |   1.181    |  103.7   |    37.78     |     65.93     |          1.11          |        1.04        |          0.38          |          0.66           |
+| guid-sequential-key                 | 200000  |   60.772   |   1.081    |   3.05   |     0.72     |     2.34      |          0.08          |        0.03        |          0.01          |          0.02           |
+| guid-comb-key                       | 200000  |  144.028   |   1.119    |  106.63  |    39.36     |     67.28     |          1.27          |        1.07        |          0.39          |          0.67           |
+| objectid-key                        | 200000  |   65.713   |   2.331    |   3.34   |     0.67     |     2.67      |          0.08          |        0.03        |          0.01          |          0.03           |
+| objectid-char-indexed               | 200000  |  100.696   |   1.138    |   3.27   |     0.39     |     2.88      |          0.09          |        0.03        |           0            |          0.03           |
+| numeric-indexed                     | 200000  |  104.068   |   0.742    |   2.46   |     0.08     |     2.38      |          0.1           |        0.02        |           0            |          0.02           |
+| objectid-indexed                    | 200000  |   105.26   |   0.934    |   3.06   |     0.77     |     2.29      |          0.1           |        0.03        |          0.01          |          0.02           |
+| guid-indexed                        | 200000  |  192.556   |   0.806    |  74.77   |    28.69     |     46.1      |          1.03          |        0.75        |          0.29          |          0.46           |
+| guid-sequential-indexed             | 200000  |  114.233   |   0.837    |   2.37   |     0.31     |     2.06      |          0.16          |        0.02        |           0            |          0.02           |
+| guid-comb-indexed                   | 200000  |  192.688   |   0.835    |  70.27   |    25.93     |     44.35     |          0.88          |        0.7         |          0.26          |          0.44           |
+| <div style='width:155px'>Case</div> | Inserts | InsertTime | SelectTime | DiskTime | DiskReadTime | DiskWriteTime | CurrentDiskQueueLength | AvgDiskQueueLength | AvgDiskReadQueueLength | AvgDiskWriteQueueLength |
+| auto-increment-key                  | 200000  |  102.528   |   0.396    |   1.62   |     0.06     |     1.56      |          0.1           |        0.02        |           0            |          0.02           |
+| guid-key                            | 200000  |  170.669   |   1.359    |  103.77  |    40.08     |     63.72     |          1.35          |        1.04        |          0.4           |          0.64           |
+| guid-sequential-key                 | 200000  |   78.002   |   1.284    |   1.66   |     0.33     |     1.33      |          0.03          |        0.02        |           0            |          0.01           |
+| guid-comb-key                       | 200000  |  156.897   |   1.238    |  100.54  |    37.01     |     63.54     |          1.31          |        1.01        |          0.37          |          0.64           |
+| objectid-key                        | 200000  |   78.621   |   2.521    |   2.73   |     0.84     |     1.89      |          0.03          |        0.03        |          0.01          |          0.02           |
+| objectid-char-indexed               | 200000  |  124.143   |   1.195    |   2.74   |     0.24     |     2.49      |          0.1           |        0.03        |           0            |          0.02           |
+| numeric-indexed                     | 200000  |  113.819   |   0.957    |   2.07   |     0.1      |     1.98      |          0.14          |        0.02        |           0            |          0.02           |
+| objectid-indexed                    | 200000  |  139.487   |   0.804    |   2.02   |     0.23     |     1.79      |          0.21          |        0.02        |           0            |          0.02           |
+| guid-indexed                        | 200000  |  241.126   |   1.047    |  56.74   |    20.57     |     36.17     |          0.8           |        0.57        |          0.21          |          0.36           |
+| guid-sequential-indexed             | 200000  |  113.107   |   1.013    |   3.39   |     1.14     |     2.25      |          0.11          |        0.03        |          0.01          |          0.02           |
+| guid-comb-indexed                   | 200000  |  199.975   |   1.073    |  74.52   |    28.41     |     46.13     |          1.02          |        0.75        |          0.28          |          0.46           |
+| <div style='width:155px'>Case</div> | Inserts | InsertTime | SelectTime | DiskTime | DiskReadTime | DiskWriteTime | CurrentDiskQueueLength | AvgDiskQueueLength | AvgDiskReadQueueLength | AvgDiskWriteQueueLength |
+| auto-increment-key                  | 200000  |  110.079   |   0.485    |   1.59   |     0.01     |     1.58      |          0.03          |        0.02        |           0            |          0.02           |
+| guid-key                            | 200000  |  180.194   |   1.548    |  103.23  |    39.86     |     63.34     |          1.23          |        1.03        |          0.4           |          0.63           |
+| guid-sequential-key                 | 200000  |   80.686   |   1.955    |   1.68   |     0.13     |     1.54      |          0.12          |        0.02        |           0            |          0.02           |
+| guid-comb-key                       | 200000  |  183.397   |   1.555    |  103.04  |    40.13     |     62.87     |          1.29          |        1.03        |          0.4           |          0.63           |
+| objectid-key                        | 200000  |   84.321   |   4.468    |   2.38   |     0.46     |     1.92      |          0.07          |        0.03        |           0            |          0.02           |
+| objectid-char-indexed               | 200000  |  119.749   |    1.41    |   2.76   |     0.4      |     2.35      |          0.12          |        0.03        |           0            |          0.02           |
+| numeric-indexed                     | 200000  |  117.946   |   0.775    |   1.96   |     0.06     |      1.9      |          0.13          |        0.02        |           0            |          0.02           |
+| objectid-indexed                    | 200000  |   121.39   |   0.888    |   3.24   |     1.07     |     2.17      |          0.13          |        0.03        |          0.01          |          0.02           |
+| guid-indexed                        | 200000  |  214.213   |    1.2     |  73.65   |    28.68     |     44.97     |          0.89          |        0.74        |          0.29          |          0.45           |
+| guid-sequential-indexed             | 200000  |   122.21   |   1.619    |   2.74   |     0.82     |     1.92      |          0.12          |        0.03        |          0.01          |          0.02           |
+| guid-comb-indexed                   | 200000  |   213.44   |   0.887    |  71.33   |    27.83     |     43.5      |          0.97          |        0.71        |          0.28          |          0.44           |
+| <div style='width:155px'>Case</div> | Inserts | InsertTime | SelectTime | DiskTime | DiskReadTime | DiskWriteTime | CurrentDiskQueueLength | AvgDiskQueueLength | AvgDiskReadQueueLength | AvgDiskWriteQueueLength |
+| auto-increment-key                  | 200000  |  118.336   |   2.046    |   2.13   |     0.87     |     1.26      |          0.06          |        0.02        |          0.01          |          0.01           |
+| guid-key                            | 200000  |  194.208   |    2.56    |  102.89  |    40.66     |     62.24     |          1.27          |        1.03        |          0.41          |          0.62           |
+| guid-sequential-key                 | 200000  |   90.018   |   1.715    |   1.89   |     0.46     |     1.43      |          0.08          |        0.02        |           0            |          0.01           |
+| guid-comb-key                       | 200000  |  193.926   |   1.796    |  100.7   |    39.58     |     61.12     |          1.35          |        1.01        |          0.4           |          0.61           |
+| objectid-key                        | 200000  |   96.741   |   2.921    |   1.52   |     0.1      |     1.42      |          0.21          |        0.02        |           0            |          0.01           |
+| objectid-char-indexed               | 200000  |  129.493   |    1.45    |   3.71   |     1.11     |      2.6      |          0.2           |        0.04        |          0.01          |          0.03           |
+| numeric-indexed                     | 200000  |  130.837   |   2.743    |   2.56   |     0.86     |     1.69      |          0.03          |        0.03        |          0.01          |          0.02           |
+| objectid-indexed                    | 200000  |  130.286   |   1.134    |   2.8    |     0.98     |     1.83      |          0.13          |        0.03        |          0.01          |          0.02           |
+| guid-indexed                        | 200000  |  226.491   |   1.197    |  69.86   |    27.87     |      42       |          0.85          |        0.7         |          0.28          |          0.42           |
+| guid-sequential-indexed             | 200000  |  130.976   |   1.357    |   2.08   |     0.11     |     1.97      |          0.15          |        0.02        |           0            |          0.02           |
+| guid-comb-indexed                   | 200000  |  223.977   |   1.103    |  67.18   |     26.4     |     40.79     |          0.96          |        0.67        |          0.26          |          0.41           |
+| <div style='width:155px'>Case</div> | Inserts | InsertTime | SelectTime | DiskTime | DiskReadTime | DiskWriteTime | CurrentDiskQueueLength | AvgDiskQueueLength | AvgDiskReadQueueLength | AvgDiskWriteQueueLength |
+| <div style='width:155px'>Case</div> | Inserts | InsertTime | SelectTime | DiskTime | DiskReadTime | DiskWriteTime | CurrentDiskQueueLength | AvgDiskQueueLength | AvgDiskReadQueueLength | AvgDiskWriteQueueLength |
+| auto-increment-key                  |  10000  |   2.396    |   0.179    |    0     |      0       |       0       |           0            |         0          |           0            |            0            |
+| guid-key                            |  10000  |   5.205    |   0.018    |  181.8   |    70.18     |     68.4      |          1.67          |        1.82        |          0.7           |          1.12           |
+| guid-sequential-key                 |  10000  |   0.508    |   0.022    |    0     |      0       |       0       |           0            |         0          |           0            |            0            |
+| guid-comb-key                       |  10000  |   5.838    |   0.021    |  175.85  |    72.76     |     66.31     |           2            |        1.76        |          0.73          |          1.03           |
+| objectid-key                        |  10000  |   0.709    |   0.016    |    0     |      0       |       0       |           0            |         0          |           0            |            0            |
+| objectid-char-indexed               |  10000  |   2.598    |   0.013    |    0     |      0       |       0       |           0            |         0          |           0            |            0            |
+| numeric-indexed                     |  10000  |   2.485    |   0.013    |    0     |      0       |       0       |           0            |         0          |           0            |            0            |
+| objectid-indexed                    |  10000  |   2.542    |   0.012    |    0     |      0       |       0       |           0            |         0          |           0            |            0            |
+| guid-indexed                        |  10000  |   8.018    |   0.015    |  122.5   |    46.61     |     56.5      |           1            |        1.23        |          0.47          |          0.76           |
+| guid-sequential-indexed             |  10000  |   2.681    |   0.012    |    0     |      0       |       0       |           0            |         0          |           0            |            0            |
+| guid-comb-indexed                   |  10000  |   7.501    |   0.012    |  117.9   |    47.52     |     55.85     |          1.4           |        1.18        |          0.48          |           0.7           |
+| <div style='width:155px'>Case</div> | Inserts | InsertTime | SelectTime | DiskTime | DiskReadTime | DiskWriteTime | CurrentDiskQueueLength | AvgDiskQueueLength | AvgDiskReadQueueLength | AvgDiskWriteQueueLength |
+| auto-increment-key                  |  10000  |    2.56    |   0.027    |    0     |      0       |       0       |           0            |         0          |           0            |            0            |
+| guid-key                            |  10000  |   6.411    |   0.024    |  193.32  |    67.07     |    101.32     |          2.75          |        1.93        |          0.67          |          1.26           |
+| guid-sequential-key                 |  10000  |   1.002    |   0.016    |    0     |      0       |       0       |           0            |         0          |           0            |            0            |
+| guid-comb-key                       |  10000  |   6.656    |   0.035    |  189.03  |      75      |     87.03     |           5            |        1.89        |          0.75          |          1.14           |
+| objectid-key                        |  10000  |   1.103    |   0.037    |    0     |      0       |       0       |           0            |         0          |           0            |            0            |
+| objectid-char-indexed               |  10000  |   3.064    |   0.014    |   7.43   |      0       |       0       |           0            |        0.07        |           0            |          0.07           |
+| numeric-indexed                     |  10000  |   2.907    |   0.014    |    0     |      0       |       0       |           0            |         0          |           0            |            0            |
+| objectid-indexed                    |  10000  |   3.034    |   0.022    |   4.47   |     0.01     |       0       |           0            |        0.04        |           0            |          0.04           |
+| guid-indexed                        |  10000  |   7.849    |   0.046    |  110.08  |    41.99     |     56.9      |           1            |        1.1         |          0.42          |          0.68           |
+| guid-sequential-indexed             |  10000  |   3.078    |   0.031    |   5.7    |      0       |       0       |           0            |        0.06        |           0            |          0.06           |
+| guid-comb-indexed                   |  10000  |   8.826    |   0.027    |  113.38  |    48.61     |     53.03     |          1.83          |        1.13        |          0.49          |          0.65           |
+| <div style='width:155px'>Case</div> | Inserts | InsertTime | SelectTime | DiskTime | DiskReadTime | DiskWriteTime | CurrentDiskQueueLength | AvgDiskQueueLength | AvgDiskReadQueueLength | AvgDiskWriteQueueLength |
+| auto-increment-key                  |  10000  |   2.997    |   0.038    |   3.84   |     1.1      |       0       |           0            |        0.04        |          0.01          |          0.03           |
+| guid-key                            |  10000  |   6.446    |    0.06    |  175.12  |    72.36     |     75.99     |           1            |        1.75        |          0.72          |          1.03           |
+| guid-sequential-key                 |  10000  |   1.462    |   0.026    |    0     |      0       |       0       |           0            |         0          |           0            |            0            |
+| guid-comb-key                       |  10000  |   5.893    |   0.061    |  195.7   |    66.49     |     88.12     |          1.67          |        1.96        |          0.66          |          1.29           |
+| objectid-key                        |  10000  |   1.602    |   0.033    |    0     |      0       |       0       |           0            |         0          |           0            |            0            |
+| objectid-char-indexed               |  10000  |   3.467    |   0.036    |   14.3   |      0       |       0       |           1            |        0.14        |           0            |          0.14           |
+| numeric-indexed                     |  10000  |   3.506    |   0.018    |   1.92   |      0       |       0       |           1            |        0.02        |           0            |          0.02           |
+| objectid-indexed                    |  10000  |   3.623    |   0.031    |   1.91   |      0       |       0       |           0            |        0.02        |           0            |          0.02           |
+| guid-indexed                        |  10000  |   8.411    |   0.036    |  111.8   |    45.05     |     53.71     |          1.83          |        1.12        |          0.45          |          0.67           |
+| guid-sequential-indexed             |  10000  |   3.571    |   0.037    |   2.97   |      0       |       0       |           0            |        0.03        |           0            |          0.03           |
+| guid-comb-indexed                   |  10000  |    9.36    |   0.059    |  116.82  |    48.21     |     59.37     |          1.86          |        1.17        |          0.48          |          0.68           |
+| <div style='width:155px'>Case</div> | Inserts | InsertTime | SelectTime | DiskTime | DiskReadTime | DiskWriteTime | CurrentDiskQueueLength | AvgDiskQueueLength | AvgDiskReadQueueLength | AvgDiskWriteQueueLength |
+| auto-increment-key                  |  10000  |   3.508    |   0.044    |   1.16   |      0       |       0       |           0            |        0.01        |           0            |          0.01           |
+| guid-key                            |  10000  |   5.934    |   0.085    |  187.85  |    65.48     |     79.61     |           2            |        1.88        |          0.66          |          1.22           |
+| guid-sequential-key                 |  10000  |   1.983    |   0.033    |    0     |      0       |       0       |           0            |         0          |           0            |            0            |
+| guid-comb-key                       |  10000  |   6.851    |    0.08    |  187.45  |      71      |     81.74     |          2.5           |        1.87        |          0.71          |          1.16           |
+| objectid-key                        |  10000  |   2.098    |   0.047    |    0     |      0       |       0       |           0            |         0          |           0            |            0            |
+| objectid-char-indexed               |  10000  |   3.921    |   0.058    |   1.96   |      0       |       0       |           0            |        0.02        |           0            |          0.02           |
+| numeric-indexed                     |  10000  |   3.884    |   0.036    |   2.05   |      0       |       0       |           1            |        0.02        |           0            |          0.02           |
+| objectid-indexed                    |  10000  |   3.993    |   0.053    |   9.18   |     1.18     |      1.9      |           0            |        0.09        |          0.01          |          0.08           |
+| guid-indexed                        |  10000  |   9.207    |   0.103    |  114.09  |    45.36     |     60.69     |          1.29          |        1.14        |          0.45          |          0.69           |
+| guid-sequential-indexed             |  10000  |   4.139    |   0.097    |   3.04   |     0.18     |     2.39      |           1            |        0.03        |           0            |          0.03           |
+| guid-comb-indexed                   |  10000  |   8.896    |    0.04    |  105.3   |    42.35     |     55.21     |          3.17          |        1.05        |          0.42          |          0.63           |
+| <div style='width:155px'>Case</div> | Inserts | InsertTime | SelectTime | DiskTime | DiskReadTime | DiskWriteTime | CurrentDiskQueueLength | AvgDiskQueueLength | AvgDiskReadQueueLength | AvgDiskWriteQueueLength |
+| auto-increment-key                  |  10000  |     4      |   0.038    |   3.31   |     1.17     |     1.75      |           0            |        0.03        |          0.01          |          0.02           |
+| guid-key                            |  10000  |   7.472    |   0.167    |  169.3   |    67.36     |     85.52     |          3.6           |        1.69        |          0.67          |          1.02           |
+| guid-sequential-key                 |  10000  |   2.492    |   0.046    |    0     |      0       |       0       |           0            |         0          |           0            |            0            |
+| guid-comb-key                       |  10000  |   7.605    |   0.048    |  163.63  |    65.32     |     84.02     |          0.6           |        1.64        |          0.65          |          0.98           |
+| objectid-key                        |  10000  |   2.669    |   0.064    |    0     |      0       |       0       |           0            |         0          |           0            |            0            |
+| objectid-char-indexed               |  10000  |   4.493    |   0.038    |   7.88   |     0.21     |      7.3      |          0.5           |        0.08        |           0            |          0.08           |
+| numeric-indexed                     |  10000  |   4.421    |   0.031    |   6.55   |     0.32     |     1.08      |          0.5           |        0.07        |           0            |          0.06           |
+| objectid-indexed                    |  10000  |   4.524    |   0.053    |   1.36   |     0.29     |     0.68      |          0.5           |        0.01        |           0            |          0.01           |
+| guid-indexed                        |  10000  |   9.344    |   0.079    |  104.12  |     40.5     |     60.95     |          2.43          |        1.04        |          0.4           |          0.64           |
+| guid-sequential-indexed             |  10000  |   4.537    |   0.037    |   1.48   |     0.29     |     0.78      |          0.5           |        0.01        |           0            |          0.01           |
+| guid-comb-indexed                   |  10000  |   10.04    |   0.057    |  109.37  |    45.91     |     62.28     |          0.62          |        1.09        |          0.46          |          0.63           |
+| <div style='width:155px'>Case</div> | Inserts | InsertTime | SelectTime | DiskTime | DiskReadTime | DiskWriteTime | CurrentDiskQueueLength | AvgDiskQueueLength | AvgDiskReadQueueLength | AvgDiskWriteQueueLength |
+| auto-increment-key                  |  10000  |   4.469    |   0.049    |   1.12   |     0.31     |     0.66      |          0.5           |        0.01        |           0            |          0.01           |
+| guid-key                            |  10000  |   7.836    |   0.085    |  154.53  |    61.48     |     87.65     |          2.2           |        1.55        |          0.61          |          0.93           |
+| guid-sequential-key                 |  10000  |   2.917    |   0.053    |    0     |      0       |       0       |           0            |         0          |           0            |            0            |
+| guid-comb-key                       |  10000  |   7.111    |   0.138    |  160.12  |    58.18     |     98.27     |           4            |        1.6         |          0.58          |          1.02           |
+| objectid-key                        |  10000  |   3.145    |   0.078    |   0.81   |     0.61     |       0       |           0            |        0.01        |          0.01          |            0            |
+| objectid-char-indexed               |  10000  |   4.888    |   0.055    |   1.59   |     0.64     |     0.77      |          0.5           |        0.02        |          0.01          |          0.01           |
+| numeric-indexed                     |  10000  |   4.878    |   0.058    |   1.89   |     0.21     |     1.45      |           1            |        0.02        |           0            |          0.02           |
+| objectid-indexed                    |  10000  |   4.976    |   0.058    |   3.14   |     1.39     |     1.75      |          0.33          |        0.03        |          0.01          |          0.02           |
+| guid-indexed                        |  10000  |   9.775    |   0.054    |  104.06  |    41.54     |     62.5      |           2            |        1.04        |          0.42          |          0.63           |
+| guid-sequential-indexed             |  10000  |   5.038    |   0.055    |   6.19   |     0.52     |     5.59      |           0            |        0.06        |          0.01          |          0.06           |
+| guid-comb-indexed                   |  10000  |   10.519   |    0.08    |  107.39  |     44.8     |     62.51     |          1.62          |        1.07        |          0.45          |          0.63           |
+| <div style='width:155px'>Case</div> | Inserts | InsertTime | SelectTime | DiskTime | DiskReadTime | DiskWriteTime | CurrentDiskQueueLength | AvgDiskQueueLength | AvgDiskReadQueueLength | AvgDiskWriteQueueLength |
+| auto-increment-key                  |  10000  |   4.997    |   0.049    |   1.98   |     0.74     |     1.18      |           1            |        0.02        |          0.01          |          0.01           |
+| guid-key                            |  10000  |   7.522    |   0.147    |  136.18  |    49.28     |     86.91     |          1.8           |        1.36        |          0.49          |          0.87           |
+| guid-sequential-key                 |  10000  |   3.412    |   0.073    |   0.47   |      0       |       0       |           0            |         0          |           0            |            0            |
+| guid-comb-key                       |  10000  |   8.314    |   0.165    |  143.7   |    56.19     |     87.4      |          1.83          |        1.44        |          0.56          |          0.87           |
+| objectid-key                        |  10000  |   3.604    |   0.089    |   0.25   |      0       |       0       |           0            |         0          |           0            |            0            |
+| objectid-char-indexed               |  10000  |   5.345    |   0.064    |   1.14   |     0.16     |     0.84      |           0            |        0.01        |           0            |          0.01           |
+| numeric-indexed                     |  10000  |   5.364    |   0.056    |   1.15   |     0.22     |     0.93      |          0.33          |        0.01        |           0            |          0.01           |
+| objectid-indexed                    |  10000  |   5.479    |   0.073    |   1.12   |     0.24     |     0.81      |           0            |        0.01        |           0            |          0.01           |
+| guid-indexed                        |  10000  |   11.065   |   0.143    |  95.08   |    41.15     |     53.95     |          1.44          |        0.95        |          0.41          |          0.54           |
+| guid-sequential-indexed             |  10000  |    5.49    |   0.086    |   1.13   |     0.23     |     0.82      |          0.33          |        0.01        |           0            |          0.01           |
+| guid-comb-indexed                   |  10000  |   10.184   |    0.12    |  87.69   |    34.21     |     53.44     |           1            |        0.88        |          0.34          |          0.53           |
+| <div style='width:155px'>Case</div> | Inserts | InsertTime | SelectTime | DiskTime | DiskReadTime | DiskWriteTime | CurrentDiskQueueLength | AvgDiskQueueLength | AvgDiskReadQueueLength | AvgDiskWriteQueueLength |
+| auto-increment-key                  |  10000  |   5.458    |   0.046    |   0.79   |     0.22     |      0.5      |          0.33          |        0.01        |           0            |          0.01           |
+| guid-key                            |  10000  |   8.713    |   0.158    |  129.31  |    50.85     |     78.45     |          2.17          |        1.29        |          0.51          |          0.78           |
+| guid-sequential-key                 |  10000  |   3.951    |   0.068    |   0.61   |      0       |       0       |           0            |        0.01        |           0            |          0.01           |
+| guid-comb-key                       |  10000  |    9.58    |   0.188    |  130.71  |    54.49     |     76.24     |          1.57          |        1.31        |          0.55          |          0.76           |
+| objectid-key                        |  10000  |   4.024    |   0.107    |   1.05   |     0.33     |     0.36      |           0            |        0.01        |           0            |          0.01           |
+| objectid-char-indexed               |  10000  |   5.899    |   0.106    |   3.95   |     0.24     |     3.72      |          0.67          |        0.04        |           0            |          0.04           |
+| numeric-indexed                     |  10000  |   5.947    |   0.066    |   1.3    |     0.22     |     0.92      |           0            |        0.01        |           0            |          0.01           |
+| objectid-indexed                    |  10000  |   6.067    |   0.077    |   4.09   |     0.16     |      3.8      |           0            |        0.04        |           0            |          0.04           |
+| guid-indexed                        |  10000  |   10.974   |   0.084    |  78.47   |    31.22     |     47.34     |          2.12          |        0.79        |          0.31          |          0.47           |
+| guid-sequential-indexed             |  10000  |   6.312    |   0.075    |   1.08   |     0.15     |     0.77      |           0            |        0.01        |           0            |          0.01           |
+| guid-comb-indexed                   |  10000  |   12.399   |    0.09    |  81.19   |    35.35     |     45.81     |          1.1           |        0.81        |          0.35          |          0.46           |
+| <div style='width:155px'>Case</div> | Inserts | InsertTime | SelectTime | DiskTime | DiskReadTime | DiskWriteTime | CurrentDiskQueueLength | AvgDiskQueueLength | AvgDiskReadQueueLength | AvgDiskWriteQueueLength |
+| auto-increment-key                  |  10000  |   5.901    |   0.048    |   0.74   |     0.21     |     0.39      |           0            |        0.01        |           0            |          0.01           |
+| guid-key                            |  10000  |   9.936    |    0.19    |  135.96  |    53.64     |     82.24     |          1.88          |        1.36        |          0.54          |          0.82           |
+| guid-sequential-key                 |  10000  |   4.441    |   0.078    |   0.38   |      0       |     0.13      |           0            |         0          |           0            |            0            |
+| guid-comb-key                       |  10000  |   8.692    |   0.228    |  106.82  |    39.55     |     67.19     |          2.67          |        1.07        |          0.4           |          0.67           |
+| objectid-key                        |  10000  |    4.65    |   0.121    |    0     |      0       |       0       |           0            |         0          |           0            |            0            |
+| objectid-char-indexed               |  10000  |   6.483    |   0.115    |   1.02   |     0.18     |     0.85      |           0            |        0.01        |           0            |          0.01           |
+| numeric-indexed                     |  10000  |   6.408    |   0.099    |   3.26   |     0.15     |     3.01      |          0.25          |        0.03        |           0            |          0.03           |
+| objectid-indexed                    |  10000  |   6.523    |   0.085    |   0.79   |     0.14     |     0.62      |          0.25          |        0.01        |           0            |          0.01           |
+| guid-indexed                        |  10000  |   12.131   |   0.159    |  86.53   |    36.07     |     50.49     |          1.2           |        0.87        |          0.36          |           0.5           |
+| guid-sequential-indexed             |  10000  |   6.529    |   0.089    |   0.82   |     0.18     |     0.65      |           0            |        0.01        |           0            |          0.01           |
+| guid-comb-indexed                   |  10000  |   11.631   |   0.176    |  81.57   |    33.02     |     48.54     |          0.44          |        0.82        |          0.33          |          0.49           |
+| <div style='width:155px'>Case</div> | Inserts | InsertTime | SelectTime | DiskTime | DiskReadTime | DiskWriteTime | CurrentDiskQueueLength | AvgDiskQueueLength | AvgDiskReadQueueLength | AvgDiskWriteQueueLength |
+| auto-increment-key                  |  10000  |   6.508    |   0.058    |   3.09   |     0.16     |      2.8      |           0            |        0.03        |           0            |          0.03           |
+| guid-key                            |  10000  |   9.272    |   0.215    |  108.8   |    40.52     |     68.29     |          2.29          |        1.09        |          0.41          |          0.68           |
+| guid-sequential-key                 |  10000  |   4.988    |   0.085    |   1.72   |     1.17     |     0.34      |           0            |        0.02        |          0.01          |          0.01           |
+| guid-comb-key                       |  10000  |   9.902    |   0.142    |  107.99  |    42.21     |     65.7      |           2            |        1.08        |          0.42          |          0.66           |
+| objectid-key                        |  10000  |   5.152    |   0.136    |   1.4    |     0.23     |       1       |          5.33          |        0.01        |           0            |          0.01           |
+| objectid-char-indexed               |  10000  |   6.905    |    0.11    |   3.61   |     0.18     |     3.31      |           0            |        0.04        |           0            |          0.03           |
+| numeric-indexed                     |  10000  |   6.842    |   0.075    |   0.81   |     0.17     |     0.52      |          0.25          |        0.01        |           0            |          0.01           |
+| objectid-indexed                    |  10000  |   7.022    |   0.108    |   1.4    |     0.35     |     0.96      |           0            |        0.01        |           0            |          0.01           |
+| guid-indexed                        |  10000  |   13.687   |    0.22    |  88.65   |    40.63     |     47.91     |          1.91          |        0.89        |          0.41          |          0.48           |
+| guid-sequential-indexed             |  10000  |   6.949    |   0.114    |   2.67   |     1.36     |     1.21      |           0            |        0.03        |          0.01          |          0.01           |
+| guid-comb-indexed                   |  10000  |   11.625   |   0.116    |   74.8   |     29.6     |     45.17     |          0.56          |        0.75        |          0.3           |          0.45           |
+| <div style='width:155px'>Case</div> | Inserts | InsertTime | SelectTime | DiskTime | DiskReadTime | DiskWriteTime | CurrentDiskQueueLength | AvgDiskQueueLength | AvgDiskReadQueueLength | AvgDiskWriteQueueLength |
+| auto-increment-key                  |  10000  |   6.808    |   0.055    |   0.64   |     0.09     |     0.43      |           0            |        0.01        |           0            |          0.01           |
+| guid-key                            |  10000  |   10.16    |   0.176    |  109.09  |    43.66     |     65.33     |          0.88          |        1.09        |          0.44          |          0.65           |
+| guid-sequential-key                 |  10000  |   5.351    |   0.098    |   0.14   |      0       |     0.14      |           0            |         0          |           0            |            0            |
+| guid-comb-key                       |  10000  |   10.449   |   0.291    |  109.94  |    44.08     |     65.86     |          1.62          |        1.1         |          0.44          |          0.66           |
+| objectid-key                        |  10000  |   5.618    |   0.154    |   0.13   |      0       |       0       |           0            |         0          |           0            |            0            |
+| objectid-char-indexed               |  10000  |   7.284    |   0.108    |   0.66   |     0.12     |     0.54      |           0            |        0.01        |           0            |          0.01           |
+| numeric-indexed                     |  10000  |   7.279    |   0.063    |   0.69   |     0.08     |      0.6      |           0            |        0.01        |           0            |          0.01           |
+| objectid-indexed                    |  10000  |   7.402    |   0.146    |   0.71   |     0.15     |     0.52      |          0.2           |        0.01        |           0            |          0.01           |
+| guid-indexed                        |  10000  |   12.252   |   0.234    |  74.52   |    28.83     |     45.77     |          1.3           |        0.75        |          0.29          |          0.46           |
+| guid-sequential-indexed             |  10000  |   7.396    |    0.13    |   0.62   |     0.13     |     0.46      |          0.2           |        0.01        |           0            |            0            |
+| guid-comb-indexed                   |  10000  |   13.069   |    0.19    |  80.17   |    33.37     |     46.79     |          1.91          |        0.8         |          0.33          |          0.47           |
+| <div style='width:155px'>Case</div> | Inserts | InsertTime | SelectTime | DiskTime | DiskReadTime | DiskWriteTime | CurrentDiskQueueLength | AvgDiskQueueLength | AvgDiskReadQueueLength | AvgDiskWriteQueueLength |
+| auto-increment-key                  |  10000  |   7.461    |   0.048    |   0.46   |     0.11     |     0.35      |          0.2           |         0          |           0            |            0            |
+| guid-key                            |  10000  |   11.414   |   0.261    |  106.76  |    44.68     |     62.09     |          0.89          |        1.07        |          0.45          |          0.62           |
+| guid-sequential-key                 |  10000  |   5.982    |   0.107    |   1.55   |     1.23     |      0.2      |           0            |        0.02        |          0.01          |            0            |
+| guid-comb-key                       |  10000  |   10.449   |   0.242    |  97.02   |    36.72     |     60.35     |          1.5           |        0.97        |          0.37          |           0.6           |
+| objectid-key                        |  10000  |     6      |   0.157    |   0.81   |     0.48     |     0.33      |           0            |        0.01        |           0            |            0            |
+| objectid-char-indexed               |  10000  |   7.766    |   0.106    |   0.59   |     0.12     |     0.47      |          0.2           |        0.01        |           0            |            0            |
+| numeric-indexed                     |  10000  |   7.779    |   0.086    |   2.69   |     0.13     |     2.56      |          0.2           |        0.03        |           0            |          0.03           |
+| objectid-indexed                    |  10000  |   7.825    |   0.094    |   2.49   |     0.13     |     2.45      |          2.6           |        0.02        |           0            |          0.02           |
+| guid-indexed                        |  10000  |   13.698   |   0.174    |  71.07   |    31.89     |     39.19     |          0.36          |        0.71        |          0.32          |          0.39           |
+| guid-sequential-indexed             |  10000  |    7.88    |   0.103    |   0.67   |     0.15     |     0.52      |           0            |        0.01        |           0            |          0.01           |
+| guid-comb-indexed                   |  10000  |   13.602   |   0.203    |  76.72   |    33.36     |     43.35     |          1.27          |        0.77        |          0.33          |          0.43           |
+| <div style='width:155px'>Case</div> | Inserts | InsertTime | SelectTime | DiskTime | DiskReadTime | DiskWriteTime | CurrentDiskQueueLength | AvgDiskQueueLength | AvgDiskReadQueueLength | AvgDiskWriteQueueLength |
+| auto-increment-key                  |  10000  |   7.847    |   0.074    |   0.36   |     0.13     |     0.23      |           0            |         0          |           0            |            0            |
+| guid-key                            |  10000  |   10.72    |   0.236    |  88.89   |    33.15     |     55.62     |          0.25          |        0.89        |          0.33          |          0.56           |
+| guid-sequential-key                 |  10000  |    6.28    |   0.115    |   0.24   |     0.14     |      0.1      |          0.25          |         0          |           0            |            0            |
+| guid-comb-key                       |  10000  |   11.272   |    0.3     |  99.04   |    38.74     |     60.25     |          1.44          |        0.99        |          0.39          |           0.6           |
+| objectid-key                        |  10000  |   6.553    |   0.167    |   0.38   |      0       |     0.24      |           0            |         0          |           0            |            0            |
+| objectid-char-indexed               |  10000  |   8.232    |   0.112    |   3.06   |     0.11     |     2.95      |          0.17          |        0.03        |           0            |          0.03           |
+| numeric-indexed                     |  10000  |   8.114    |   0.093    |   0.86   |     0.05     |     0.74      |           0            |        0.01        |           0            |          0.01           |
+| objectid-indexed                    |  10000  |   8.286    |   0.116    |   0.64   |     0.1      |     0.51      |           0            |        0.01        |           0            |          0.01           |
+| guid-indexed                        |  10000  |   14.86    |   0.286    |  83.84   |    39.13     |     44.68     |          1.46          |        0.84        |          0.39          |          0.45           |
+| guid-sequential-indexed             |  10000  |   8.282    |   0.086    |   2.47   |     0.1      |      2.3      |          0.17          |        0.02        |           0            |          0.02           |
+| guid-comb-indexed                   |  10000  |   13.29    |   0.266    |  68.46   |    26.92     |     41.53     |          0.45          |        0.68        |          0.27          |          0.42           |
+| <div style='width:155px'>Case</div> | Inserts | InsertTime | SelectTime | DiskTime | DiskReadTime | DiskWriteTime | CurrentDiskQueueLength | AvgDiskQueueLength | AvgDiskReadQueueLength | AvgDiskWriteQueueLength |
+| auto-increment-key                  |  10000  |   8.431    |   0.078    |   0.47   |     0.09     |     0.34      |          0.17          |         0          |           0            |            0            |
+| guid-key                            |  10000  |   11.798   |   0.337    |  99.23   |    39.12     |     60.13     |          0.8           |        0.99        |          0.39          |           0.6           |
+| guid-sequential-key                 |  10000  |   6.763    |   0.123    |    0     |      0       |       0       |           0            |         0          |           0            |            0            |
+| guid-comb-key                       |  10000  |   12.69    |   0.238    |  103.51  |    41.62     |     61.9      |           1            |        1.04        |          0.42          |          0.62           |
+| objectid-key                        |  10000  |   7.035    |   0.187    |   0.58   |     0.28     |      0.3      |          0.2           |        0.01        |           0            |            0            |
+| objectid-char-indexed               |  10000  |   8.827    |   0.154    |   0.63   |     0.12     |     0.42      |          0.33          |        0.01        |           0            |          0.01           |
+| numeric-indexed                     |  10000  |   8.684    |    0.12    |   0.72   |     0.11     |     0.58      |          0.17          |        0.01        |           0            |          0.01           |
+| objectid-indexed                    |  10000  |   8.775    |   0.164    |   0.43   |     0.1      |     0.33      |           0            |         0          |           0            |            0            |
+| guid-indexed                        |  10000  |   14.054   |   0.297    |  66.82   |    27.55     |     39.22     |          0.83          |        0.67        |          0.28          |          0.39           |
+| guid-sequential-indexed             |  10000  |    9.06    |   0.115    |    1     |     0.27     |     0.73      |          0.14          |        0.01        |           0            |          0.01           |
+| guid-comb-indexed                   |  10000  |   13.742   |   0.179    |  64.18   |    26.22     |     37.96     |          0.36          |        0.64        |          0.26          |          0.38           |
+| <div style='width:155px'>Case</div> | Inserts | InsertTime | SelectTime | DiskTime | DiskReadTime | DiskWriteTime | CurrentDiskQueueLength | AvgDiskQueueLength | AvgDiskReadQueueLength | AvgDiskWriteQueueLength |
+| auto-increment-key                  |  10000  |    8.88    |   0.057    |   0.46   |     0.09     |     0.33      |          0.17          |         0          |           0            |            0            |
+| guid-key                            |  10000  |   12.889   |   0.287    |  100.11  |    39.83     |     60.25     |          1.45          |         1          |          0.4           |           0.6           |
+| guid-sequential-key                 |  10000  |   7.309    |   0.138    |   1.16   |     0.96     |      0.2      |           0            |        0.01        |          0.01          |            0            |
+| guid-comb-key                       |  10000  |   11.687   |   0.266    |  77.27   |    28.74     |     48.5      |          1.11          |        0.77        |          0.29          |          0.48           |
+| objectid-key                        |  10000  |   7.492    |    0.21    |   0.13   |      0       |     0.13      |           0            |         0          |           0            |            0            |
+| objectid-char-indexed               |  10000  |   9.218    |   0.148    |   2.98   |     0.17     |     2.81      |           0            |        0.03        |           0            |          0.03           |
+| numeric-indexed                     |  10000  |   9.182    |   0.099    |   0.61   |     0.09     |     0.52      |          0.29          |        0.01        |           0            |          0.01           |
+| objectid-indexed                    |  10000  |   9.319    |   0.093    |   2.51   |     0.1      |     2.38      |          0.14          |        0.03        |           0            |          0.02           |
+| guid-indexed                        |  10000  |   14.969   |   0.115    |  65.21   |    28.24     |     36.94     |          1.08          |        0.65        |          0.28          |          0.37           |
+| guid-sequential-indexed             |  10000  |   9.424    |   0.096    |   0.42   |     0.05     |     0.38      |          0.14          |         0          |           0            |            0            |
+| guid-comb-indexed                   |  10000  |   14.56    |   0.271    |  65.81   |    26.26     |     39.52     |           1            |        0.66        |          0.26          |           0.4           |
+| <div style='width:155px'>Case</div> | Inserts | InsertTime | SelectTime | DiskTime | DiskReadTime | DiskWriteTime | CurrentDiskQueueLength | AvgDiskQueueLength | AvgDiskReadQueueLength | AvgDiskWriteQueueLength |
+| auto-increment-key                  |  10000  |   9.254    |   0.064    |   0.41   |     0.04     |     0.36      |          0.14          |         0          |           0            |            0            |
+| guid-key                            |  10000  |   12.118   |   0.355    |   84.6   |    31.87     |     52.69     |          1.6           |        0.85        |          0.32          |          0.53           |
+| guid-sequential-key                 |  10000  |   7.845    |   0.139    |   0.08   |      0       |     0.08      |           0            |         0          |           0            |            0            |
+| guid-comb-key                       |  10000  |   12.697   |   0.159    |  82.55   |    32.49     |     50.02     |           1            |        0.83        |          0.33          |           0.5           |
+| objectid-key                        |  10000  |   7.886    |   0.207    |   3.71   |     1.48     |     2.22      |          0.17          |        0.04        |          0.01          |          0.02           |
+| objectid-char-indexed               |  10000  |   9.648    |   0.125    |   0.61   |     0.09     |     0.45      |           0            |        0.01        |           0            |          0.01           |
+| numeric-indexed                     |  10000  |   9.647    |    0.16    |   2.05   |     0.08     |     1.96      |          0.43          |        0.02        |           0            |          0.02           |
+| objectid-indexed                    |  10000  |   9.764    |   0.148    |   0.41   |     0.09     |     0.32      |           0            |         0          |           0            |            0            |
+| guid-indexed                        |  10000  |   15.899   |    0.41    |  68.52   |    30.42     |     38.1      |          1.64          |        0.69        |          0.3           |          0.38           |
+| guid-sequential-indexed             |  10000  |   9.803    |   0.124    |   0.43   |     0.1      |     0.33      |          0.14          |         0          |           0            |            0            |
+| guid-comb-indexed                   |  10000  |   14.933   |   0.165    |  56.97   |    22.48     |     34.44     |          0.17          |        0.57        |          0.23          |          0.34           |
+| <div style='width:155px'>Case</div> | Inserts | InsertTime | SelectTime | DiskTime | DiskReadTime | DiskWriteTime | CurrentDiskQueueLength | AvgDiskQueueLength | AvgDiskReadQueueLength | AvgDiskWriteQueueLength |
+| auto-increment-key                  |  10000  |   9.789    |   0.055    |   0.42   |     0.09     |     0.33      |           0            |         0          |           0            |            0            |
+| guid-key                            |  10000  |   13.097   |   0.341    |    82    |    32.55     |     49.35     |          1.09          |        0.82        |          0.33          |          0.49           |
+| guid-sequential-key                 |  10000  |   8.316    |   0.157    |   0.22   |     0.09     |     0.13      |           0            |         0          |           0            |            0            |
+| guid-comb-key                       |  10000  |   14.077   |   0.321    |  86.36   |    36.62     |     49.73     |          1.25          |        0.86        |          0.37          |           0.5           |
+| objectid-key                        |  10000  |   8.436    |   0.248    |   0.08   |      0       |     0.08      |           0            |         0          |           0            |            0            |
+| objectid-char-indexed               |  10000  |   10.146   |   0.169    |   0.81   |     0.05     |     0.72      |           0            |        0.01        |           0            |          0.01           |
+| numeric-indexed                     |  10000  |   10.226   |   0.121    |   0.51   |     0.08     |     0.43      |          0.12          |        0.01        |           0            |            0            |
+| objectid-indexed                    |  10000  |   10.231   |   0.123    |   0.49   |     0.09     |     0.41      |          0.25          |         0          |           0            |            0            |
+| guid-indexed                        |  10000  |   15.506   |   0.376    |   62.6   |    25.46     |     37.19     |          1.38          |        0.63        |          0.25          |          0.37           |
+| guid-sequential-indexed             |  10000  |   10.247   |   0.168    |   1.87   |     0.07     |     1.79      |          0.12          |        0.02        |           0            |          0.02           |
+| guid-comb-indexed                   |  10000  |   15.916   |   0.348    |  65.21   |    28.41     |     36.76     |          0.29          |        0.65        |          0.28          |          0.37           |
+| <div style='width:155px'>Case</div> | Inserts | InsertTime | SelectTime | DiskTime | DiskReadTime | DiskWriteTime | CurrentDiskQueueLength | AvgDiskQueueLength | AvgDiskReadQueueLength | AvgDiskWriteQueueLength |
+| auto-increment-key                  |  10000  |   10.159   |   0.082    |   0.7    |     0.04     |     0.61      |           0            |        0.01        |           0            |          0.01           |
+| guid-key                            |  10000  |   12.823   |   0.431    |  73.09   |    27.03     |     46.06     |          0.64          |        0.73        |          0.27          |          0.46           |
+| guid-sequential-key                 |  10000  |   8.879    |    0.16    |   0.08   |      0       |     0.08      |           0            |         0          |           0            |            0            |
+| guid-comb-key                       |  10000  |   13.573   |   0.277    |  75.61   |    28.08     |     47.52     |          0.55          |        0.76        |          0.28          |          0.48           |
+| objectid-key                        |  10000  |   9.012    |   0.248    |   0.56   |     0.33     |     0.17      |           0            |        0.01        |           0            |            0            |
+| objectid-char-indexed               |  10000  |   10.802   |   0.185    |   2.06   |     0.1      |     1.96      |           0            |        0.02        |           0            |          0.02           |
+| numeric-indexed                     |  10000  |   10.774   |   0.108    |   0.3    |     0.07     |     0.21      |           0            |         0          |           0            |            0            |
+| objectid-indexed                    |  10000  |   10.835   |   0.144    |   0.39   |     0.04     |     0.35      |          0.12          |         0          |           0            |            0            |
+| guid-indexed                        |  10000  |   16.762   |   0.457    |  68.52   |    32.01     |     36.52     |          0.67          |        0.69        |          0.32          |          0.37           |
+| guid-sequential-indexed             |  10000  |   10.757   |   0.133    |   0.49   |     0.07     |     0.36      |          0.12          |         0          |           0            |            0            |
+| guid-comb-indexed                   |  10000  |   15.876   |   0.375    |  53.58   |    21.78     |     31.78     |          0.57          |        0.54        |          0.22          |          0.32           |
+| <div style='width:155px'>Case</div> | Inserts | InsertTime | SelectTime | DiskTime | DiskReadTime | DiskWriteTime | CurrentDiskQueueLength | AvgDiskQueueLength | AvgDiskReadQueueLength | AvgDiskWriteQueueLength |
+| auto-increment-key                  |  10000  |   10.914   |   0.116    |   0.31   |     0.08     |     0.24      |          0.12          |         0          |           0            |            0            |
+| guid-key                            |  10000  |   14.068   |   0.347    |  73.96   |    29.31     |     44.72     |          1.33          |        0.74        |          0.29          |          0.45           |
+| guid-sequential-key                 |  10000  |   9.307    |   0.168    |   0.22   |     0.08     |     0.09      |          0.14          |         0          |           0            |            0            |
+| guid-comb-key                       |  10000  |   14.441   |    0.39    |  77.37   |    31.02     |     46.32     |          1.42          |        0.77        |          0.31          |          0.46           |
+| objectid-key                        |  10000  |   9.415    |   0.244    |   0.19   |      0       |     0.19      |           0            |         0          |           0            |            0            |
+| objectid-char-indexed               |  10000  |   11.199   |   0.418    |   0.45   |     0.08     |     0.37      |           0            |         0          |           0            |            0            |
+| numeric-indexed                     |  10000  |    11.1    |   0.119    |   2.2    |     0.04     |     2.16      |           0            |        0.02        |           0            |          0.02           |
+| objectid-indexed                    |  10000  |   11.214   |   0.167    |   0.5    |     0.07     |     0.43      |          0.11          |         0          |           0            |            0            |
+| guid-indexed                        |  10000  |   15.747   |   0.483    |  56.45   |    22.56     |     33.83     |          0.36          |        0.56        |          0.23          |          0.34           |
+| guid-sequential-indexed             |  10000  |   11.692   |   0.202    |   0.44   |     0.08     |     0.31      |          0.22          |         0          |           0            |            0            |
+| guid-comb-indexed                   |  10000  |   16.244   |   0.231    |  54.38   |    21.88     |     32.49     |          0.86          |        0.54        |          0.22          |          0.33           |
+| <div style='width:155px'>Case</div> | Inserts | InsertTime | SelectTime | DiskTime | DiskReadTime | DiskWriteTime | CurrentDiskQueueLength | AvgDiskQueueLength | AvgDiskReadQueueLength | AvgDiskWriteQueueLength |
+| auto-increment-key                  |  10000  |   11.351   |   0.099    |   0.32   |     0.06     |     0.26      |           0            |         0          |           0            |            0            |
+| guid-key                            |  10000  |   14.981   |   0.542    |   79.1   |    31.84     |     47.28     |          1.31          |        0.79        |          0.32          |          0.47           |
+| guid-sequential-key                 |  10000  |   9.785    |    0.34    |   5.31   |     2.62     |     2.69      |          0.12          |        0.05        |          0.03          |          0.03           |
+| guid-comb-key                       |  10000  |   14.047   |   0.332    |   69.1   |    25.37     |     43.73     |          0.58          |        0.69        |          0.25          |          0.44           |
+| objectid-key                        |  10000  |   9.899    |   0.255    |   1.64   |     1.32     |     0.32      |          0.12          |        0.02        |          0.01          |            0            |
+| objectid-char-indexed               |  10000  |   11.629   |   0.299    |   1.72   |     0.05     |     1.67      |           0            |        0.02        |           0            |          0.02           |
+| numeric-indexed                     |  10000  |   11.755   |   0.173    |   0.41   |     0.07     |     0.29      |          0.11          |         0          |           0            |            0            |
+| objectid-indexed                    |  10000  |   11.681   |   0.177    |   1.54   |     0.07     |     1.46      |           0            |        0.02        |           0            |          0.01           |
+| guid-indexed                        |  10000  |   16.752   |   0.269    |  51.37   |    21.81     |     29.52     |          0.71          |        0.51        |          0.22          |           0.3           |
+| guid-sequential-indexed             |  10000  |   11.839   |   0.211    |   0.4    |     0.08     |     0.32      |           0            |         0          |           0            |            0            |
+| guid-comb-indexed                   |  10000  |   18.039   |   0.379    |  56.84   |    24.21     |     32.66     |          0.69          |        0.57        |          0.24          |          0.33           |
+| <div style='width:155px'>Case</div> | Inserts | InsertTime | SelectTime | DiskTime | DiskReadTime | DiskWriteTime | CurrentDiskQueueLength | AvgDiskQueueLength | AvgDiskReadQueueLength | AvgDiskWriteQueueLength |
+| auto-increment-key                  |  10000  |   11.988   |   0.108    |   3.31   |     1.71     |     1.59      |           0            |        0.03        |          0.02          |          0.02           |
+| guid-key                            |  10000  |   14.946   |   0.402    |    66    |    25.46     |     40.54     |          0.46          |        0.66        |          0.25          |          0.41           |
+| guid-sequential-key                 |  10000  |   10.31    |   0.185    |   0.18   |     0.07     |     0.11      |           0            |         0          |           0            |            0            |
+| guid-comb-key                       |  10000  |   15.71    |   0.432    |  67.01   |    28.21     |     38.9      |           1            |        0.67        |          0.28          |          0.39           |
+| objectid-key                        |  10000  |   10.707   |   0.279    |   0.17   |      0       |      0.1      |           0            |         0          |           0            |            0            |
+| objectid-char-indexed               |  10000  |   12.391   |   0.184    |   1.02   |     0.65     |     0.32      |           0            |        0.01        |          0.01          |            0            |
+| numeric-indexed                     |  10000  |   12.537   |    0.13    |   0.33   |     0.06     |     0.26      |          0.2           |         0          |           0            |            0            |
+| objectid-indexed                    |  10000  |   12.543   |   0.113    |   0.5    |     0.18     |     0.26      |           0            |        0.01        |           0            |            0            |
+| guid-indexed                        |  10000  |   18.927   |   0.379    |  57.96   |     27.1     |     30.83     |          0.71          |        0.58        |          0.27          |          0.31           |
+| guid-sequential-indexed             |  10000  |   12.463   |   0.127    |   0.84   |     0.52     |     0.31      |           0            |        0.01        |          0.01          |            0            |
+| guid-comb-indexed                   |  10000  |   17.445   |   0.379    |   49.1   |    19.96     |     29.13     |          0.67          |        0.49        |          0.2           |          0.29           |
+| <div style='width:155px'>Case</div> | Inserts | InsertTime | SelectTime | DiskTime | DiskReadTime | DiskWriteTime | CurrentDiskQueueLength | AvgDiskQueueLength | AvgDiskReadQueueLength | AvgDiskWriteQueueLength |
+| auto-increment-key                  |  10000  |   12.306   |   0.077    |   0.32   |     0.06     |     0.26      |          0.1           |         0          |           0            |            0            |
+| guid-key                            |  10000  |   15.798   |   0.564    |  76.08   |    29.01     |     47.06     |          1.21          |        0.76        |          0.29          |          0.47           |
+| guid-sequential-key                 |  10000  |   10.769   |   0.201    |   0.2    |      0       |     0.18      |           0            |         0          |           0            |            0            |
+| guid-comb-key                       |  10000  |   16.603   |   0.404    |  69.72   |    28.96     |     40.75     |           1            |        0.7         |          0.29          |          0.41           |
+| objectid-key                        |  10000  |   10.836   |   0.277    |   3.37   |     1.86     |      1.5      |          0.11          |        0.03        |          0.02          |          0.02           |
+| objectid-char-indexed               |  10000  |   12.58    |   0.259    |   0.41   |     0.07     |     0.35      |          0.1           |         0          |           0            |            0            |
+| numeric-indexed                     |  10000  |   12.691   |    0.1     |   0.36   |     0.06     |     0.22      |           0            |         0          |           0            |            0            |
+| objectid-indexed                    |  10000  |   12.684   |   0.182    |   0.47   |     0.07     |     0.35      |           0            |         0          |           0            |            0            |
+| guid-indexed                        |  10000  |   17.599   |   0.342    |  51.97   |    19.85     |     32.06     |          0.67          |        0.52        |          0.2           |          0.32           |
+| guid-sequential-indexed             |  10000  |   12.808   |   0.164    |   0.97   |     0.5      |     0.39      |          0.1           |        0.01        |          0.01          |            0            |
+| guid-comb-indexed                   |  10000  |   18.503   |   0.221    |  53.37   |    23.44     |     29.91     |          0.5           |        0.53        |          0.23          |           0.3           |
+| <div style='width:155px'>Case</div> | Inserts | InsertTime | SelectTime | DiskTime | DiskReadTime | DiskWriteTime | CurrentDiskQueueLength | AvgDiskQueueLength | AvgDiskReadQueueLength | AvgDiskWriteQueueLength |
+| auto-increment-key                  |  10000  |   12.578   |   0.093    |   0.29   |     0.03     |     0.26      |           0            |         0          |           0            |            0            |
+| guid-key                            |  10000  |   16.505   |   0.375    |  69.69   |     28.1     |     41.57     |          0.93          |        0.7         |          0.28          |          0.42           |
+| guid-sequential-key                 |  10000  |   11.261   |   0.206    |   0.22   |     0.06     |     0.16      |           0            |         0          |           0            |            0            |
+| guid-comb-key                       |  10000  |   15.87    |   0.437    |  62.24   |    24.67     |     37.55     |          1.14          |        0.62        |          0.25          |          0.38           |
+| objectid-key                        |  10000  |   11.46    |   0.307    |   0.12   |      0       |     0.12      |           0            |         0          |           0            |            0            |
+| objectid-char-indexed               |  10000  |   13.177   |    0.23    |   1.71   |     0.06     |     1.66      |           0            |        0.02        |           0            |          0.02           |
+| numeric-indexed                     |  10000  |   13.089   |    0.16    |   1.72   |     0.21     |     1.51      |          0.09          |        0.02        |           0            |          0.02           |
+| objectid-indexed                    |  10000  |   13.567   |   0.161    |   0.42   |     0.06     |     0.32      |          0.09          |         0          |           0            |            0            |
+| guid-indexed                        |  10000  |   18.866   |   0.246    |  52.88   |    22.37     |     30.49     |          0.62          |        0.53        |          0.22          |          0.31           |
+| guid-sequential-indexed             |  10000  |   13.203   |   0.196    |   0.54   |     0.03     |     0.47      |          0.27          |        0.01        |           0            |          0.01           |
+| guid-comb-indexed                   |  10000  |   18.915   |   0.336    |  54.45   |    23.36     |     31.07     |          0.35          |        0.54        |          0.23          |          0.31           |
+| <div style='width:155px'>Case</div> | Inserts | InsertTime | SelectTime | DiskTime | DiskReadTime | DiskWriteTime | CurrentDiskQueueLength | AvgDiskQueueLength | AvgDiskReadQueueLength | AvgDiskWriteQueueLength |
+| auto-increment-key                  |  10000  |   13.059   |   0.084    |   1.25   |     0.65     |      0.6      |           0            |        0.01        |          0.01          |          0.01           |
+| guid-key                            |  10000  |   15.971   |   0.554    |   62.1   |    23.72     |     38.37     |          0.36          |        0.62        |          0.24          |          0.38           |
+| guid-sequential-key                 |  10000  |   11.683   |   0.206    |   0.15   |      0       |      0.1      |           0            |         0          |           0            |            0            |
+| guid-comb-key                       |  10000  |   17.413   |   0.494    |  63.47   |    26.11     |     37.36     |          1.47          |        0.63        |          0.26          |          0.37           |
+| objectid-key                        |  10000  |   11.816   |   0.306    |   1.85   |     1.7      |     0.16      |           0            |        0.02        |          0.02          |            0            |
+| objectid-char-indexed               |  10000  |   13.51    |   0.227    |   0.41   |     0.06     |     0.31      |           0            |         0          |           0            |            0            |
+| numeric-indexed                     |  10000  |   13.35    |   0.152    |   0.41   |     0.06     |     0.31      |          0.27          |         0          |           0            |            0            |
+| objectid-indexed                    |  10000  |   13.638   |   0.182    |   1.54   |     0.06     |     1.44      |          0.09          |        0.02        |           0            |          0.01           |
+| guid-indexed                        |  10000  |   18.274   |   0.398    |  41.88   |      16      |     25.81     |          0.19          |        0.42        |          0.16          |          0.26           |
+| guid-sequential-indexed             |  10000  |   14.081   |   0.155    |   2.19   |     0.17     |     1.98      |          0.08          |        0.02        |           0            |          0.02           |
+| guid-comb-indexed                   |  10000  |   18.844   |    0.33    |  49.07   |    20.61     |     28.43     |          0.88          |        0.49        |          0.21          |          0.28           |
+| <div style='width:155px'>Case</div> | Inserts | InsertTime | SelectTime | DiskTime | DiskReadTime | DiskWriteTime | CurrentDiskQueueLength | AvgDiskQueueLength | AvgDiskReadQueueLength | AvgDiskWriteQueueLength |
+| auto-increment-key                  |  10000  |   13.722   |   0.097    |   0.26   |     0.03     |     0.24      |           0            |         0          |           0            |            0            |
+| guid-key                            |  10000  |   17.778   |   0.487    |  64.17   |    26.79     |     37.38     |          0.75          |        0.64        |          0.27          |          0.37           |
+| guid-sequential-key                 |  10000  |   12.12    |   0.239    |   1.46   |     0.17     |     1.29      |           0            |        0.01        |           0            |          0.01           |
+| guid-comb-key                       |  10000  |   16.138   |   0.529    |  51.94   |    18.97     |     32.98     |          0.43          |        0.52        |          0.19          |          0.33           |
+| objectid-key                        |  10000  |   12.454   |   0.353    |   0.08   |      0       |     0.08      |           0            |         0          |           0            |            0            |
+| objectid-char-indexed               |  10000  |   14.25    |   0.285    |   1.43   |     0.05     |     1.34      |          0.08          |        0.01        |           0            |          0.01           |
+| numeric-indexed                     |  10000  |   13.893   |   0.127    |   0.29   |     0.06     |     0.21      |           0            |         0          |           0            |            0            |
+| objectid-indexed                    |  10000  |   14.091   |   0.162    |   0.89   |     0.34     |     0.55      |          0.08          |        0.01        |           0            |          0.01           |
+| guid-indexed                        |  10000  |   19.803   |   0.221    |  48.95   |     20.7     |     28.18     |          0.29          |        0.49        |          0.21          |          0.28           |
+| guid-sequential-indexed             |  10000  |   14.144   |   0.274    |   0.69   |     0.05     |      0.6      |           0            |        0.01        |           0            |          0.01           |
+| guid-comb-indexed                   |  10000  |   20.018   |   0.552    |  49.65   |    20.98     |     28.65     |          0.5           |        0.5         |          0.21          |          0.29           |
+| <div style='width:155px'>Case</div> | Inserts | InsertTime | SelectTime | DiskTime | DiskReadTime | DiskWriteTime | CurrentDiskQueueLength | AvgDiskQueueLength | AvgDiskReadQueueLength | AvgDiskWriteQueueLength |
+| auto-increment-key                  |  10000  |   14.228   |   0.085    |   0.31   |     0.02     |     0.24      |          0.08          |         0          |           0            |            0            |
+| guid-key                            |  10000  |   16.949   |   0.512    |  56.47   |    21.75     |     34.71     |          0.73          |        0.56        |          0.22          |          0.35           |
+| guid-sequential-key                 |  10000  |   12.749   |   0.224    |   0.15   |      0       |     0.15      |           0            |         0          |           0            |            0            |
+| guid-comb-key                       |  10000  |   17.521   |   0.375    |  56.68   |    22.15     |     34.48     |          0.4           |        0.57        |          0.22          |          0.35           |
+| objectid-key                        |  10000  |   12.953   |   0.408    |   1.31   |     0.67     |     0.64      |          0.09          |        0.01        |          0.01          |          0.01           |
+| objectid-char-indexed               |  10000  |   14.607   |   0.268    |   0.4    |     0.06     |     0.34      |          0.08          |         0          |           0            |            0            |
+| numeric-indexed                     |  10000  |   14.632   |   0.143    |   0.35   |     0.05     |     0.29      |          0.08          |         0          |           0            |            0            |
+| objectid-indexed                    |  10000  |   14.791   |   0.185    |   0.28   |     0.06     |     0.23      |          0.08          |         0          |           0            |            0            |
+| guid-indexed                        |  10000  |   19.896   |   0.554    |  47.75   |    20.44     |     27.31     |          0.72          |        0.48        |          0.2           |          0.27           |
+| guid-sequential-indexed             |  10000  |   15.101   |   0.203    |   0.94   |     0.38     |     0.55      |          0.15          |        0.01        |           0            |          0.01           |
+| guid-comb-indexed                   |  10000  |   19.838   |   0.547    |  46.59   |    19.64     |     26.93     |          0.5           |        0.47        |          0.2           |          0.27           |
+| <div style='width:155px'>Case</div> | Inserts | InsertTime | SelectTime | DiskTime | DiskReadTime | DiskWriteTime | CurrentDiskQueueLength | AvgDiskQueueLength | AvgDiskReadQueueLength | AvgDiskWriteQueueLength |
+| auto-increment-key                  |  10000  |   14.569   |    0.13    |   0.29   |     0.03     |     0.23      |           0            |         0          |           0            |            0            |
+| guid-key                            |  10000  |   18.333   |   0.554    |  59.51   |    22.82     |     36.69     |          0.5           |        0.6         |          0.23          |          0.37           |
+| guid-sequential-key                 |  10000  |   13.153   |   0.252    |   0.3    |     0.05     |     0.25      |           0            |         0          |           0            |            0            |
+| guid-comb-key                       |  10000  |   18.105   |   0.669    |  57.07   |    22.69     |     34.31     |          0.94          |        0.57        |          0.23          |          0.34           |
+| objectid-key                        |  10000  |   13.371   |   0.379    |   0.14   |      0       |     0.12      |           0            |         0          |           0            |            0            |
+| objectid-char-indexed               |  10000  |   15.105   |   0.266    |   0.85   |     0.33     |     0.52      |          0.08          |        0.01        |           0            |          0.01           |
+| numeric-indexed                     |  10000  |   14.985   |   0.137    |   0.38   |     0.03     |     0.31      |          0.08          |         0          |           0            |            0            |
+| objectid-indexed                    |  10000  |   15.182   |   0.174    |   0.54   |     0.05     |     0.45      |           0            |        0.01        |           0            |            0            |
+| guid-indexed                        |  10000  |   20.002   |    0.28    |  45.39   |     18.9     |     26.46     |          0.28          |        0.45        |          0.19          |          0.26           |
+| guid-sequential-indexed             |  10000  |   15.19    |   0.276    |   0.5    |     0.05     |     0.42      |           0            |        0.01        |           0            |            0            |
+| guid-comb-indexed                   |  10000  |   20.263   |    0.26    |  41.47   |    17.13     |     24.36     |          0.61          |        0.41        |          0.17          |          0.24           |
+| <div style='width:155px'>Case</div> | Inserts | InsertTime | SelectTime | DiskTime | DiskReadTime | DiskWriteTime | CurrentDiskQueueLength | AvgDiskQueueLength | AvgDiskReadQueueLength | AvgDiskWriteQueueLength |
+| auto-increment-key                  |  10000  |   15.086   |   0.113    |   0.53   |     0.09     |     0.43      |          0.69          |        0.01        |           0            |            0            |
+| guid-key                            |  10000  |   19.251   |   0.492    |  64.69   |    25.33     |     39.37     |          1.24          |        0.65        |          0.25          |          0.39           |
+| guid-sequential-key                 |  10000  |   13.541   |   0.242    |   0.05   |      0       |     0.05      |           0            |         0          |           0            |            0            |
+| guid-comb-key                       |  10000  |   17.727   |   0.664    |  53.18   |    20.83     |     32.35     |          0.56          |        0.53        |          0.21          |          0.32           |
+| objectid-key                        |  10000  |   13.76    |   0.392    |   2.84   |     1.69     |     1.14      |           0            |        0.03        |          0.02          |          0.01           |
+| objectid-char-indexed               |  10000  |   15.749   |   0.246    |   1.09   |     0.05     |     1.04      |           0            |        0.01        |           0            |          0.01           |
+| numeric-indexed                     |  10000  |   15.808   |   0.204    |   1.12   |     0.05     |     1.03      |           0            |        0.01        |           0            |          0.01           |
+| objectid-indexed                    |  10000  |   15.825   |   0.198    |   1.12   |     0.05     |     1.02      |           0            |        0.01        |           0            |          0.01           |
+| guid-indexed                        |  10000  |   21.612   |   0.211    |  45.92   |    19.68     |     26.19     |          0.37          |        0.46        |          0.2           |          0.26           |
+| guid-sequential-indexed             |  10000  |   15.68    |   0.632    |   5.89   |     4.14     |     1.75      |           0            |        0.06        |          0.04          |          0.02           |
+| guid-comb-indexed                   |  10000  |   20.44    |   0.503    |  40.44   |     15.5     |     24.93     |          0.78          |        0.4         |          0.16          |          0.25           |
+| <div style='width:155px'>Case</div> | Inserts | InsertTime | SelectTime | DiskTime | DiskReadTime | DiskWriteTime | CurrentDiskQueueLength | AvgDiskQueueLength | AvgDiskReadQueueLength | AvgDiskWriteQueueLength |
+| auto-increment-key                  |  10000  |   15.699   |   0.108    |   0.26   |     0.05     |     0.18      |          0.08          |         0          |           0            |            0            |
+| guid-key                            |  10000  |   18.713   |   0.439    |  50.71   |    19.87     |     30.79     |          1.06          |        0.51        |          0.2           |          0.31           |
+| guid-sequential-key                 |  10000  |   14.108   |   0.258    |   0.26   |     0.05     |     0.21      |           0            |         0          |           0            |            0            |
+| guid-comb-key                       |  10000  |   19.652   |   0.444    |  55.29   |     22.6     |     32.7      |          1.06          |        0.55        |          0.23          |          0.33           |
+| objectid-key                        |  10000  |   14.286   |   0.406    |   0.17   |     0.02     |     0.14      |           0            |         0          |           0            |            0            |
+| objectid-char-indexed               |  10000  |   15.833   |   0.258    |   0.4    |     0.04     |     0.36      |           0            |         0          |           0            |            0            |
+| numeric-indexed                     |  10000  |   15.945   |   0.145    |   0.3    |     0.05     |     0.24      |          0.08          |         0          |           0            |            0            |
+| objectid-indexed                    |  10000  |   16.176   |   0.192    |   0.51   |     0.04     |     0.44      |          0.07          |        0.01        |           0            |            0            |
+| guid-indexed                        |  10000  |   20.603   |   0.613    |  44.03   |    18.89     |     25.11     |          0.58          |        0.44        |          0.19          |          0.25           |
+| guid-sequential-indexed             |  10000  |   16.25    |   0.244    |   0.39   |     0.05     |     0.31      |           0            |         0          |           0            |            0            |
+| guid-comb-indexed                   |  10000  |   21.636   |    0.2     |  38.56   |    15.76     |     22.8      |          0.16          |        0.39        |          0.16          |          0.23           |
+| <div style='width:155px'>Case</div> | Inserts | InsertTime | SelectTime | DiskTime | DiskReadTime | DiskWriteTime | CurrentDiskQueueLength | AvgDiskQueueLength | AvgDiskReadQueueLength | AvgDiskWriteQueueLength |
+| auto-increment-key                  |  10000  |   16.919   |   0.115    |   0.22   |     0.04     |     0.14      |           0            |         0          |           0            |            0            |
+| guid-key                            |  10000  |   20.058   |   0.534    |  57.62   |    23.15     |     34.45     |          0.78          |        0.58        |          0.23          |          0.34           |
+| guid-sequential-key                 |  10000  |   14.626   |   0.272    |   0.11   |      0       |     0.11      |           0            |         0          |           0            |            0            |
+| guid-comb-key                       |  10000  |   19.17    |   0.479    |  50.17   |    18.46     |     31.72     |          0.82          |        0.5         |          0.18          |          0.32           |
+| objectid-key                        |  10000  |   14.785   |   0.407    |   1.78   |     1.39     |     0.39      |          0.08          |        0.02        |          0.01          |            0            |
+| objectid-char-indexed               |  10000  |   16.566   |   0.257    |   1.17   |     0.04     |     1.12      |           0            |        0.01        |           0            |          0.01           |
+| numeric-indexed                     |  10000  |   16.455   |   0.215    |   0.37   |     0.02     |     0.31      |          0.07          |         0          |           0            |            0            |
+| objectid-indexed                    |  10000  |   16.476   |   0.186    |   0.34   |     0.02     |     0.29      |           0            |         0          |           0            |            0            |
+| guid-indexed                        |  10000  |   22.477   |    0.21    |  41.96   |    18.14     |     23.78     |          0.75          |        0.42        |          0.18          |          0.24           |
+| guid-sequential-indexed             |  10000  |   16.647   |   0.296    |   0.32   |     0.02     |     0.26      |          0.07          |         0          |           0            |            0            |
+| guid-comb-indexed                   |  10000  |   22.064   |   0.628    |  41.92   |    17.25     |     24.66     |          0.4           |        0.42        |          0.17          |          0.25           |
+| <div style='width:155px'>Case</div> | Inserts | InsertTime | SelectTime | DiskTime | DiskReadTime | DiskWriteTime | CurrentDiskQueueLength | AvgDiskQueueLength | AvgDiskReadQueueLength | AvgDiskWriteQueueLength |
+| auto-increment-key                  |  10000  |   16.67    |   0.144    |   0.25   |     0.02     |     0.23      |           0            |         0          |           0            |            0            |
+| guid-key                            |  10000  |   19.424   |   0.763    |   49.9   |    20.12     |     29.77     |          0.28          |        0.5         |          0.2           |           0.3           |
+| guid-sequential-key                 |  10000  |     15     |   0.283    |   0.73   |     0.54     |     0.19      |           0            |        0.01        |          0.01          |            0            |
+| guid-comb-key                       |  10000  |   20.063   |   0.355    |   51.9   |    20.39     |     31.54     |          0.89          |        0.52        |          0.2           |          0.32           |
+| objectid-key                        |  10000  |   15.432   |   0.452    |   0.13   |      0       |     0.13      |           0            |         0          |           0            |            0            |
+| objectid-char-indexed               |  10000  |   17.388   |   0.309    |   0.29   |     0.04     |     0.22      |          0.07          |         0          |           0            |            0            |
+| numeric-indexed                     |  10000  |   17.13    |   0.245    |   0.64   |     0.13     |     0.48      |          0.13          |        0.01        |           0            |          0.01           |
+| objectid-indexed                    |  10000  |   17.413   |   0.277    |   0.37   |     0.03     |     0.31      |          0.07          |         0          |           0            |            0            |
+| guid-indexed                        |  10000  |   23.087   |   0.614    |   47.1   |    20.44     |     26.61     |          0.62          |        0.47        |          0.2           |          0.27           |
+| guid-sequential-indexed             |  10000  |   17.333   |    0.18    |   0.52   |     0.02     |     0.47      |          0.07          |        0.01        |           0            |          0.01           |
+| guid-comb-indexed                   |  10000  |   22.863   |   0.714    |  43.53   |     18.9     |     24.63     |          0.62          |        0.44        |          0.19          |          0.25           |
+| <div style='width:155px'>Case</div> | Inserts | InsertTime | SelectTime | DiskTime | DiskReadTime | DiskWriteTime | CurrentDiskQueueLength | AvgDiskQueueLength | AvgDiskReadQueueLength | AvgDiskWriteQueueLength |
+| auto-increment-key                  |  10000  |   17.119   |   0.143    |   1.59   |     0.45     |     1.13      |          0.13          |        0.02        |           0            |          0.01           |
+| guid-key                            |  10000  |   21.049   |   0.723    |  53.75   |    22.26     |     31.44     |          0.53          |        0.54        |          0.22          |          0.31           |
+| guid-sequential-key                 |  10000  |   15.771   |    0.29    |   0.13   |      0       |     0.13      |           0            |         0          |           0            |            0            |
+| guid-comb-key                       |  10000  |   21.591   |   0.612    |  53.31   |     22.6     |     30.7      |          0.32          |        0.53        |          0.23          |          0.31           |
+| objectid-key                        |  10000  |   15.774   |   0.435    |   1.64   |     1.41     |     0.19      |           0            |        0.02        |          0.01          |            0            |
+| objectid-char-indexed               |  10000  |   17.461   |   0.292    |   0.29   |     0.02     |     0.27      |           0            |         0          |           0            |            0            |
+| numeric-indexed                     |  10000  |   17.342   |   0.221    |   1.07   |     0.04     |     0.99      |           0            |        0.01        |           0            |          0.01           |
+| objectid-indexed                    |  10000  |   17.487   |   0.182    |   1.06   |     0.05     |     0.99      |           0            |        0.01        |           0            |          0.01           |
+| guid-indexed                        |  10000  |   22.874   |   0.588    |  41.58   |    18.71     |     22.84     |          1.1           |        0.42        |          0.19          |          0.23           |
+| guid-sequential-indexed             |  10000  |   17.695   |   0.274    |   1.05   |     0.04     |     0.98      |          0.13          |        0.01        |           0            |          0.01           |
+| guid-comb-indexed                   |  10000  |   23.224   |   0.672    |  41.92   |    18.22     |     23.68     |          0.9           |        0.42        |          0.18          |          0.24           |
+| <div style='width:155px'>Case</div> | Inserts | InsertTime | SelectTime | DiskTime | DiskReadTime | DiskWriteTime | CurrentDiskQueueLength | AvgDiskQueueLength | AvgDiskReadQueueLength | AvgDiskWriteQueueLength |
+| auto-increment-key                  |  10000  |   17.725   |   0.141    |   0.25   |     0.03     |     0.22      |          0.07          |         0          |           0            |            0            |
+| guid-key                            |  10000  |   20.747   |   0.501    |  45.47   |    18.31     |     27.15     |          0.89          |        0.45        |          0.18          |          0.27           |
+| guid-sequential-key                 |  10000  |   16.09    |   0.297    |   0.47   |     0.22     |     0.25      |          0.07          |         0          |           0            |            0            |
+| guid-comb-key                       |  10000  |   21.042   |   0.427    |  47.29   |    19.34     |     27.92     |          0.47          |        0.47        |          0.19          |          0.28           |
+| objectid-key                        |  10000  |   16.129   |   0.515    |   1.08   |     0.07     |     0.96      |           0            |        0.01        |           0            |          0.01           |
+| objectid-char-indexed               |  10000  |   17.847   |   0.349    |   3.77   |     2.43     |     1.35      |           0            |        0.04        |          0.02          |          0.01           |
+| numeric-indexed                     |  10000  |   17.775   |   0.207    |   0.26   |     0.05     |     0.21      |          0.07          |         0          |           0            |            0            |
+| objectid-indexed                    |  10000  |   18.046   |    0.2     |   1.23   |     0.68     |     0.52      |          0.06          |        0.01        |          0.01          |          0.01           |
+| guid-indexed                        |  10000  |   24.081   |   0.762    |  44.52   |    19.25     |     25.26     |          0.23          |        0.45        |          0.19          |          0.25           |
+| guid-sequential-indexed             |  10000  |   18.429   |   0.218    |   0.35   |     0.04     |     0.28      |           0            |         0          |           0            |            0            |
+| guid-comb-indexed                   |  10000  |   23.191   |   0.355    |  35.89   |    14.35     |     21.55     |          0.24          |        0.36        |          0.14          |          0.22           |
+| <div style='width:155px'>Case</div> | Inserts | InsertTime | SelectTime | DiskTime | DiskReadTime | DiskWriteTime | CurrentDiskQueueLength | AvgDiskQueueLength | AvgDiskReadQueueLength | AvgDiskWriteQueueLength |
+| auto-increment-key                  |  10000  |   18.018   |   0.127    |   2.26   |     1.72     |     0.54      |           0            |        0.02        |          0.02          |          0.01           |
+| guid-key                            |  10000  |   21.665   |    0.74    |  51.61   |    21.21     |     30.4      |          0.55          |        0.52        |          0.21          |           0.3           |
+| guid-sequential-key                 |  10000  |   16.49    |   0.302    |   0.13   |      0       |     0.13      |           0            |         0          |           0            |            0            |
+| guid-comb-key                       |  10000  |   21.931   |   0.795    |  54.65   |    22.19     |     32.43     |          0.25          |        0.55        |          0.22          |          0.32           |
+| objectid-key                        |  10000  |   16.853   |   0.482    |   1.26   |     1.08     |     0.15      |          0.07          |        0.01        |          0.01          |            0            |
+| objectid-char-indexed               |  10000  |   18.62    |   0.304    |   0.34   |     0.04     |     0.29      |           0            |         0          |           0            |            0            |
+| numeric-indexed                     |  10000  |   18.477   |   0.294    |   0.32   |     0.02     |     0.27      |           0            |         0          |           0            |            0            |
+| objectid-indexed                    |  10000  |   18.868   |   0.242    |   0.3    |     0.02     |     0.25      |           0            |         0          |           0            |            0            |
+| guid-indexed                        |  10000  |    23.7    |   0.338    |  35.58   |    14.42     |     21.13     |          0.52          |        0.36        |          0.14          |          0.21           |
+| guid-sequential-indexed             |  10000  |   18.623   |   0.253    |   0.28   |     0.05     |      0.2      |          0.06          |         0          |           0            |            0            |
+| guid-comb-indexed                   |  10000  |   24.446   |   0.315    |  40.35   |    16.97     |     23.37     |          0.5           |        0.4         |          0.17          |          0.23           |
+| <div style='width:155px'>Case</div> | Inserts | InsertTime | SelectTime | DiskTime | DiskReadTime | DiskWriteTime | CurrentDiskQueueLength | AvgDiskQueueLength | AvgDiskReadQueueLength | AvgDiskWriteQueueLength |
+| auto-increment-key                  |  10000  |   18.387   |    0.13    |   0.3    |     0.03     |     0.22      |          0.06          |         0          |           0            |            0            |
+| guid-key                            |  10000  |   21.988   |   0.695    |  48.75   |    19.45     |     29.33     |          0.85          |        0.49        |          0.19          |          0.29           |
+| guid-sequential-key                 |  10000  |   16.904   |   0.319    |   1.35   |     0.92     |     0.43      |          0.07          |        0.01        |          0.01          |            0            |
+| guid-comb-key                       |  10000  |   21.635   |   0.687    |  44.61   |    18.11     |     26.49     |          0.7           |        0.45        |          0.18          |          0.26           |
+| objectid-key                        |  10000  |   17.472   |   0.533    |   0.13   |      0       |     0.13      |           0            |         0          |           0            |            0            |
+| objectid-char-indexed               |  10000  |   19.073   |   0.505    |   1.91   |     0.48     |     1.43      |          0.06          |        0.02        |           0            |          0.01           |
+| numeric-indexed                     |  10000  |   18.98    |   0.294    |   1.94   |     1.4      |     0.51      |           0            |        0.02        |          0.01          |          0.01           |
+| objectid-indexed                    |  10000  |   19.036   |    0.22    |   1.44   |     1.1      |     0.33      |          0.12          |        0.01        |          0.01          |            0            |
+| guid-indexed                        |  10000  |   24.535   |   0.718    |  42.79   |     21.1     |     21.67     |          0.83          |        0.43        |          0.21          |          0.22           |
+| guid-sequential-indexed             |  10000  |   19.048   |   0.267    |   1.93   |     0.73     |     1.09      |          0.06          |        0.02        |          0.01          |          0.01           |
+| guid-comb-indexed                   |  10000  |   23.765   |   0.591    |  36.91   |    16.24     |     20.67     |          0.68          |        0.37        |          0.16          |          0.21           |
+| <div style='width:155px'>Case</div> | Inserts | InsertTime | SelectTime | DiskTime | DiskReadTime | DiskWriteTime | CurrentDiskQueueLength | AvgDiskQueueLength | AvgDiskReadQueueLength | AvgDiskWriteQueueLength |
+| auto-increment-key                  |  10000  |   19.153   |   0.126    |   0.44   |     0.05     |      0.4      |          0.06          |         0          |           0            |            0            |
+| guid-key                            |  10000  |   22.418   |    0.65    |  45.07   |    17.64     |     27.44     |          0.6           |        0.45        |          0.18          |          0.27           |
+| guid-sequential-key                 |  10000  |   17.611   |   0.319    |   0.1    |      0       |      0.1      |           0            |         0          |           0            |            0            |
+| guid-comb-key                       |  10000  |   23.88    |   0.588    |  47.34   |    19.85     |     27.46     |          0.73          |        0.47        |          0.2           |          0.27           |
+| objectid-key                        |  10000  |   17.682   |   0.531    |   2.6    |     1.63     |     0.94      |           0            |        0.03        |          0.02          |          0.01           |
+| objectid-char-indexed               |  10000  |   19.542   |   0.419    |   0.25   |     0.04     |     0.21      |          0.06          |         0          |           0            |            0            |
+| numeric-indexed                     |  10000  |   19.701   |   0.219    |    1     |     0.04     |     0.93      |           0            |        0.01        |           0            |          0.01           |
+| objectid-indexed                    |  10000  |   20.99    |   0.253    |   2.58   |     1.62     |     0.94      |          0.05          |        0.03        |          0.02          |          0.01           |
+| guid-indexed                        |  10000  |   25.189   |   0.709    |  33.99   |    14.08     |     19.89     |          0.96          |        0.34        |          0.14          |           0.2           |
+| guid-sequential-indexed             |  10000  |   20.293   |   0.267    |   0.47   |     0.04     |     0.41      |           0            |         0          |           0            |            0            |
+| guid-comb-indexed                   |  10000  |   25.11    |   0.361    |  35.95   |    14.57     |     21.38     |          0.61          |        0.36        |          0.15          |          0.21           |
+| <div style='width:155px'>Case</div> | Inserts | InsertTime | SelectTime | DiskTime | DiskReadTime | DiskWriteTime | CurrentDiskQueueLength | AvgDiskQueueLength | AvgDiskReadQueueLength | AvgDiskWriteQueueLength |
+| auto-increment-key                  |  10000  |   21.686   |   0.123    |   0.23   |     0.04     |     0.16      |          0.11          |         0          |           0            |            0            |
+| guid-key                            |  10000  |   25.786   |   0.838    |  46.05   |    19.73     |     26.34     |          0.54          |        0.46        |          0.2           |          0.26           |
+| guid-sequential-key                 |  10000  |   18.679   |   0.354    |   0.09   |      0       |     0.06      |           0            |         0          |           0            |            0            |
+| guid-comb-key                       |  10000  |   23.149   |   0.613    |  39.78   |     15.3     |     24.5      |          0.38          |        0.4         |          0.15          |          0.25           |
+| objectid-key                        |  10000  |   18.511   |   0.549    |   0.12   |      0       |     0.12      |           0            |         0          |           0            |            0            |
+| objectid-char-indexed               |  10000  |   20.739   |   0.339    |   0.27   |     0.07     |     0.18      |           0            |         0          |           0            |            0            |
