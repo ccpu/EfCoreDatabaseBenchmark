@@ -125,40 +125,40 @@ namespace EfCoreDatabaseBenchmark
 
         public async Task<BenchmarkResult> Collect(string name, Action<int> select, Func<int, Task> batchInsert)
         {
-
-            var diskUsage = new PerformanceCollector();
-            var stopWatch = new Stopwatch();
-
-            stopWatch.Start();
-            diskUsage.Start();
-            await batchInsert(_numOfItemToInsert);
-            stopWatch.Stop();
-            diskUsage.Stop();
-
-            var pos = Math.Abs(_context.Count(name) / 2);
-            var insertTime = TimeSpan.FromMilliseconds(stopWatch.ElapsedMilliseconds).TotalSeconds;
-            stopWatch = new Stopwatch();
-            stopWatch.Start();
-            select(pos);
-            var selectTime = TimeSpan.FromMilliseconds(stopWatch.ElapsedMilliseconds).TotalSeconds;
-            stopWatch.Stop();
-
-
-            var perfResult = diskUsage.GetData();
-
             var benchmarkResult = new BenchmarkResult();
 
-            foreach (var result in perfResult.GetType().GetProperties())
+            using (var diskUsage = new PerformanceCollector())
             {
-                var value = result.GetValue(perfResult);
-                benchmarkResult.GetType().GetProperty(result.Name)?.SetValue(benchmarkResult, value);
-            }
-            benchmarkResult.SelectTime = selectTime;
-            benchmarkResult.Inserts = _numOfItemToInsert;
-            benchmarkResult.InsertTime = insertTime;
-            benchmarkResult.BenchmarkCase = name;
+                var stopWatch = new Stopwatch();
 
-            await _context.Add(benchmarkResult);
+                stopWatch.Start();
+                diskUsage.Start();
+                await batchInsert(_numOfItemToInsert);
+                stopWatch.Stop();
+                diskUsage.Stop();
+
+                var pos = Math.Abs(_context.Count(name) / 2);
+                var insertTime = TimeSpan.FromMilliseconds(stopWatch.ElapsedMilliseconds).TotalSeconds;
+                stopWatch = new Stopwatch();
+                stopWatch.Start();
+                select(pos);
+                var selectTime = TimeSpan.FromMilliseconds(stopWatch.ElapsedMilliseconds).TotalSeconds;
+                stopWatch.Stop();
+
+                var perfResult = diskUsage.GetData();
+
+                foreach (var result in perfResult.GetType().GetProperties())
+                {
+                    var value = result.GetValue(perfResult);
+                    benchmarkResult.GetType().GetProperty(result.Name)?.SetValue(benchmarkResult, value);
+                }
+                benchmarkResult.SelectTime = selectTime;
+                benchmarkResult.Inserts = _numOfItemToInsert;
+                benchmarkResult.InsertTime = insertTime;
+                benchmarkResult.BenchmarkCase = name;
+
+                await _context.Add(benchmarkResult);
+            }
 
             return benchmarkResult;
         }

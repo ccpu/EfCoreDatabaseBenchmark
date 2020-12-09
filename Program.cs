@@ -7,22 +7,22 @@ using EfCoreDatabaseBenchmark.Repositories;
 
 namespace EfCoreDatabaseBenchmark
 {
-    class Program
+    internal class Program
     {
-        static async Task Main(string[] args)
+        private static async Task Main()
         {
             using (var context = new MysqlBenchmarkContext())
             {
-                await new AutoMigration(context).Migrate();
-                await Run(context);
+                await new AutoMigration(context).Migrate().ConfigureAwait(false);
             }
-
+            await Run().ConfigureAwait(false);
         }
 
-        private static async Task Run(MysqlBenchmarkContext context)
+        private static async Task Run()
         {
             while (true)
             {
+                using var context = new MysqlBenchmarkContext();
                 var resultService = new MysqlResultService(context);
 
                 Console.WriteLine();
@@ -51,7 +51,7 @@ namespace EfCoreDatabaseBenchmark
                 engine.Add(new BenchmarkCase { CaseName = "guid-sequential-indexed", InsertFunc = mySqlRepo.InsertGuidSequentialIndexed, SelectFunc = mySqlRepo.SelectGuidSequentialIndexed });
                 engine.Add(new BenchmarkCase { CaseName = "guid-comb-indexed", InsertFunc = mySqlRepo.InsertCombGuidIndexed, SelectFunc = mySqlRepo.SelectCombGuidIndexed });
 
-                await engine.Run();
+                await engine.Run().ConfigureAwait(false);
             }
         }
     }

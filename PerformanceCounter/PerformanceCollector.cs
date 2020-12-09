@@ -36,7 +36,7 @@ namespace EfCoreDatabaseBenchmark.PerformanceCounter
         public System.Diagnostics.PerformanceCounter AvgDiskWriteQueueLength { get; set; }
     }
 
-    public class PerformanceCollector
+    public class PerformanceCollector : IDisposable
     {
         public readonly Thread _thread;
         public bool _stop = false;
@@ -133,6 +133,22 @@ namespace EfCoreDatabaseBenchmark.PerformanceCounter
         public void Stop()
         {
             _stop = true;
+        }
+
+        public void Dispose()
+        {
+            _counterData.Clear();
+            _performanceCounters.DiskReadTime.Dispose();
+            _performanceCounters.DiskWriteTime.Dispose();
+            _performanceCounters.DiskTime.Dispose();
+            _performanceCounters.CurrentDiskQueueLength.Dispose();
+            _performanceCounters.AvgDiskQueueLength.Dispose();
+            _performanceCounters.AvgDiskReadQueueLength.Dispose();
+            _performanceCounters.AvgDiskWriteQueueLength.Dispose();
+
+            GC.Collect();
+            GC.WaitForPendingFinalizers();
+            GC.Collect();
         }
     }
 }
