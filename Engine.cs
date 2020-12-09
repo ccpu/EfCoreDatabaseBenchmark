@@ -137,7 +137,8 @@ namespace EfCoreDatabaseBenchmark
                 stopWatch.Stop();
                 diskUsage.Stop();
 
-                var pos = Math.Abs(_context.Count(name) / 2);
+                var totalRows = _context.Count(name);
+                var pos = Math.Abs(totalRows / 2);
                 var insertTime = TimeSpan.FromMilliseconds(stopWatch.ElapsedMilliseconds).TotalSeconds;
                 stopWatch = new Stopwatch();
                 stopWatch.Start();
@@ -156,7 +157,6 @@ namespace EfCoreDatabaseBenchmark
                 benchmarkResult.Inserts = _numOfItemToInsert;
                 benchmarkResult.InsertTime = insertTime;
                 benchmarkResult.BenchmarkCase = name;
-
                 await _context.Add(benchmarkResult);
             }
 

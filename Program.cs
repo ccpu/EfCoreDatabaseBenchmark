@@ -20,6 +20,8 @@ namespace EfCoreDatabaseBenchmark
 
         private static async Task Run()
         {
+            var sequence = 10;
+            var numOfItems = 100000;
             while (true)
             {
                 using var context = new MysqlBenchmarkContext();
@@ -28,11 +30,13 @@ namespace EfCoreDatabaseBenchmark
                 Console.WriteLine();
                 Console.WriteLine();
 
-                Console.Write("Enter number of sequence: ");
-                var sequence = int.Parse(Console.ReadLine() ?? throw new InvalidOperationException());
+                Console.Write($"Enter number of sequence ({sequence}): ");
+                var readLineSequence = Console.ReadLine();
+                sequence = String.IsNullOrEmpty(readLineSequence) ? sequence : int.Parse(readLineSequence);
 
-                Console.Write("Enter number of item to insert: ");
-                var numOfItems = int.Parse(Console.ReadLine() ?? throw new InvalidOperationException());
+                Console.Write($"Enter number of item to insert ({numOfItems}): ");
+                var readLineNumOfItems = Console.ReadLine();
+                numOfItems = String.IsNullOrEmpty(readLineNumOfItems) ? numOfItems : int.Parse(readLineNumOfItems);
 
                 var mySqlRepo = new MysqlRepository(context);
 
