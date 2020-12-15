@@ -145,10 +145,6 @@ namespace EfCoreDatabaseBenchmark.PerformanceCounter
             _performanceCounters.AvgDiskQueueLength.Dispose();
             _performanceCounters.AvgDiskReadQueueLength.Dispose();
             _performanceCounters.AvgDiskWriteQueueLength.Dispose();
-
-            GC.Collect();
-            GC.WaitForPendingFinalizers();
-            GC.Collect();
         }
     }
 }

@@ -24,17 +24,14 @@ namespace EfCoreDatabaseBenchmark.Data
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-
             optionsBuilder
-                .UseMySql("server=localhost;port=3306;database=Benchmark;user=root;password=pass;Old Guids=true",
-                    mysqlOptions => { mysqlOptions.CommandTimeout(28000); })
+                .UseMySql("server=localhost;port=3308;database=Benchmark;user=root;password=pass;Old Guids=true",
+                    mysqlOptions => mysqlOptions.CommandTimeout(28000))
                 .UseSnakeCaseNamingConvention();
-
         }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-
             modelBuilder.Entity<GuidIndexed>()
                 .HasIndex(p => new { p.Guid })
                 .IsUnique();
@@ -59,6 +56,5 @@ namespace EfCoreDatabaseBenchmark.Data
                 .HasIndex(p => new { p.UId })
                 .IsUnique();
         }
-
     }
 }

@@ -1,8 +1,9 @@
-﻿using System.Threading.Tasks;
+﻿using System;
+using System.Threading.Tasks;
 
 namespace EfCoreDatabaseBenchmark.Repositories
 {
-    internal interface IMysqlMysqlRepository
+    public interface IRepository : IDisposable
     {
         void SelectAutoIncrementKey(int position);
         void SelectObjectIdKey(int position);

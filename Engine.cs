@@ -7,6 +7,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using EfCoreDatabaseBenchmark.Entities;
 using EfCoreDatabaseBenchmark.PerformanceCounter;
+using EfCoreDatabaseBenchmark.Repositories;
 using EfCoreDatabaseBenchmark.Services;
 using EfCoreDatabaseBenchmark.Utils;
 
@@ -18,6 +19,7 @@ namespace EfCoreDatabaseBenchmark
         public string CaseName { get; set; }
         public Action<int> SelectFunc { get; set; }
         public Func<int, Task> InsertFunc { get; set; }
+        public IRepository Repo { get; set; }
     }
 
     public class Column
@@ -30,7 +32,7 @@ namespace EfCoreDatabaseBenchmark
     {
         public readonly IResultService _context;
         public readonly int _sequence;
-        public readonly List<BenchmarkCase> _cases = new List<BenchmarkCase>();
+        public readonly List<Func<BenchmarkCase>> _cases = new List<Func<BenchmarkCase>>();
         public readonly int _numOfItemToInsert;
         public int _totalInsert;
         public readonly string _mainFile;
@@ -68,9 +70,9 @@ namespace EfCoreDatabaseBenchmark
             };
         }
 
-        public void Add(BenchmarkCase newCase)
+        public void Add(Func<BenchmarkCase> func)
         {
-            _cases.Add(newCase);
+            _cases.Add(func);
         }
 
         public async Task Run()
@@ -104,8 +106,10 @@ namespace EfCoreDatabaseBenchmark
 
                 _totalInsert += (x + _numOfItemToInsert);
 
-                foreach (var item in _cases)
+                foreach (var func in _cases)
                 {
+                    BenchmarkCase item = func();
+
                     Console.Write(item.CaseName + " ");
 
                     var result = await Collect(item.CaseName, item.SelectFunc, item.InsertFunc);
@@ -118,6 +122,8 @@ namespace EfCoreDatabaseBenchmark
 
                     Console.Write(result.InsertTime);
                     Console.WriteLine();
+
+                    item.Repo.Dispose();
                 }
             }
             Console.WriteLine(_totalInsert + " item inserted.");

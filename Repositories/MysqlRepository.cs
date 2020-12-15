@@ -5,16 +5,13 @@ using EfCoreDatabaseBenchmark.Entities;
 
 namespace EfCoreDatabaseBenchmark.Repositories
 {
-
-
-    internal class MysqlRepository : IMysqlMysqlRepository
+    internal class MysqlRepository : IRepository
     {
         private readonly MysqlBenchmarkContext _context;
 
         public MysqlRepository(MysqlBenchmarkContext context)
         {
             _context = context;
-
         }
 
         public void SelectAutoIncrementKey(int position)
@@ -199,7 +196,10 @@ namespace EfCoreDatabaseBenchmark.Repositories
 
             await _context.SaveChangesAsync();
         }
+
+        public void Dispose()
+        {
+            _context.Dispose();
+        }
     }
-
-
 }

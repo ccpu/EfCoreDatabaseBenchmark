@@ -38,22 +38,75 @@ namespace EfCoreDatabaseBenchmark
                 var readLineNumOfItems = Console.ReadLine();
                 numOfItems = String.IsNullOrEmpty(readLineNumOfItems) ? numOfItems : int.Parse(readLineNumOfItems);
 
-                var mySqlRepo = new MysqlRepository(context);
-
                 var engine = new Engine(resultService, "Mysql", sequence, numOfItems);
 
-                engine.Add(new BenchmarkCase { CaseName = "auto-increment-key", InsertFunc = mySqlRepo.InsertAutoIncrementKey, SelectFunc = mySqlRepo.SelectAutoIncrementKey });
-                engine.Add(new BenchmarkCase { CaseName = "guid-key", InsertFunc = mySqlRepo.InsertGuidKey, SelectFunc = mySqlRepo.SelectGuidKey });
-                engine.Add(new BenchmarkCase { CaseName = "guid-sequential-key", InsertFunc = mySqlRepo.InsertGuidSequentialKey, SelectFunc = mySqlRepo.SelectGuidSequentialKey });
-                engine.Add(new BenchmarkCase { CaseName = "guid-comb-key", InsertFunc = mySqlRepo.InsertCombGuidKey, SelectFunc = mySqlRepo.SelectCombGuidKey });
-                engine.Add(new BenchmarkCase { CaseName = "objectid-key", InsertFunc = mySqlRepo.InsertObjectIdKey, SelectFunc = mySqlRepo.SelectObjectIdKey });
+                engine.Add(() =>
+                {
+                    var mySqlRepo = new MysqlRepository(new MysqlBenchmarkContext());
+                    return new BenchmarkCase { CaseName = "auto-increment-key", InsertFunc = mySqlRepo.InsertAutoIncrementKey, SelectFunc = mySqlRepo.SelectAutoIncrementKey, Repo = mySqlRepo };
+                });
 
-                engine.Add(new BenchmarkCase { CaseName = "objectid-char-indexed", InsertFunc = mySqlRepo.InsertObjectIdCharIndexed, SelectFunc = mySqlRepo.SelectObjectIdCharIndexed });
-                engine.Add(new BenchmarkCase { CaseName = "numeric-indexed", InsertFunc = mySqlRepo.InsertNumericIndexed, SelectFunc = mySqlRepo.SelectNumericIndexed });
-                engine.Add(new BenchmarkCase { CaseName = "objectid-indexed", InsertFunc = mySqlRepo.InsertObjectIdIndexed, SelectFunc = mySqlRepo.SelectObjectIdIndexed });
-                engine.Add(new BenchmarkCase { CaseName = "guid-indexed", InsertFunc = mySqlRepo.InsertGuidIndexed, SelectFunc = mySqlRepo.SelectGuidIndexed });
-                engine.Add(new BenchmarkCase { CaseName = "guid-sequential-indexed", InsertFunc = mySqlRepo.InsertGuidSequentialIndexed, SelectFunc = mySqlRepo.SelectGuidSequentialIndexed });
-                engine.Add(new BenchmarkCase { CaseName = "guid-comb-indexed", InsertFunc = mySqlRepo.InsertCombGuidIndexed, SelectFunc = mySqlRepo.SelectCombGuidIndexed });
+                engine.Add(() =>
+                {
+                    var mySqlRepo = new MysqlRepository(new MysqlBenchmarkContext());
+                    return new BenchmarkCase { CaseName = "guid-key", InsertFunc = mySqlRepo.InsertGuidKey, SelectFunc = mySqlRepo.SelectGuidKey, Repo = mySqlRepo };
+                });
+
+                engine.Add(() =>
+                {
+                    var mySqlRepo = new MysqlRepository(new MysqlBenchmarkContext());
+                    return new BenchmarkCase { CaseName = "guid-sequential-key", InsertFunc = mySqlRepo.InsertGuidSequentialKey, SelectFunc = mySqlRepo.SelectGuidSequentialKey, Repo = mySqlRepo };
+                });
+
+
+                engine.Add(() =>
+                {
+                    var mySqlRepo = new MysqlRepository(new MysqlBenchmarkContext());
+                    return new BenchmarkCase { CaseName = "guid-comb-key", InsertFunc = mySqlRepo.InsertCombGuidKey, SelectFunc = mySqlRepo.SelectCombGuidKey, Repo = mySqlRepo };
+                });
+
+
+                engine.Add(() =>
+                {
+                    var mySqlRepo = new MysqlRepository(new MysqlBenchmarkContext());
+                    return new BenchmarkCase { CaseName = "objectid-key", InsertFunc = mySqlRepo.InsertObjectIdKey, SelectFunc = mySqlRepo.SelectObjectIdKey, Repo = mySqlRepo };
+                });
+
+                engine.Add(() =>
+                {
+                    var mySqlRepo = new MysqlRepository(new MysqlBenchmarkContext());
+                    return new BenchmarkCase { CaseName = "objectid-char-indexed", InsertFunc = mySqlRepo.InsertObjectIdCharIndexed, SelectFunc = mySqlRepo.SelectObjectIdCharIndexed, Repo = mySqlRepo };
+                });
+
+                engine.Add(() =>
+                {
+                    var mySqlRepo = new MysqlRepository(new MysqlBenchmarkContext());
+                    return new BenchmarkCase { CaseName = "numeric-indexed", InsertFunc = mySqlRepo.InsertNumericIndexed, SelectFunc = mySqlRepo.SelectNumericIndexed, Repo = mySqlRepo };
+                });
+
+                engine.Add(() =>
+                {
+                    var mySqlRepo = new MysqlRepository(new MysqlBenchmarkContext());
+                    return new BenchmarkCase { CaseName = "objectid-indexed", InsertFunc = mySqlRepo.InsertObjectIdIndexed, SelectFunc = mySqlRepo.SelectObjectIdIndexed, Repo = mySqlRepo };
+                });
+
+                engine.Add(() =>
+                {
+                    var mySqlRepo = new MysqlRepository(new MysqlBenchmarkContext());
+                    return new BenchmarkCase { CaseName = "guid-indexed", InsertFunc = mySqlRepo.InsertGuidIndexed, SelectFunc = mySqlRepo.SelectGuidIndexed, Repo = mySqlRepo };
+                });
+
+                engine.Add(() =>
+                {
+                    var mySqlRepo = new MysqlRepository(new MysqlBenchmarkContext());
+                    return new BenchmarkCase { CaseName = "guid-sequential-indexed", InsertFunc = mySqlRepo.InsertGuidSequentialIndexed, SelectFunc = mySqlRepo.SelectGuidSequentialIndexed, Repo = mySqlRepo };
+                });
+
+                engine.Add(() =>
+                {
+                    var mySqlRepo = new MysqlRepository(new MysqlBenchmarkContext());
+                    return new BenchmarkCase { CaseName = "guid-comb-indexed", InsertFunc = mySqlRepo.InsertCombGuidIndexed, SelectFunc = mySqlRepo.SelectCombGuidIndexed, Repo = mySqlRepo };
+                });
 
                 await engine.Run().ConfigureAwait(false);
             }
