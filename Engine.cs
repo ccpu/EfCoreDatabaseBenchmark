@@ -1,15 +1,12 @@
 using System;
 using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
 using System.Diagnostics;
 using System.IO;
-using System.Linq;
 using System.Threading.Tasks;
 using EfCoreDatabaseBenchmark.Entities;
 using EfCoreDatabaseBenchmark.PerformanceCounter;
 using EfCoreDatabaseBenchmark.Repositories;
 using EfCoreDatabaseBenchmark.Services;
-using EfCoreDatabaseBenchmark.Utils;
 
 namespace EfCoreDatabaseBenchmark
 {
@@ -35,15 +32,13 @@ namespace EfCoreDatabaseBenchmark
         public readonly List<Func<BenchmarkCase>> _cases = new List<Func<BenchmarkCase>>();
         public readonly int _numOfItemToInsert;
         public int _totalInsert;
-        public readonly string _mainFile;
 
-        public Engine(IResultService context, string dbName, int sequence, int numOfItemToInsert)
+        public Engine(IResultService context, int sequence, int numOfItemToInsert)
         {
             _context = context;
             _sequence = sequence;
             _numOfItemToInsert = numOfItemToInsert;
             const string dir = "Results";
-            _mainFile = dir + "/" + dbName + ".md";
 
             if (!Directory.Exists(dir))
             {
@@ -51,24 +46,6 @@ namespace EfCoreDatabaseBenchmark
             }
         }
 
-        public static Column GenerateHeader(IReadOnlyCollection<string> headerColumn, bool firstToLeft = false)
-        {
-            var firstToLeftSet = false;
-            return new Column
-            {
-                Header = "|" + headerColumn.Aggregate("", (str, obj) => str + obj.ToString() + "|"),
-                Line = "|" + headerColumn.Aggregate("", (str, obj) =>
-                {
-                    if (firstToLeft && !firstToLeftSet)
-                    {
-                        firstToLeftSet = true;
-                        return str + ":------------|";
-                    }
-
-                    return str + ":------------:|";
-                })
-            };
-        }
 
         public void Add(Func<BenchmarkCase> func)
         {
@@ -77,32 +54,11 @@ namespace EfCoreDatabaseBenchmark
 
         public async Task Run()
         {
-            var props = typeof(BenchmarkResult)
-                .GetProperties()
-                .OrderBy(p => p.GetCustomAttributes(typeof(DisplayAttribute), true)
-                               .Cast<DisplayAttribute>()
-                               .Select(a => a.Order)
-                               .FirstOrDefault()).Filter(x => x.Name != "Id");
-
-            var columns = props.Map(x => x.Name).ToList();
-            columns[0] = "<div style='width:155px'>Case</div>";
-
-            var tableHeader = GenerateHeader(columns, true);
-
             Console.WriteLine("Benchmark started ...");
 
             for (var x = 0; x < _sequence; x++)
             {
                 Console.WriteLine("---------- Benchmark Sequence " + (x + 1) + " ----------");
-                var mainFileExist = File.Exists(_mainFile);
-                if (mainFileExist)
-                {
-                    await File.AppendAllLinesAsync(_mainFile, new[] { tableHeader.Header });
-                }
-                else
-                {
-                    await File.WriteAllLinesAsync(_mainFile, new[] { tableHeader.Header, tableHeader.Line });
-                }
 
                 _totalInsert += (x + _numOfItemToInsert);
 
@@ -113,12 +69,6 @@ namespace EfCoreDatabaseBenchmark
                     Console.Write(item.CaseName + " ");
 
                     var result = await Collect(item.CaseName, item.SelectFunc, item.InsertFunc);
-
-                    var values = props.Map(p => p.GetValue(result, null)).ToList();
-
-                    var valuesString = "|" + values.Aggregate("", (str, obj) => str + obj + "|");
-
-                    await File.AppendAllLinesAsync(_mainFile, new[] { valuesString });
 
                     Console.Write(result.InsertTime);
                     Console.WriteLine();

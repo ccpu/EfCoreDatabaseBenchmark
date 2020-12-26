@@ -25,7 +25,7 @@ namespace EfCoreDatabaseBenchmark.Data
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             optionsBuilder
-                .UseMySql("server=localhost;port=3308;database=Benchmark;user=root;password=pass;Old Guids=true",
+                .UseMySql("server=localhost;port=4999;database=Benchmark;user=root;password=pass;Old Guids=true",
                     mysqlOptions => mysqlOptions.CommandTimeout(28000))
                 .UseSnakeCaseNamingConvention();
         }

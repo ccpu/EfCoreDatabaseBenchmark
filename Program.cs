@@ -11,6 +11,7 @@ namespace EfCoreDatabaseBenchmark
     {
         private static async Task Main()
         {
+
             using (var context = new MysqlBenchmarkContext())
             {
                 await new AutoMigration(context).Migrate().ConfigureAwait(false);
@@ -38,7 +39,7 @@ namespace EfCoreDatabaseBenchmark
                 var readLineNumOfItems = Console.ReadLine();
                 numOfItems = String.IsNullOrEmpty(readLineNumOfItems) ? numOfItems : int.Parse(readLineNumOfItems);
 
-                var engine = new Engine(resultService, "Mysql", sequence, numOfItems);
+                var engine = new Engine(resultService, sequence, numOfItems);
 
                 engine.Add(() =>
                 {
