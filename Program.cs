@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Threading.Tasks;
-using Benchmark;
 using EfCoreDatabaseBenchmark.Data;
 using EfCoreDatabaseBenchmark.Services;
 using EfCoreDatabaseBenchmark.Repositories;
+using Microsoft.Extensions.DependencyInjection;
 
 namespace EfCoreDatabaseBenchmark
 {

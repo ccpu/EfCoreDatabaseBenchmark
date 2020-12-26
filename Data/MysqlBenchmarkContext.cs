@@ -1,11 +1,14 @@
 
+using System;
 using EfCoreDatabaseBenchmark.Entities;
 using Microsoft.EntityFrameworkCore;
 
 namespace EfCoreDatabaseBenchmark.Data
 {
+
     public class MysqlBenchmarkContext : DbContext
     {
+
 
         public DbSet<AutoIncrementKey> AutoIncrementKey { get; set; }
         public DbSet<GuidKey> GuidKey { get; set; }
@@ -24,10 +27,13 @@ namespace EfCoreDatabaseBenchmark.Data
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder
-                .UseMySql("server=localhost;port=4999;database=Benchmark;user=root;password=pass;Old Guids=true",
-                    mysqlOptions => mysqlOptions.CommandTimeout(28000))
-                .UseSnakeCaseNamingConvention();
+            var connectionString = "server=localhost;port=4999;database=Benchmark;user=root;password=pass;Old Guids=true";
+            optionsBuilder.UseMySql(
+                connectionString,
+                ServerVersion.AutoDetect(
+                    connectionString
+                )
+            ).UseSnakeCaseNamingConvention();
         }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
