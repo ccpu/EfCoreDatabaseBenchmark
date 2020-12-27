@@ -17,7 +17,6 @@ namespace EfCoreDatabaseBenchmark.Entities
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public long Id { get; set; }
 
-        [MaxLength(12), Column(TypeName = "Binary(12)")]
         public byte[] UId { get; set; }
 
         [DataType(DataType.DateTime)]

@@ -81,7 +81,7 @@ namespace EfCoreDatabaseBenchmark
                     stream
                 ).ReadToEndAsync();
             }
-            catch (Exception)
+            catch (Exception e)
             {
                 return null;
             }
@@ -94,11 +94,19 @@ namespace EfCoreDatabaseBenchmark
         private async Task WriteSnapshotSource(string source)
         {
             // write snapshot into the database
+
             await _db.Database.ExecuteSqlRawAsync(
-                @"CREATE TABLE IF NOT EXISTS `auto_migration` (
-                    snapshot LONGBLOB NULL
+                @"CREATE TABLE IF NOT EXISTS auto_migration (
+                    snapshot bytea NULL
                 );"
             );
+
+            //await _db.Database.ExecuteSqlRawAsync(
+            //    @"CREATE TABLE IF NOT EXISTS `auto_migration` (
+            //        snapshot LONGBLOB NULL
+            //    );"
+            //);
+
             await _db.Database.ExecuteSqlRawAsync(
                 "insert into auto_migration(snapshot) select null where not exists(select 1 from auto_migration)"
             );

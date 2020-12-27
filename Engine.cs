@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using EfCoreDatabaseBenchmark.Entities;
 using EfCoreDatabaseBenchmark.PerformanceCounter;
 using EfCoreDatabaseBenchmark.Repositories;
-using EfCoreDatabaseBenchmark.Services;
+
 
 namespace EfCoreDatabaseBenchmark
 {
@@ -16,6 +16,7 @@ namespace EfCoreDatabaseBenchmark
         public string CaseName { get; set; }
         public Action<int> SelectFunc { get; set; }
         public Func<int, Task> InsertFunc { get; set; }
+        public Func<int, Task> UpdateFunc { get; set; }
         public IRepository Repo { get; set; }
     }
 
@@ -27,15 +28,15 @@ namespace EfCoreDatabaseBenchmark
 
     public class Engine
     {
-        public readonly IResultService _context;
+        //public readonly IResultService _context;
         public readonly int _sequence;
         public readonly List<Func<BenchmarkCase>> _cases = new List<Func<BenchmarkCase>>();
         public readonly int _numOfItemToInsert;
         public int _totalInsert;
 
-        public Engine(IResultService context, int sequence, int numOfItemToInsert)
+        public Engine(int sequence, int numOfItemToInsert)
         {
-            _context = context;
+            //_context = context;
             _sequence = sequence;
             _numOfItemToInsert = numOfItemToInsert;
             const string dir = "Results";
@@ -68,18 +69,16 @@ namespace EfCoreDatabaseBenchmark
 
                     Console.Write(item.CaseName + " ");
 
-                    var result = await Collect(item.CaseName, item.SelectFunc, item.InsertFunc);
+                    var result = await Collect(item);
 
                     Console.Write(result.InsertTime);
                     Console.WriteLine();
-
-                    item.Repo.Dispose();
                 }
             }
             Console.WriteLine(_totalInsert + " item inserted.");
         }
 
-        public async Task<BenchmarkResult> Collect(string name, Action<int> select, Func<int, Task> batchInsert)
+        public async Task<BenchmarkResult> Collect(BenchmarkCase @case)
         {
             var benchmarkResult = new BenchmarkResult();
 
@@ -89,17 +88,23 @@ namespace EfCoreDatabaseBenchmark
 
                 stopWatch.Start();
                 diskUsage.Start();
-                await batchInsert(_numOfItemToInsert);
+                await @case.InsertFunc(_numOfItemToInsert);
                 stopWatch.Stop();
                 diskUsage.Stop();
 
-                var totalRows = _context.Count(name);
+                var totalRows = @case.Repo.Count(@case.CaseName);
                 var pos = Math.Abs(totalRows / 2);
                 var insertTime = TimeSpan.FromMilliseconds(stopWatch.ElapsedMilliseconds).TotalSeconds;
                 stopWatch = new Stopwatch();
                 stopWatch.Start();
-                select(pos);
+                @case.SelectFunc(pos);
                 var selectTime = TimeSpan.FromMilliseconds(stopWatch.ElapsedMilliseconds).TotalSeconds;
+                stopWatch.Stop();
+
+                stopWatch = new Stopwatch();
+                stopWatch.Start();
+                await @case.UpdateFunc(pos);
+                var updateTime = TimeSpan.FromMilliseconds(stopWatch.ElapsedMilliseconds).TotalSeconds;
                 stopWatch.Stop();
 
                 var perfResult = diskUsage.GetData();
@@ -112,8 +117,9 @@ namespace EfCoreDatabaseBenchmark
                 benchmarkResult.SelectTime = selectTime;
                 benchmarkResult.Inserts = _numOfItemToInsert;
                 benchmarkResult.InsertTime = insertTime;
-                benchmarkResult.BenchmarkCase = name;
-                await _context.Add(benchmarkResult);
+                benchmarkResult.UpdateTime = updateTime;
+                benchmarkResult.BenchmarkCase = @case.CaseName;
+                await @case.Repo.Add(benchmarkResult);
             }
 
             return benchmarkResult;

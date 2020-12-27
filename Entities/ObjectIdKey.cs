@@ -13,8 +13,7 @@ namespace EfCoreDatabaseBenchmark.Entities
             Id = ObjectId.GenerateNewId().ToByteArray();
         }
 
-        [Key]
-        [MaxLength(12), Column(TypeName = "Binary(12)")]
+        [Key, MaxLength(12)]
         public byte[] Id { get; set; }
 
         [DataType(DataType.DateTime)]

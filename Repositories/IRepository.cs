@@ -1,31 +1,34 @@
 ﻿using System;
 using System.Threading.Tasks;
+using EfCoreDatabaseBenchmark.Entities;
 
 namespace EfCoreDatabaseBenchmark.Repositories
 {
     public interface IRepository : IDisposable
     {
-        void SelectAutoIncrementKey(int position);
-        void SelectObjectIdKey(int position);
-        void SelectGuidKey(int position);
-        void SelectGuidSequentialKey(int position);
-        void SelectCombGuidKey(int position);
-        void SelectNumericIndexed(int position);
-        void SelectGuidIndexed(int position);
-        void SelectObjectIdCharIndexed(int position);
-        void SelectObjectIdIndexed(int position);
-        void SelectGuidSequentialIndexed(int position);
-        void SelectCombGuidIndexed(int position);
-        Task InsertAutoIncrementKey(int NumOfItems);
-        Task InsertObjectIdCharIndexed(int NumOfItems);
-        Task InsertObjectIdKey(int NumOfItems);
-        Task InsertGuidKey(int NumOfItems);
-        Task InsertNumericIndexed(int NumOfItems);
-        Task InsertObjectIdIndexed(int NumOfItems);
-        Task InsertGuidSequentialKey(int NumOfItems);
-        Task InsertCombGuidKey(int NumOfItems);
-        Task InsertGuidSequentialIndexed(int NumOfItems);
-        Task InsertGuidIndexed(int NumOfItems);
-        Task InsertCombGuidIndexed(int NumOfItems);
+        void AutoIncrementKeySelect(int position);
+        void ObjectIdKeySelect(int position);
+        void GuidKeySelect(int position);
+        void GuidSequentialKeySelect(int position);
+        void CombGuidKeySelect(int position);
+        void NumericIndexedSelect(int position);
+        void GuidIndexedSelect(int position);
+        void ObjectIdCharIndexedSelect(int position);
+        void ObjectIdIndexedSelect(int position);
+        void GuidSequentialIndexedSelect(int position);
+        void CombGuidIndexedSelect(int position);
+        Task AutoIncrementKeyInsert(int NumOfItems);
+        Task ObjectIdCharIndexedInsert(int NumOfItems);
+        Task ObjectIdKeyInsert(int NumOfItems);
+        Task GuidKeyInsert(int NumOfItems);
+        Task NumericIndexedInsert(int NumOfItems);
+        Task ObjectIdIndexedInsert(int NumOfItems);
+        Task GuidSequentialKeyInsert(int NumOfItems);
+        Task CombGuidKeyInsert(int NumOfItems);
+        Task GuidSequentialIndexedInsert(int NumOfItems);
+        Task GuidIndexedInsert(int NumOfItems);
+        Task CombGuidIndexedInsert(int NumOfItems);
+        int Count(string caseName);
+        Task Add(BenchmarkResult result);
     }
 }

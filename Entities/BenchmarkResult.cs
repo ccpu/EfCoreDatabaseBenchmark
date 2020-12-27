@@ -8,7 +8,7 @@ namespace EfCoreDatabaseBenchmark.Entities
     {
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-        public int Id { get; set; }
+        public long Id { get; set; }
         [Display(Order = 1)]
         public string BenchmarkCase { get; set; }
         [Display(Order = 2)]
@@ -17,5 +17,7 @@ namespace EfCoreDatabaseBenchmark.Entities
         public double InsertTime { get; set; }
         [Display(Order = 4)]
         public double SelectTime { get; set; }
+        [Display(Order = 5)]
+        public double UpdateTime { get; set; }
     }
 }
