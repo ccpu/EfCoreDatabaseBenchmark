@@ -10,6 +10,7 @@ namespace EfCoreDatabaseBenchmark.Data
         {
             var connectionString = "Host=localhost;Port=26257;database=Benchmark;Username=root;";
             optionsBuilder.UseNpgsql(connectionString, options => options.SetPostgresVersion(new Version(9, 6))).UseSnakeCaseNamingConvention();
+            optionsBuilder.EnableSensitiveDataLogging();
         }
     }
 }

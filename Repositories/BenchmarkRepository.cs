@@ -3,6 +3,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using EfCoreDatabaseBenchmark.Data;
 using EfCoreDatabaseBenchmark.Entities;
+using Microsoft.EntityFrameworkCore;
 
 namespace EfCoreDatabaseBenchmark.Repositories
 {
@@ -12,6 +13,7 @@ namespace EfCoreDatabaseBenchmark.Repositories
 
         public BenchmarkRepository(IBenchmarkDbContext context)
         {
+            context.Database.SetCommandTimeout((int)TimeSpan.FromMinutes(10).TotalSeconds);
             _context = context;
         }
 

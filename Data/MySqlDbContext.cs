@@ -14,6 +14,7 @@ namespace EfCoreDatabaseBenchmark.Data
                     connectionString
                 )
             ).UseSnakeCaseNamingConvention();
+            optionsBuilder.EnableSensitiveDataLogging();
         }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

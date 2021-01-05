@@ -9,6 +9,7 @@ namespace EfCoreDatabaseBenchmark.Data
         {
             var connectionString = "Host=localhost;database=Benchmark;Username=postgres;Password=password";
             optionsBuilder.UseNpgsql(connectionString).UseSnakeCaseNamingConvention();
+            optionsBuilder.EnableSensitiveDataLogging();
         }
     }
 }
