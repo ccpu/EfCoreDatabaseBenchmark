@@ -93,6 +93,7 @@ namespace EfCoreDatabaseBenchmark
                                 x.Name != "Min" &&
                                 x.Name != "Max" &&
                                 x.Name != "Avg" &&
+                                x.Name != "SessionId" &&
                                 x.Name != "CountSession" &&
                                 x.Name != "Inserts"))
                         {
