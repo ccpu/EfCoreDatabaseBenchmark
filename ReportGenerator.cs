@@ -80,43 +80,48 @@ namespace EfCoreDatabaseBenchmark
                 foreach (var group in groups)
                 {
                     // to prevent messing up csv file,if no match means benchmark has not generated result for all cases, maybe duo to cancellation 
-                    if (group.Count() != tableNamesList.Count())
+                    if (group.Count() == tableNamesList.Count())
                     {
-                        return;
-                    }
-
-                    dynamic obj = new System.Dynamic.ExpandoObject();
+                        dynamic obj = new System.Dynamic.ExpandoObject();
 
 
-                    foreach (var benchmarkProp in new BenchmarkResult().GetType().GetProperties()
-                        .Where(x =>
-                            x.Name != "Id" &&
-                            x.Name != "BenchmarkCase" &&
-                            x.Name != "Sum" &&
-                            x.Name != "Min" &&
-                            x.Name != "Max" &&
-                            x.Name != "Avg" &&
-                            x.Name != "CountSession" &&
-                            x.Name != "Inserts"))
-                    {
-                        foreach (var tableName in tableNamesList)
+                        foreach (var benchmarkProp in new BenchmarkResult().GetType().GetProperties()
+                            .Where(x =>
+                                x.Name != "Id" &&
+                                x.Name != "BenchmarkCase" &&
+                                x.Name != "Sum" &&
+                                x.Name != "Min" &&
+                                x.Name != "Max" &&
+                                x.Name != "Avg" &&
+                                x.Name != "CountSession" &&
+                                x.Name != "Inserts"))
                         {
-                            var results = group.First(x => x.BenchmarkCase == tableName.ToString());
+                            foreach (var tableName in tableNamesList)
+                            {
+                                var results = group.First(x => x.BenchmarkCase == tableName.ToString());
 
-                            var benchmarkPropName = benchmarkProp.Name;
-                            var value = results.GetType().GetProperty(benchmarkPropName)?.GetValue(results, null);
-                            ((IDictionary<String, Object>)obj)[tableName + "_" + benchmarkPropName] = value;
+                                var benchmarkPropName = benchmarkProp.Name;
+                                var value = results.GetType().GetProperty(benchmarkPropName)?.GetValue(results, null);
+                                ((IDictionary<String, Object>)obj)[tableName + "_" + benchmarkPropName] = value;
+                            }
                         }
+
+                        csv.WriteRecord(obj);
+                        csv.NextRecord();
                     }
 
-                    csv.WriteRecord(obj);
-                    csv.NextRecord();
+
                 }
                 writer.Flush();
                 stream.Position = 0;
                 var csvResult = reader.ReadToEnd();
 
-                File.WriteAllText(databaseName + "-report.csv", csvResult);
+                if (!Directory.Exists("results"))
+                {
+                    Directory.CreateDirectory("results");
+                }
+
+                File.WriteAllText("results/" + databaseName + "-report.csv", csvResult);
 
             }
         }
