@@ -5,11 +5,10 @@ using EfCoreDatabaseBenchmark.Utils;
 
 namespace EfCoreDatabaseBenchmark.Entities
 {
-    public class CombGuidIndexed
+    public class GuidCombIndexed : BenchmarkCommon
     {
-        public CombGuidIndexed()
+        public GuidCombIndexed()
         {
-            DateCreated = DateTime.UtcNow;
             Guid = new GuidCombGenerator().Generate();
         }
 
@@ -19,7 +18,5 @@ namespace EfCoreDatabaseBenchmark.Entities
 
         public Guid Guid { get; set; }
 
-        [DataType(DataType.DateTime)]
-        public DateTime? DateCreated { get; set; }
     }
 }

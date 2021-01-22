@@ -4,11 +4,10 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace EfCoreDatabaseBenchmark.Entities
 {
-    public class GuidIndexed
+    public class GuidIndexed : BenchmarkCommon
     {
         public GuidIndexed()
         {
-            DateCreated = DateTime.UtcNow;
             Guid = Guid.NewGuid();
         }
 
@@ -18,7 +17,5 @@ namespace EfCoreDatabaseBenchmark.Entities
 
         public Guid Guid { get; set; }
 
-        [DataType(DataType.DateTime)]
-        public DateTime? DateCreated { get; set; }
     }
 }

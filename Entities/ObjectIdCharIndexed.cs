@@ -5,11 +5,10 @@ using MongoDB.Bson;
 
 namespace EfCoreDatabaseBenchmark.Entities
 {
-    public class ObjectIdCharIndexed
+    public class ObjectIdCharIndexed : BenchmarkCommon
     {
         public ObjectIdCharIndexed()
         {
-            DateCreated = DateTime.UtcNow;
             UId = ObjectId.GenerateNewId().ToString();
         }
 
@@ -20,7 +19,6 @@ namespace EfCoreDatabaseBenchmark.Entities
         [MaxLength(24), Column(TypeName = "char(24)")]
         public string UId { get; set; }
 
-        [DataType(DataType.DateTime)]
-        public DateTime? DateCreated { get; set; }
+
     }
 }

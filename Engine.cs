@@ -13,9 +13,9 @@ namespace EfCoreDatabaseBenchmark
 
     public class BenchmarkCase
     {
-        public string CaseName { get; set; }
+        public BenchmarkTables TableName { get; set; }
         public Action<int> SelectFunc { get; set; }
-        public Func<int, Task> InsertFunc { get; set; }
+        public Func<int, Guid, Task> InsertFunc { get; set; }
         public Func<int, Task> UpdateFunc { get; set; }
         public IRepository Repo { get; set; }
     }
@@ -25,6 +25,13 @@ namespace EfCoreDatabaseBenchmark
         public string Header { get; set; }
         public string Line { get; set; }
     }
+
+    public class AggregationReturn
+    {
+        public double TimeTaken { get; set; }
+        public long value { get; set; }
+    }
+
 
     public class Engine
     {
@@ -62,23 +69,38 @@ namespace EfCoreDatabaseBenchmark
                 Console.WriteLine("---------- Benchmark Sequence " + (x + 1) + " ----------");
 
                 _totalInsert += (x + _numOfItemToInsert);
-
+                var sessionId = Guid.NewGuid();
                 foreach (var func in _cases)
                 {
                     BenchmarkCase item = func();
 
-                    Console.Write(item.CaseName + " ");
+                    Console.Write(item.TableName + " ");
 
-                    var result = await Collect(item);
+                    var result = await Collect(item, sessionId);
 
                     Console.Write(result.InsertTime);
                     Console.WriteLine();
                 }
+
             }
+
             Console.WriteLine(_totalInsert + " item inserted.");
+            Console.WriteLine();
+            Console.WriteLine();
+            await Task.Run(() => { ReportGenerator.Generate(); });
         }
 
-        public async Task<BenchmarkResult> Collect(BenchmarkCase @case)
+        public async Task<AggregationReturn> AggregationTest(Func<Guid, BenchmarkTables, Task<long>> func, Guid sessionId, BenchmarkTables tableName)
+        {
+            var stopWatch = new Stopwatch();
+            stopWatch.Start();
+            var value = await func(sessionId, tableName);
+            var time = TimeSpan.FromMilliseconds(stopWatch.ElapsedMilliseconds).TotalSeconds;
+            stopWatch.Stop();
+            return new AggregationReturn { TimeTaken = time, value = value };
+        }
+
+        public async Task<BenchmarkResult> Collect(BenchmarkCase @case, Guid sessionId)
         {
             var benchmarkResult = new BenchmarkResult();
 
@@ -88,11 +110,11 @@ namespace EfCoreDatabaseBenchmark
 
                 stopWatch.Start();
                 diskUsage.Start();
-                await @case.InsertFunc(_numOfItemToInsert);
+                await @case.InsertFunc(_numOfItemToInsert, sessionId);
                 stopWatch.Stop();
                 diskUsage.Stop();
 
-                var totalRows = @case.Repo.Count(@case.CaseName);
+                var totalRows = @case.Repo.Count(@case.TableName);
                 var pos = Math.Abs(totalRows / 2);
                 var insertTime = TimeSpan.FromMilliseconds(stopWatch.ElapsedMilliseconds).TotalSeconds;
                 stopWatch = new Stopwatch();
@@ -107,6 +129,13 @@ namespace EfCoreDatabaseBenchmark
                 var updateTime = TimeSpan.FromMilliseconds(stopWatch.ElapsedMilliseconds).TotalSeconds;
                 stopWatch.Stop();
 
+                var sum = await AggregationTest(@case.Repo.Sum, sessionId, @case.TableName);
+                var min = await AggregationTest(@case.Repo.Min, sessionId, @case.TableName);
+                var max = await AggregationTest(@case.Repo.Max, sessionId, @case.TableName);
+                var avg = await AggregationTest(@case.Repo.Avg, sessionId, @case.TableName);
+                var count = await AggregationTest(@case.Repo.CountBySession, sessionId, @case.TableName);
+
+
                 var perfResult = diskUsage.GetData();
 
                 foreach (var result in perfResult.GetType().GetProperties())
@@ -114,11 +143,30 @@ namespace EfCoreDatabaseBenchmark
                     var value = result.GetValue(perfResult);
                     benchmarkResult.GetType().GetProperty(result.Name)?.SetValue(benchmarkResult, value);
                 }
+
                 benchmarkResult.SelectTime = selectTime;
                 benchmarkResult.Inserts = _numOfItemToInsert;
                 benchmarkResult.InsertTime = insertTime;
                 benchmarkResult.UpdateTime = updateTime;
-                benchmarkResult.BenchmarkCase = @case.CaseName;
+                benchmarkResult.BenchmarkCase = @case.TableName.ToString();
+                benchmarkResult.SessionId = sessionId;
+
+                benchmarkResult.Sum = sum.value;
+                benchmarkResult.SumTime = sum.TimeTaken;
+
+                benchmarkResult.Min = min.value;
+                benchmarkResult.MinTime = min.TimeTaken;
+
+                benchmarkResult.Max = max.value;
+                benchmarkResult.MaxTime = max.TimeTaken;
+
+                benchmarkResult.Avg = avg.value;
+                benchmarkResult.AvgTime = avg.TimeTaken;
+
+                benchmarkResult.CountSession = count.value;
+                benchmarkResult.CountSessionTime = count.TimeTaken;
+
+
                 await @case.Repo.Add(benchmarkResult);
             }
 

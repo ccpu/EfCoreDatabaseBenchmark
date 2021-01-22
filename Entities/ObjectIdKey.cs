@@ -5,18 +5,14 @@ using MongoDB.Bson;
 
 namespace EfCoreDatabaseBenchmark.Entities
 {
-    public class ObjectIdKey
+    public class ObjectIdKey : BenchmarkCommon
     {
         public ObjectIdKey()
         {
-            DateCreated = DateTime.UtcNow;
             Id = ObjectId.GenerateNewId().ToByteArray();
         }
 
         [Key, MaxLength(12)]
         public byte[] Id { get; set; }
-
-        [DataType(DataType.DateTime)]
-        public DateTime? DateCreated { get; set; }
     }
 }

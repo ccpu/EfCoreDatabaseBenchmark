@@ -4,11 +4,10 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace EfCoreDatabaseBenchmark.Entities
 {
-    public class GuidSequentialIndexed
+    public class GuidSequentialIndexed : BenchmarkCommon
     {
         public GuidSequentialIndexed()
         {
-            DateCreated = DateTime.UtcNow;
             Guid = Utils.SequentialGuid.Create(SequentialGuid.SequentialGuidType.SequentialAsBinary);
         }
 
@@ -18,7 +17,5 @@ namespace EfCoreDatabaseBenchmark.Entities
 
         public Guid Guid { get; set; }
 
-        [DataType(DataType.DateTime)]
-        public DateTime? DateCreated { get; set; }
     }
 }

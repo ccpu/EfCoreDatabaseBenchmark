@@ -8,12 +8,7 @@ namespace EfCoreDatabaseBenchmark.Data
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             var connectionString = "server=localhost;port=4999;database=Benchmark;user=root;password=pass;Old Guids=true";
-            optionsBuilder.UseMySql(
-                connectionString,
-                ServerVersion.AutoDetect(
-                    connectionString
-                )
-            ).UseSnakeCaseNamingConvention();
+            optionsBuilder.UseMySql(connectionString, ServerVersion.AutoDetect(connectionString));
             optionsBuilder.EnableSensitiveDataLogging();
         }
         protected override void OnModelCreating(ModelBuilder modelBuilder)

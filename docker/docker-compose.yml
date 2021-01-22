@@ -10,7 +10,7 @@ services:
       - MYSQL_USER=root
       - MYSQL_PASSWORD=pass
     volumes:
-      - E:/ProgramData/mariadb/mariadb-docker:/var/lib/mysql
+      - E:/ProgramData/docker/mariadb/mariadb-docker:/var/lib/mysql
     # tty: true
     ports:
       - 4998:3306
@@ -27,7 +27,7 @@ services:
     environment:
       MYSQL_ROOT_PASSWORD: pass
     volumes:
-      - E:/ProgramData/MySQL/mysql-docker:/var/lib/mysql
+      - E:/ProgramData/docker/MySQL/mysql-docker:/var/lib/mysql
     # tty: true
     ports:
       - 4999:3306
@@ -45,7 +45,7 @@ services:
       - POSTGRES_PASSWORD=password
       - PGDATA=/var/lib/postgresql/data/pgdata
     volumes:
-      - E:/ProgramData/postgres/docker:/var/lib/postgresql
+      - E:/ProgramData/docker/postgres/docker:/var/lib/postgresql
     ports:
       - 5432:5432
     deploy:
@@ -60,7 +60,7 @@ services:
     image: cockroachdb/cockroach:latest
     command: start-single-node --cluster-name=example-single-node --logtostderr=WARNING --log-file-verbosity=WARNING --insecure
     volumes:
-      - E:/ProgramData/crdb/docker:/cockroach/cockroach-data
+      - E:/ProgramData/docker/crdb/docker:/cockroach/cockroach-data
     ports:
       - "26257:26257"
       - "8080:8080"

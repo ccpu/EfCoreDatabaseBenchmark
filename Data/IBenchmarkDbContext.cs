@@ -12,11 +12,11 @@ namespace EfCoreDatabaseBenchmark.Data
         DbSet<AutoIncrementKey> AutoIncrementKey { get; set; }
         DbSet<GuidKey> GuidKey { get; set; }
         DbSet<GuidSequentialKey> GuidSequentialKey { get; set; }
-        DbSet<CombGuidKey> CombGuidKey { get; set; }
+        DbSet<GuidCombKey> GuidCombKey { get; set; }
         DbSet<ObjectIdKey> ObjectIdKey { get; set; }
         DbSet<GuidIndexed> GuidIndexed { get; set; }
         DbSet<GuidSequentialIndexed> GuidSequentialIndexed { get; set; }
-        DbSet<CombGuidIndexed> CombGuidIndexed { get; set; }
+        DbSet<GuidCombIndexed> GuidCombIndexed { get; set; }
         DbSet<NumericIndexed> NumericIndexed { get; set; }
         DbSet<ObjectIdIndexed> ObjectIdIndexed { get; set; }
         DbSet<ObjectIdCharIndexed> ObjectIdCharIndexed { get; set; }

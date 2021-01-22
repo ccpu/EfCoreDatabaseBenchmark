@@ -17,18 +17,23 @@ namespace EfCoreDatabaseBenchmark.Repositories
         void ObjectIdIndexedSelect(int position);
         void GuidSequentialIndexedSelect(int position);
         void CombGuidIndexedSelect(int position);
-        Task AutoIncrementKeyInsert(int NumOfItems);
-        Task ObjectIdCharIndexedInsert(int NumOfItems);
-        Task ObjectIdKeyInsert(int NumOfItems);
-        Task GuidKeyInsert(int NumOfItems);
-        Task NumericIndexedInsert(int NumOfItems);
-        Task ObjectIdIndexedInsert(int NumOfItems);
-        Task GuidSequentialKeyInsert(int NumOfItems);
-        Task CombGuidKeyInsert(int NumOfItems);
-        Task GuidSequentialIndexedInsert(int NumOfItems);
-        Task GuidIndexedInsert(int NumOfItems);
-        Task CombGuidIndexedInsert(int NumOfItems);
-        int Count(string caseName);
+        Task AutoIncrementKeyInsert(int NumOfItems, Guid sessionId);
+        Task ObjectIdCharIndexedInsert(int NumOfItems, Guid sessionId);
+        Task ObjectIdKeyInsert(int NumOfItems, Guid sessionId);
+        Task GuidKeyInsert(int NumOfItems, Guid sessionId);
+        Task NumericIndexedInsert(int NumOfItems, Guid sessionId);
+        Task ObjectIdIndexedInsert(int NumOfItems, Guid sessionId);
+        Task GuidSequentialKeyInsert(int NumOfItems, Guid sessionId);
+        Task CombGuidKeyInsert(int NumOfItems, Guid sessionId);
+        Task GuidSequentialIndexedInsert(int NumOfItems, Guid sessionId);
+        Task GuidIndexedInsert(int NumOfItems, Guid sessionId);
+        Task CombGuidIndexedInsert(int NumOfItems, Guid sessionId);
+        int Count(BenchmarkTables caseName);
         Task Add(BenchmarkResult result);
+        Task<long> Sum(Guid sessionId, BenchmarkTables tableName);
+        Task<long> Min(Guid sessionId, BenchmarkTables tableName);
+        Task<long> Max(Guid sessionId, BenchmarkTables tableName);
+        Task<long> CountBySession(Guid sessionId, BenchmarkTables tableName);
+        Task<long> Avg(Guid sessionId, BenchmarkTables tableName);
     }
 }

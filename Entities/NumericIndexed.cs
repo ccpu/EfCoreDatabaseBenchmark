@@ -7,11 +7,10 @@ using IdGen;
 
 namespace EfCoreDatabaseBenchmark.Entities
 {
-    public class NumericIndexed
+    public class NumericIndexed : BenchmarkCommon
     {
         public NumericIndexed()
         {
-            DateCreated = DateTime.UtcNow;
             Num = NumericIdGenerator.GenerateId();
         }
 
@@ -21,7 +20,5 @@ namespace EfCoreDatabaseBenchmark.Entities
 
         public long Num { get; set; }
 
-        [DataType(DataType.DateTime)]
-        public DateTime? DateCreated { get; set; }
     }
 }

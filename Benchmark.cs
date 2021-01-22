@@ -21,7 +21,7 @@ namespace EfCoreDatabaseBenchmark
                 var repo = new BenchmarkRepository(getContext());
                 return new BenchmarkCase
                 {
-                    CaseName = "auto-increment-key",
+                    TableName = BenchmarkTables.AutoIncrementKey,
                     InsertFunc = repo.AutoIncrementKeyInsert,
                     SelectFunc = repo.AutoIncrementKeySelect,
                     UpdateFunc = repo.AutoIncrementKeyUpdateAsync,
@@ -34,7 +34,7 @@ namespace EfCoreDatabaseBenchmark
                 var repo = new BenchmarkRepository(getContext());
                 return new BenchmarkCase
                 {
-                    CaseName = "guid-key",
+                    TableName = BenchmarkTables.GuidKey,
                     InsertFunc = repo.GuidKeyInsert,
                     SelectFunc = repo.GuidKeySelect,
                     UpdateFunc = repo.GuidKeyUpdateAsync,
@@ -47,7 +47,7 @@ namespace EfCoreDatabaseBenchmark
                 var repo = new BenchmarkRepository(getContext());
                 return new BenchmarkCase
                 {
-                    CaseName = "guid-sequential-key",
+                    TableName = BenchmarkTables.GuidSequentialKey,
                     InsertFunc = repo.GuidSequentialKeyInsert,
                     SelectFunc = repo.GuidSequentialKeySelect,
                     UpdateFunc = repo.GuidSequentialKeyUpdateAsync,
@@ -61,7 +61,7 @@ namespace EfCoreDatabaseBenchmark
                 var repo = new BenchmarkRepository(getContext());
                 return new BenchmarkCase
                 {
-                    CaseName = "guid-comb-key",
+                    TableName = BenchmarkTables.GuidCombKey,
                     InsertFunc = repo.CombGuidKeyInsert,
                     SelectFunc = repo.CombGuidKeySelect,
                     UpdateFunc = repo.CombGuidKeyUpdateAsync,
@@ -75,7 +75,7 @@ namespace EfCoreDatabaseBenchmark
                 var repo = new BenchmarkRepository(getContext());
                 return new BenchmarkCase
                 {
-                    CaseName = "objectid-key",
+                    TableName = BenchmarkTables.ObjectIdKey,
                     InsertFunc = repo.ObjectIdKeyInsert,
                     SelectFunc = repo.ObjectIdKeySelect,
                     UpdateFunc = repo.ObjectIdKeyUpdateAsync,
@@ -88,7 +88,7 @@ namespace EfCoreDatabaseBenchmark
                 var repo = new BenchmarkRepository(getContext());
                 return new BenchmarkCase
                 {
-                    CaseName = "objectid-char-indexed",
+                    TableName = BenchmarkTables.ObjectIdCharIndexed,
                     InsertFunc = repo.ObjectIdCharIndexedInsert,
                     SelectFunc = repo.ObjectIdCharIndexedSelect,
                     UpdateFunc = repo.ObjectIdCharIndexedUpdateAsync,
@@ -101,7 +101,7 @@ namespace EfCoreDatabaseBenchmark
                 var repo = new BenchmarkRepository(getContext());
                 return new BenchmarkCase
                 {
-                    CaseName = "numeric-indexed",
+                    TableName = BenchmarkTables.NumericIndexed,
                     InsertFunc = repo.NumericIndexedInsert,
                     SelectFunc = repo.NumericIndexedSelect,
                     UpdateFunc = repo.NumericIndexedUpdateAsync,
@@ -114,7 +114,7 @@ namespace EfCoreDatabaseBenchmark
                 var repo = new BenchmarkRepository(getContext());
                 return new BenchmarkCase
                 {
-                    CaseName = "objectid-indexed",
+                    TableName = BenchmarkTables.ObjectIdIndexed,
                     InsertFunc = repo.ObjectIdIndexedInsert,
                     SelectFunc = repo.ObjectIdIndexedSelect,
                     UpdateFunc = repo.ObjectIdIndexedUpdateAsync,
@@ -127,7 +127,7 @@ namespace EfCoreDatabaseBenchmark
                 var repo = new BenchmarkRepository(getContext());
                 return new BenchmarkCase
                 {
-                    CaseName = "guid-indexed",
+                    TableName = BenchmarkTables.GuidIndexed,
                     InsertFunc = repo.GuidIndexedInsert,
                     SelectFunc = repo.GuidIndexedSelect,
                     UpdateFunc = repo.GuidIndexedUpdateAsync,
@@ -140,7 +140,7 @@ namespace EfCoreDatabaseBenchmark
                 var repo = new BenchmarkRepository(getContext());
                 return new BenchmarkCase
                 {
-                    CaseName = "guid-sequential-indexed",
+                    TableName = BenchmarkTables.GuidSequentialIndexed,
                     InsertFunc = repo.GuidSequentialIndexedInsert,
                     SelectFunc = repo.GuidSequentialIndexedSelect,
                     UpdateFunc = repo.GuidSequentialIndexedUpdateAsync,
@@ -153,7 +153,7 @@ namespace EfCoreDatabaseBenchmark
                 var repo = new BenchmarkRepository(getContext());
                 return new BenchmarkCase
                 {
-                    CaseName = "guid-comb-indexed",
+                    TableName = BenchmarkTables.GuidCombIndexed,
                     InsertFunc = repo.CombGuidIndexedInsert,
                     SelectFunc = repo.CombGuidIndexedSelect,
                     UpdateFunc = repo.CombGuidIndexedUpdateAsync,

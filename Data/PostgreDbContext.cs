@@ -8,7 +8,7 @@ namespace EfCoreDatabaseBenchmark.Data
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             var connectionString = "Host=localhost;database=Benchmark;Username=postgres;Password=password";
-            optionsBuilder.UseNpgsql(connectionString).UseSnakeCaseNamingConvention();
+            optionsBuilder.UseNpgsql(connectionString);
             optionsBuilder.EnableSensitiveDataLogging();
         }
     }

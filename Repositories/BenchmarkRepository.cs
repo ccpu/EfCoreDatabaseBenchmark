@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
 using EfCoreDatabaseBenchmark.Data;
@@ -23,12 +24,11 @@ namespace EfCoreDatabaseBenchmark.Repositories
             var result = _context.AutoIncrementKey.Skip(position).Take(1);
             _context.AutoIncrementKey.Where(x => x.Id == result.First().Id).ToList();
         }
-        public async Task AutoIncrementKeyInsert(int NumOfItems)
+        public async Task AutoIncrementKeyInsert(int NumOfItems, Guid sessionId)
         {
-
             for (int i = 0; i < NumOfItems; i++)
             {
-                _context.AutoIncrementKey.Add(new AutoIncrementKey());
+                _context.AutoIncrementKey.Add(new AutoIncrementKey() { SessionId = sessionId });
             }
 
             await _context.SaveChangesAsync();
@@ -49,11 +49,11 @@ namespace EfCoreDatabaseBenchmark.Repositories
             _context.ObjectIdKey.Where(x => x.Id == result.First().Id).ToList();
         }
 
-        public async Task ObjectIdKeyInsert(int NumOfItems)
+        public async Task ObjectIdKeyInsert(int NumOfItems, Guid sessionId)
         {
             for (int i = 0; i < NumOfItems; i++)
             {
-                _context.ObjectIdKey.Add(new ObjectIdKey());
+                _context.ObjectIdKey.Add(new ObjectIdKey() { SessionId = sessionId });
             }
 
             await _context.SaveChangesAsync();
@@ -73,12 +73,12 @@ namespace EfCoreDatabaseBenchmark.Repositories
             var result = _context.GuidKey.Skip(position).Take(1);
             _context.GuidKey.Where(x => x.Id == result.First().Id).ToList();
         }
-        public async Task GuidKeyInsert(int NumOfItems)
+        public async Task GuidKeyInsert(int NumOfItems, Guid sessionId)
         {
 
             for (int i = 0; i < NumOfItems; i++)
             {
-                _context.GuidKey.Add(new GuidKey());
+                _context.GuidKey.Add(new GuidKey() { SessionId = sessionId });
             }
 
             await _context.SaveChangesAsync();
@@ -98,12 +98,12 @@ namespace EfCoreDatabaseBenchmark.Repositories
             var result = _context.GuidSequentialKey.Skip(position).Take(1);
             _context.GuidSequentialKey.Where(x => x.Id == result.First().Id).ToList();
         }
-        public async Task GuidSequentialKeyInsert(int NumOfItems)
+        public async Task GuidSequentialKeyInsert(int NumOfItems, Guid sessionId)
         {
 
             for (int i = 0; i < NumOfItems; i++)
             {
-                _context.GuidSequentialKey.Add(new GuidSequentialKey());
+                _context.GuidSequentialKey.Add(new GuidSequentialKey() { SessionId = sessionId });
             }
 
             await _context.SaveChangesAsync();
@@ -120,21 +120,21 @@ namespace EfCoreDatabaseBenchmark.Repositories
         #region CombGuidKey
         public void CombGuidKeySelect(int position)
         {
-            var result = _context.CombGuidKey.Skip(position).Take(1);
-            _context.CombGuidKey.Where(x => x.Id == result.First().Id).ToList();
+            var result = _context.GuidCombKey.Skip(position).Take(1);
+            _context.GuidCombKey.Where(x => x.Id == result.First().Id).ToList();
         }
-        public async Task CombGuidKeyInsert(int NumOfItems)
+        public async Task CombGuidKeyInsert(int NumOfItems, Guid sessionId)
         {
             for (int i = 0; i < NumOfItems; i++)
             {
-                _context.CombGuidKey.Add(new CombGuidKey());
+                _context.GuidCombKey.Add(new GuidCombKey() { SessionId = sessionId });
             }
 
             await _context.SaveChangesAsync();
         }
         public async Task CombGuidKeyUpdateAsync(int position)
         {
-            var result = _context.CombGuidKey.Skip(position).Take(1).First();
+            var result = _context.GuidCombKey.Skip(position).Take(1).First();
             result.DateCreated = DateTime.UtcNow;
             _context.Update(result);
             await _context.SaveChangesAsync();
@@ -147,12 +147,12 @@ namespace EfCoreDatabaseBenchmark.Repositories
             var result = _context.NumericIndexed.Skip(position).Take(1);
             _context.NumericIndexed.Where(x => x.Num == result.First().Num).ToList();
         }
-        public async Task NumericIndexedInsert(int NumOfItems)
+        public async Task NumericIndexedInsert(int NumOfItems, Guid sessionId)
         {
 
             for (int i = 0; i < NumOfItems; i++)
             {
-                _context.NumericIndexed.Add(new NumericIndexed());
+                _context.NumericIndexed.Add(new NumericIndexed() { SessionId = sessionId });
             }
 
             await _context.SaveChangesAsync();
@@ -172,11 +172,11 @@ namespace EfCoreDatabaseBenchmark.Repositories
             var result = _context.GuidIndexed.Skip(position).Take(1);
             _context.GuidIndexed.Where(x => x.Guid == result.First().Guid).ToList();
         }
-        public async Task GuidIndexedInsert(int NumOfItems)
+        public async Task GuidIndexedInsert(int NumOfItems, Guid sessionId)
         {
             for (int i = 0; i < NumOfItems; i++)
             {
-                _context.GuidIndexed.Add(new GuidIndexed());
+                _context.GuidIndexed.Add(new GuidIndexed() { SessionId = sessionId });
             }
 
             await _context.SaveChangesAsync();
@@ -196,12 +196,12 @@ namespace EfCoreDatabaseBenchmark.Repositories
             var result = _context.ObjectIdCharIndexed.Skip(position).Take(1);
             _context.ObjectIdCharIndexed.Where(x => x.Id == result.First().Id).ToList();
         }
-        public async Task ObjectIdCharIndexedInsert(int NumOfItems)
+        public async Task ObjectIdCharIndexedInsert(int NumOfItems, Guid sessionId)
         {
 
             for (int i = 0; i < NumOfItems; i++)
             {
-                _context.ObjectIdCharIndexed.Add(new ObjectIdCharIndexed());
+                _context.ObjectIdCharIndexed.Add(new ObjectIdCharIndexed() { SessionId = sessionId });
             }
 
             await _context.SaveChangesAsync();
@@ -221,12 +221,12 @@ namespace EfCoreDatabaseBenchmark.Repositories
             var result = _context.ObjectIdIndexed.Skip(position).Take(1);
             _context.ObjectIdIndexed.Where(x => x.UId == result.First().UId).ToList();
         }
-        public async Task ObjectIdIndexedInsert(int NumOfItems)
+        public async Task ObjectIdIndexedInsert(int NumOfItems, Guid sessionId)
         {
 
             for (int i = 0; i < NumOfItems; i++)
             {
-                _context.ObjectIdIndexed.Add(new ObjectIdIndexed());
+                _context.ObjectIdIndexed.Add(new ObjectIdIndexed() { SessionId = sessionId });
             }
 
             await _context.SaveChangesAsync();
@@ -246,11 +246,11 @@ namespace EfCoreDatabaseBenchmark.Repositories
             var result = _context.GuidSequentialIndexed.Skip(position).Take(1);
             _context.GuidSequentialIndexed.Where(x => x.Guid == result.First().Guid).ToList();
         }
-        public async Task GuidSequentialIndexedInsert(int NumOfItems)
+        public async Task GuidSequentialIndexedInsert(int NumOfItems, Guid sessionId)
         {
             for (int i = 0; i < NumOfItems; i++)
             {
-                _context.GuidSequentialIndexed.Add(new GuidSequentialIndexed());
+                _context.GuidSequentialIndexed.Add(new GuidSequentialIndexed() { SessionId = sessionId });
             }
 
             await _context.SaveChangesAsync();
@@ -267,21 +267,21 @@ namespace EfCoreDatabaseBenchmark.Repositories
         #region CombGuidIndexed
         public void CombGuidIndexedSelect(int position)
         {
-            var result = _context.CombGuidIndexed.Skip(position).Take(1);
-            _context.CombGuidIndexed.Where(x => x.Guid == result.First().Guid).ToList();
+            var result = _context.GuidCombIndexed.Skip(position).Take(1);
+            _context.GuidCombIndexed.Where(x => x.Guid == result.First().Guid).ToList();
         }
-        public async Task CombGuidIndexedInsert(int NumOfItems)
+        public async Task CombGuidIndexedInsert(int NumOfItems, Guid sessionId)
         {
             for (int i = 0; i < NumOfItems; i++)
             {
-                _context.CombGuidIndexed.Add(new CombGuidIndexed());
+                _context.GuidCombIndexed.Add(new GuidCombIndexed() { SessionId = sessionId });
             }
 
             await _context.SaveChangesAsync();
         }
         public async Task CombGuidIndexedUpdateAsync(int position)
         {
-            var result = _context.CombGuidIndexed.Skip(position).Take(1).First();
+            var result = _context.GuidCombIndexed.Skip(position).Take(1).First();
             result.DateCreated = DateTime.UtcNow;
             _context.Update(result);
             await _context.SaveChangesAsync();
@@ -294,9 +294,74 @@ namespace EfCoreDatabaseBenchmark.Repositories
             await _context.SaveChangesAsync();
         }
 
-        public int Count(string caseName)
+        public async Task<long> Sum(Guid sessionId, BenchmarkTables tableName)
         {
-            var result = _context.Results.Where(x => x.BenchmarkCase == caseName).Select(x => x.Inserts).Sum();
+            var sum = await SelectRandomNumber(sessionId, tableName).SumAsync();
+            return sum;
+        }
+
+        public async Task<long> Min(Guid sessionId, BenchmarkTables tableName)
+        {
+            var sum = await SelectRandomNumber(sessionId, tableName).MinAsync();
+            return sum;
+        }
+
+
+        public async Task<long> Max(Guid sessionId, BenchmarkTables tableName)
+        {
+            var sum = await SelectRandomNumber(sessionId, tableName).MaxAsync();
+            return sum;
+        }
+
+
+        public async Task<long> CountBySession(Guid sessionId, BenchmarkTables tableName)
+        {
+            var sum = await SelectRandomNumber(sessionId, tableName).CountAsync();
+            return sum;
+        }
+        public async Task<long> Avg(Guid sessionId, BenchmarkTables tableName)
+        {
+            var sum = await SelectRandomNumber(sessionId, tableName).AverageAsync();
+            return (long)sum;
+        }
+
+
+        public IQueryable<long> SelectRandomNumber(Guid sessionId, BenchmarkTables tableName)
+        {
+            switch (tableName)
+            {
+                case BenchmarkTables.AutoIncrementKey:
+                return _context.AutoIncrementKey.Where((x => x.SessionId == sessionId)).Select(x => x.RandomNumber);
+                case BenchmarkTables.GuidCombIndexed:
+                return _context.GuidCombIndexed.Where((x => x.SessionId == sessionId)).Select(x => x.RandomNumber);
+                case BenchmarkTables.GuidCombKey:
+                return _context.GuidCombKey.Where((x => x.SessionId == sessionId)).Select(x => x.RandomNumber);
+                case BenchmarkTables.GuidIndexed:
+                return _context.GuidIndexed.Where((x => x.SessionId == sessionId)).Select(x => x.RandomNumber);
+                case BenchmarkTables.GuidKey:
+                return _context.GuidKey.Where((x => x.SessionId == sessionId)).Select(x => x.RandomNumber);
+                case BenchmarkTables.GuidSequentialIndexed:
+                return _context.GuidSequentialIndexed.Where((x => x.SessionId == sessionId)).Select(x => x.RandomNumber);
+                case BenchmarkTables.GuidSequentialKey:
+                return _context.GuidSequentialKey.Where((x => x.SessionId == sessionId)).Select(x => x.RandomNumber);
+                case BenchmarkTables.NumericIndexed:
+                return _context.NumericIndexed.Where((x => x.SessionId == sessionId)).Select(x => x.RandomNumber);
+                case BenchmarkTables.ObjectIdCharIndexed:
+                return _context.ObjectIdCharIndexed.Where((x => x.SessionId == sessionId)).Select(x => x.RandomNumber);
+                case BenchmarkTables.ObjectIdIndexed:
+                return _context.ObjectIdIndexed.Where((x => x.SessionId == sessionId)).Select(x => x.RandomNumber);
+                case BenchmarkTables.ObjectIdKey:
+                return _context.ObjectIdKey.Where((x => x.SessionId == sessionId)).Select(x => x.RandomNumber);
+            }
+
+            return null;
+        }
+
+
+        public int Count(BenchmarkTables tableName)
+        {
+            var name = tableName.ToString();
+            var result = _context.Results.Where(x => x.BenchmarkCase == name).Select(x => x.Inserts).Sum();
             return (int)result;
         }
 
