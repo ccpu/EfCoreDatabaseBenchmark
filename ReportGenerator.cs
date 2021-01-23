@@ -102,8 +102,7 @@ namespace EfCoreDatabaseBenchmark
                                 x.Name != "Max" &&
                                 x.Name != "Avg" &&
                                 x.Name != "SessionId" &&
-                                x.Name != "CountSession" &&
-                                x.Name != "Inserts"))
+                                x.Name != "CountSession"))
                         {
                             foreach (var tableName in tableNamesList)
                             {

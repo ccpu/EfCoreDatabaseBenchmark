@@ -83,7 +83,7 @@ namespace EfCoreDatabaseBenchmark
                 }
 
             }
-
+            Console.WriteLine();
             Console.WriteLine(_totalInsert + " item inserted.");
             Console.WriteLine();
             Console.WriteLine();
