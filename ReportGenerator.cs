@@ -15,40 +15,48 @@ namespace EfCoreDatabaseBenchmark
     {
         public static void Generate()
         {
-            Console.WriteLine("Generating reports ...");
-            using (var context = new MySqlDbContext())
+            try
             {
-                if (context.Exists())
+                Console.WriteLine("Generating reports ...");
+                Console.WriteLine("MySQL Reports ...");
+                using (var context = new MySqlDbContext())
                 {
-                    Console.WriteLine("MySQL Reports ...");
-                    MySqlReport(context.Results, "mysql");
+                    if (context.Exists())
+                    {
+                        MySqlReport(context.Results, "mysql");
+                    }
                 }
+                Console.WriteLine("Mariadb Reports ...");
+                using (var context = new MariadbDbContext())
+                {
+                    if (context.Exists())
+                    {
+                        MySqlReport(context.Results, "mariadb");
+                    }
+                }
+                Console.WriteLine("PostgreDb Reports ...");
+                using (var context = new PostgreDbContext())
+                {
+                    if (context.Exists())
+                    {
+                        MySqlReport(context.Results, "Postgredb");
+                    }
+                }
+                Console.WriteLine("Cockroachdb Reports ...");
+                using (var context = new CockroachdbDbContext())
+                {
+                    if (context.Exists())
+                    {
+                        MySqlReport(context.Results, "cockroachdb");
+                    }
+                }
+                Console.WriteLine("All Report Generated.");
             }
-            using (var context = new MariadbDbContext())
+            catch (Exception e)
             {
-                if (context.Exists())
-                {
-                    Console.WriteLine("Mariadb Reports ...");
-                    MySqlReport(context.Results, "mariadb");
-                }
+                Console.WriteLine(e.Message);
             }
-            using (var context = new PostgreDbContext())
-            {
-                if (context.Exists())
-                {
-                    Console.WriteLine("PostgreDb Reports ...");
-                    MySqlReport(context.Results, "Postgredb");
-                }
-            }
-            using (var context = new CockroachdbDbContext())
-            {
-                if (context.Exists())
-                {
-                    Console.WriteLine("Cockroachdb Reports ...");
-                    MySqlReport(context.Results, "cockroachdb");
-                }
-            }
-            Console.WriteLine("All Report Generated.");
+
         }
 
         static void MySqlReport(DbSet<BenchmarkResult> contextResults, string databaseName)
