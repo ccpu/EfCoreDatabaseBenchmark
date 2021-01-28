@@ -110,7 +110,7 @@ namespace EfCoreDatabaseBenchmark
 
                                 var benchmarkPropName = benchmarkProp.Name;
                                 var value = results.GetType().GetProperty(benchmarkPropName)?.GetValue(results, null);
-                                ((IDictionary<String, Object>)obj)[tableName + "_" + benchmarkPropName] = value;
+                                ((IDictionary<String, Object>)obj)[benchmarkPropName + "_" + tableName] = value;
                             }
                         }
 
